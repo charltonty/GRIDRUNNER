@@ -1,0 +1,2894 @@
+{
+  "items": {
+    "wire": {
+      "name": "Insulated wire",
+      "mass": 0.3,
+      "category": "material",
+      "value": 4,
+      "stack": 999,
+      "description": "Insulated wire"
+    },
+    "cells": {
+      "name": "Lithium cell",
+      "mass": 1.2,
+      "category": "material",
+      "value": 18,
+      "stack": 999,
+      "description": "Lithium cell"
+    },
+    "electronics": {
+      "name": "Electronics",
+      "mass": 0.5,
+      "category": "material",
+      "value": 9,
+      "stack": 999,
+      "description": "Electronics"
+    },
+    "steel": {
+      "name": "Steel scrap",
+      "mass": 1.8,
+      "category": "material",
+      "value": 2,
+      "stack": 999,
+      "description": "Steel scrap"
+    },
+    "copper": {
+      "name": "Copper",
+      "mass": 0.4,
+      "category": "material",
+      "value": 6,
+      "stack": 999,
+      "description": "Copper"
+    },
+    "aluminum": {
+      "name": "Aluminum",
+      "mass": 0.3,
+      "category": "material",
+      "value": 3,
+      "stack": 999,
+      "description": "Aluminum"
+    },
+    "plastic": {
+      "name": "Plastic",
+      "mass": 0.1,
+      "category": "material",
+      "value": 1,
+      "stack": 999,
+      "description": "Plastic"
+    },
+    "glass": {
+      "name": "Glass",
+      "mass": 0.3,
+      "category": "material",
+      "value": 1,
+      "stack": 999,
+      "description": "Glass"
+    },
+    "rubber": {
+      "name": "Rubber",
+      "mass": 0.2,
+      "category": "material",
+      "value": 2,
+      "stack": 999,
+      "description": "Rubber"
+    },
+    "fabric": {
+      "name": "Fabric",
+      "mass": 0.1,
+      "category": "material",
+      "value": 1,
+      "stack": 999,
+      "description": "Fabric"
+    },
+    "magnets": {
+      "name": "Magnets",
+      "mass": 0.2,
+      "category": "material",
+      "value": 5,
+      "stack": 999,
+      "description": "Magnets"
+    },
+    "bearings": {
+      "name": "Bearings",
+      "mass": 0.3,
+      "category": "material",
+      "value": 4,
+      "stack": 999,
+      "description": "Bearings"
+    },
+    "silicon": {
+      "name": "Silicon",
+      "mass": 0.2,
+      "category": "material",
+      "value": 6,
+      "stack": 999,
+      "description": "Silicon"
+    },
+    "screwdriver": {
+      "name": "Screwdriver",
+      "mass": 0.3,
+      "category": "tool",
+      "value": 6,
+      "stack": 999,
+      "description": "Screwdriver"
+    },
+    "pickaxe": {
+      "name": "Pickaxe",
+      "mass": 2.5,
+      "category": "tool",
+      "value": 15,
+      "stack": 999,
+      "description": "Pickaxe"
+    },
+    "wrench": {
+      "name": "Wrench",
+      "mass": 0.8,
+      "category": "tool",
+      "value": 8,
+      "stack": 999,
+      "description": "Wrench"
+    },
+    "cutters": {
+      "name": "Wire cutters",
+      "mass": 0.4,
+      "category": "tool",
+      "value": 8,
+      "stack": 999,
+      "description": "Wire cutters"
+    },
+    "toaster": {
+      "name": "Broken toaster",
+      "mass": 2.1,
+      "category": "junk",
+      "value": 3,
+      "stack": 999,
+      "description": "Broken toaster",
+      "tool": "screwdriver",
+      "salvage": {
+        "steel": 1,
+        "copper": 1,
+        "wire": 1
+      }
+    },
+    "laptop": {
+      "name": "Dead laptop",
+      "mass": 1.8,
+      "category": "junk",
+      "value": 12,
+      "stack": 999,
+      "description": "Dead laptop",
+      "tool": "screwdriver",
+      "salvage": {
+        "electronics": 2,
+        "cells": 1,
+        "plastic": 1
+      }
+    },
+    "motor": {
+      "name": "Seized motor",
+      "mass": 4,
+      "category": "junk",
+      "value": 9,
+      "stack": 999,
+      "description": "Seized motor",
+      "tool": "wrench",
+      "salvage": {
+        "copper": 3,
+        "magnets": 2,
+        "bearings": 1
+      }
+    },
+    "panel": {
+      "name": "Cracked solar panel",
+      "mass": 3.2,
+      "category": "junk",
+      "value": 7,
+      "stack": 999,
+      "description": "Cracked solar panel",
+      "tool": "screwdriver",
+      "salvage": {
+        "aluminum": 2,
+        "glass": 2,
+        "silicon": 1
+      }
+    },
+    "bottle": {
+      "name": "Empty bottle",
+      "mass": 0.2,
+      "category": "junk",
+      "value": 0,
+      "stack": 999,
+      "description": "Empty bottle",
+      "salvage": {
+        "glass": 1
+      }
+    },
+    "rag": {
+      "name": "Oily rag",
+      "mass": 0.1,
+      "category": "junk",
+      "value": 0,
+      "stack": 999,
+      "description": "Oily rag",
+      "salvage": {
+        "fabric": 1
+      }
+    },
+    "can": {
+      "name": "Crushed can",
+      "mass": 0.1,
+      "category": "junk",
+      "value": 0,
+      "stack": 999,
+      "description": "Crushed can",
+      "salvage": {
+        "aluminum": 1
+      }
+    },
+    "wrapper": {
+      "name": "Food wrapper",
+      "mass": 0.01,
+      "category": "junk",
+      "value": 0,
+      "stack": 999,
+      "description": "Food wrapper",
+      "salvage": {
+        "plastic": 1
+      }
+    },
+    "tire": {
+      "name": "Ruined tire",
+      "mass": 3,
+      "category": "junk",
+      "value": 1,
+      "stack": 999,
+      "description": "Ruined tire",
+      "tool": "cutters",
+      "salvage": {
+        "rubber": 3
+      }
+    },
+    "fuel": {
+      "name": "Generator fuel · 1 L",
+      "mass": 0.8,
+      "category": "energy",
+      "value": 80,
+      "stack": 999,
+      "description": "Generator fuel · 1 L",
+      "energyKWh": 3
+    }
+  },
+  "recipes": {
+    "wire": {
+      "name": "Strip copper into wire",
+      "inputs": {
+        "copper": 1,
+        "plastic": 1
+      },
+      "output": {
+        "wire": 2
+      },
+      "tool": "cutters",
+      "station": "field",
+      "energy": 0
+    },
+    "pickaxe": {
+      "name": "Assemble pickaxe",
+      "inputs": {
+        "steel": 2,
+        "rubber": 1
+      },
+      "output": {
+        "pickaxe": 1
+      },
+      "tool": "wrench",
+      "station": "trailer",
+      "energy": 1
+    },
+    "cutters": {
+      "name": "Repair wire cutters",
+      "inputs": {
+        "steel": 1,
+        "rubber": 1
+      },
+      "output": {
+        "cutters": 1
+      },
+      "tool": "screwdriver",
+      "station": "field",
+      "energy": 0
+    },
+    "cells": {
+      "name": "Rebuild lithium cell",
+      "inputs": {
+        "electronics": 2,
+        "copper": 1
+      },
+      "output": {
+        "cells": 1
+      },
+      "tool": "screwdriver",
+      "station": "trailer",
+      "energy": 3
+    }
+  },
+  "field": {
+    "version": 1,
+    "seed": 1047,
+    "storage": {
+      "bike": {},
+      "trailer": {}
+    },
+    "world": [
+      {
+        "id": "field-1-0",
+        "leg": 1,
+        "x": -18,
+        "z": 10,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 1,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-1",
+        "leg": 1,
+        "x": 29,
+        "z": -20,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "motor": 1,
+          "can": 1,
+          "cutters": 1,
+          "tire": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-2",
+        "leg": 1,
+        "x": -40,
+        "z": -50,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "screwdriver": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-3",
+        "leg": 1,
+        "x": 51,
+        "z": -80,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "aluminum": 2,
+          "bearings": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-4",
+        "leg": 1,
+        "x": -18,
+        "z": -110,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 2,
+          "bottle": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-5",
+        "leg": 1,
+        "x": 29,
+        "z": -140,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-6",
+        "leg": 1,
+        "x": -40,
+        "z": -170,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 2,
+          "panel": 1,
+          "screwdriver": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-7",
+        "leg": 1,
+        "x": 51,
+        "z": -200,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "bearings": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-8",
+        "leg": 1,
+        "x": -18,
+        "z": -230,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 1,
+          "toaster": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-9",
+        "leg": 1,
+        "x": 29,
+        "z": -260,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "cutters": 2,
+          "motor": 1,
+          "wrench": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-10",
+        "leg": 1,
+        "x": -40,
+        "z": -290,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "screwdriver": 2,
+          "wire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-11",
+        "leg": 1,
+        "x": 51,
+        "z": -320,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-12",
+        "leg": 1,
+        "x": -18,
+        "z": -350,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-13",
+        "leg": 1,
+        "x": 29,
+        "z": -380,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 1,
+          "wrench": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-14",
+        "leg": 1,
+        "x": -40,
+        "z": -410,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "screwdriver": 1,
+          "electronics": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-15",
+        "leg": 1,
+        "x": 51,
+        "z": -440,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "steel": 1,
+          "motor": 1,
+          "fuel": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-16",
+        "leg": 1,
+        "x": -18,
+        "z": -470,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 1,
+          "toaster": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-17",
+        "leg": 1,
+        "x": 29,
+        "z": -500,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-18",
+        "leg": 1,
+        "x": -40,
+        "z": -530,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "panel": 1,
+          "wire": 1,
+          "screwdriver": 1,
+          "laptop": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-19",
+        "leg": 1,
+        "x": 51,
+        "z": -560,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "bearings": 3,
+          "copper": 1,
+          "aluminum": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-20",
+        "leg": 1,
+        "x": -18,
+        "z": -590,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-21",
+        "leg": 1,
+        "x": 29,
+        "z": -620,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "tire": 1,
+          "can": 2,
+          "cutters": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-22",
+        "leg": 1,
+        "x": -40,
+        "z": -650,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 1,
+          "laptop": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-23",
+        "leg": 1,
+        "x": 51,
+        "z": -680,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-24",
+        "leg": 1,
+        "x": -18,
+        "z": -710,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 1,
+          "bottle": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-25",
+        "leg": 1,
+        "x": 29,
+        "z": -740,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 1,
+          "wrench": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-26",
+        "leg": 1,
+        "x": -40,
+        "z": -770,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "screwdriver": 2,
+          "cells": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-27",
+        "leg": 1,
+        "x": 51,
+        "z": -800,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "motor": 1,
+          "bearings": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-28",
+        "leg": 1,
+        "x": -18,
+        "z": -830,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 2,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-29",
+        "leg": 1,
+        "x": 29,
+        "z": -860,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-30",
+        "leg": 1,
+        "x": -40,
+        "z": -890,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "laptop": 1,
+          "wire": 1,
+          "electronics": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-31",
+        "leg": 1,
+        "x": 51,
+        "z": -920,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "steel": 1,
+          "aluminum": 1,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-32",
+        "leg": 1,
+        "x": -18,
+        "z": -950,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 1,
+          "bottle": 2,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-33",
+        "leg": 1,
+        "x": 29,
+        "z": -980,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "can": 1,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-34",
+        "leg": 1,
+        "x": -40,
+        "z": -1010,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "panel": 1,
+          "laptop": 1,
+          "electronics": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-35",
+        "leg": 1,
+        "x": 51,
+        "z": -1040,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-36",
+        "leg": 1,
+        "x": -18,
+        "z": -1070,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 2,
+          "rag": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-37",
+        "leg": 1,
+        "x": 29,
+        "z": -1100,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "wrench": 1,
+          "cutters": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-38",
+        "leg": 1,
+        "x": -40,
+        "z": -1130,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "wire": 2,
+          "laptop": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-39",
+        "leg": 1,
+        "x": 51,
+        "z": -1160,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "copper": 1,
+          "bearings": 2,
+          "aluminum": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-40",
+        "leg": 1,
+        "x": -18,
+        "z": -1190,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 2,
+          "bottle": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-41",
+        "leg": 1,
+        "x": 29,
+        "z": -1220,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-1-42",
+        "leg": 1,
+        "x": -40,
+        "z": -1250,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "screwdriver": 1,
+          "electronics": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-43",
+        "leg": 1,
+        "x": 51,
+        "z": -1280,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "bearings": 3,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-44",
+        "leg": 1,
+        "x": -18,
+        "z": -1310,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "can": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-45",
+        "leg": 1,
+        "x": 29,
+        "z": -1340,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 1,
+          "cutters": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-46",
+        "leg": 1,
+        "x": -40,
+        "z": -1370,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 1,
+          "laptop": 1,
+          "cells": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-1-47",
+        "leg": 1,
+        "x": 51,
+        "z": -1400,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-0",
+        "leg": 2,
+        "x": -18,
+        "z": -1590,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "wrapper": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-1",
+        "leg": 2,
+        "x": 29,
+        "z": -1620,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 2,
+          "motor": 1,
+          "wrench": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-2",
+        "leg": 2,
+        "x": -40,
+        "z": -1650,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "wire": 1,
+          "panel": 2,
+          "screwdriver": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-3",
+        "leg": 2,
+        "x": 51,
+        "z": -1680,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "motor": 2,
+          "copper": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-4",
+        "leg": 2,
+        "x": -18,
+        "z": -1710,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "can": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-5",
+        "leg": 2,
+        "x": 29,
+        "z": -1740,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-6",
+        "leg": 2,
+        "x": -40,
+        "z": -1770,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "laptop": 2,
+          "wire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-7",
+        "leg": 2,
+        "x": 51,
+        "z": -1800,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "motor": 1,
+          "aluminum": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-8",
+        "leg": 2,
+        "x": -18,
+        "z": -1830,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 2,
+          "toaster": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-9",
+        "leg": 2,
+        "x": 29,
+        "z": -1860,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "tire": 1,
+          "rag": 2,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-10",
+        "leg": 2,
+        "x": -40,
+        "z": -1890,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "laptop": 1,
+          "wire": 2,
+          "panel": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-11",
+        "leg": 2,
+        "x": 51,
+        "z": -1920,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-12",
+        "leg": 2,
+        "x": -18,
+        "z": -1950,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 1,
+          "toaster": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-13",
+        "leg": 2,
+        "x": 29,
+        "z": -1980,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 2,
+          "cutters": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-14",
+        "leg": 2,
+        "x": -40,
+        "z": -2010,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "panel": 1,
+          "screwdriver": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-15",
+        "leg": 2,
+        "x": 51,
+        "z": -2040,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "steel": 1,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-16",
+        "leg": 2,
+        "x": -18,
+        "z": -2070,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-17",
+        "leg": 2,
+        "x": 29,
+        "z": -2100,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-18",
+        "leg": 2,
+        "x": -40,
+        "z": -2130,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "panel": 1,
+          "wire": 2,
+          "screwdriver": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-19",
+        "leg": 2,
+        "x": 51,
+        "z": -2160,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "copper": 2,
+          "bearings": 1,
+          "motor": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-20",
+        "leg": 2,
+        "x": -18,
+        "z": -2190,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-21",
+        "leg": 2,
+        "x": 29,
+        "z": -2220,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "wrench": 1,
+          "tire": 1,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-22",
+        "leg": 2,
+        "x": -40,
+        "z": -2250,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "laptop": 2,
+          "electronics": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-23",
+        "leg": 2,
+        "x": 51,
+        "z": -2280,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-24",
+        "leg": 2,
+        "x": -18,
+        "z": -2310,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "wrapper": 3,
+          "rag": 1,
+          "toaster": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-25",
+        "leg": 2,
+        "x": 29,
+        "z": -2340,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 4,
+          "fuel": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-26",
+        "leg": 2,
+        "x": -40,
+        "z": -2370,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "panel": 1,
+          "wire": 2,
+          "screwdriver": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-27",
+        "leg": 2,
+        "x": 51,
+        "z": -2400,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "motor": 1,
+          "bearings": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-28",
+        "leg": 2,
+        "x": -18,
+        "z": -2430,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "can": 2,
+          "toaster": 2,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-29",
+        "leg": 2,
+        "x": 29,
+        "z": -2460,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-30",
+        "leg": 2,
+        "x": -40,
+        "z": -2490,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "wire": 1,
+          "cells": 1,
+          "panel": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-31",
+        "leg": 2,
+        "x": 51,
+        "z": -2520,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "aluminum": 1,
+          "motor": 1,
+          "copper": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-32",
+        "leg": 2,
+        "x": -18,
+        "z": -2550,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "wrapper": 1,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-33",
+        "leg": 2,
+        "x": 29,
+        "z": -2580,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 2,
+          "wrench": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-34",
+        "leg": 2,
+        "x": -40,
+        "z": -2610,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "panel": 3,
+          "electronics": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-35",
+        "leg": 2,
+        "x": 51,
+        "z": -2640,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-36",
+        "leg": 2,
+        "x": -18,
+        "z": -2670,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 1,
+          "wrapper": 1,
+          "bottle": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-37",
+        "leg": 2,
+        "x": 29,
+        "z": -2700,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "wrench": 2,
+          "tire": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-38",
+        "leg": 2,
+        "x": -40,
+        "z": -2730,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "panel": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-39",
+        "leg": 2,
+        "x": 51,
+        "z": -2760,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "steel": 1,
+          "bearings": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-40",
+        "leg": 2,
+        "x": -18,
+        "z": -2790,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "wrapper": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-41",
+        "leg": 2,
+        "x": 29,
+        "z": -2820,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-2-42",
+        "leg": 2,
+        "x": -40,
+        "z": -2850,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "wire": 1,
+          "electronics": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-43",
+        "leg": 2,
+        "x": 51,
+        "z": -2880,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "aluminum": 2,
+          "copper": 1,
+          "motor": 1,
+          "steel": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-44",
+        "leg": 2,
+        "x": -18,
+        "z": -2910,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 1,
+          "wrapper": 1,
+          "can": 1,
+          "toaster": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-45",
+        "leg": 2,
+        "x": 29,
+        "z": -2940,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "motor": 2,
+          "tire": 1,
+          "wrench": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-46",
+        "leg": 2,
+        "x": -40,
+        "z": -2970,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "laptop": 1,
+          "cells": 1,
+          "wire": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-2-47",
+        "leg": 2,
+        "x": 51,
+        "z": -3000,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-0",
+        "leg": 3,
+        "x": -18,
+        "z": -3190,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "can": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-1",
+        "leg": 3,
+        "x": 29,
+        "z": -3220,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "cutters": 1,
+          "tire": 1,
+          "can": 1,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-2",
+        "leg": 3,
+        "x": -40,
+        "z": -3250,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "laptop": 1,
+          "electronics": 1,
+          "panel": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-3",
+        "leg": 3,
+        "x": 51,
+        "z": -3280,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "bearings": 1,
+          "aluminum": 2,
+          "steel": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-4",
+        "leg": 3,
+        "x": -18,
+        "z": -3310,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "can": 4,
+          "bottle": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-5",
+        "leg": 3,
+        "x": 29,
+        "z": -3340,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-6",
+        "leg": 3,
+        "x": -40,
+        "z": -3370,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 1,
+          "wire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-7",
+        "leg": 3,
+        "x": 51,
+        "z": -3400,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "bearings": 1,
+          "motor": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-8",
+        "leg": 3,
+        "x": -18,
+        "z": -3430,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "bottle": 2,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-9",
+        "leg": 3,
+        "x": 29,
+        "z": -3460,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "can": 1,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-10",
+        "leg": 3,
+        "x": -40,
+        "z": -3490,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 1,
+          "laptop": 1,
+          "cells": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-11",
+        "leg": 3,
+        "x": 51,
+        "z": -3520,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-12",
+        "leg": 3,
+        "x": -18,
+        "z": -3550,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "wrapper": 1,
+          "toaster": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-13",
+        "leg": 3,
+        "x": 29,
+        "z": -3580,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "cutters": 1,
+          "tire": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-14",
+        "leg": 3,
+        "x": -40,
+        "z": -3610,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "screwdriver": 1,
+          "electronics": 1,
+          "cells": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-15",
+        "leg": 3,
+        "x": 51,
+        "z": -3640,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "aluminum": 2,
+          "steel": 1,
+          "bearings": 1,
+          "copper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-16",
+        "leg": 3,
+        "x": -18,
+        "z": -3670,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 1,
+          "can": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-17",
+        "leg": 3,
+        "x": 29,
+        "z": -3700,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-18",
+        "leg": 3,
+        "x": -40,
+        "z": -3730,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "electronics": 2,
+          "wire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-19",
+        "leg": 3,
+        "x": 51,
+        "z": -3760,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "motor": 1,
+          "copper": 2,
+          "steel": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-20",
+        "leg": 3,
+        "x": -18,
+        "z": -3790,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 3,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-21",
+        "leg": 3,
+        "x": 29,
+        "z": -3820,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "motor": 1,
+          "wrench": 1,
+          "cutters": 1,
+          "can": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-22",
+        "leg": 3,
+        "x": -40,
+        "z": -3850,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 2,
+          "screwdriver": 1,
+          "wire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-23",
+        "leg": 3,
+        "x": 51,
+        "z": -3880,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-24",
+        "leg": 3,
+        "x": -18,
+        "z": -3910,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "wrapper": 1,
+          "rag": 1,
+          "toaster": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-25",
+        "leg": 3,
+        "x": 29,
+        "z": -3940,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "tire": 1,
+          "rag": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-26",
+        "leg": 3,
+        "x": -40,
+        "z": -3970,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "wire": 1,
+          "electronics": 1,
+          "screwdriver": 1,
+          "panel": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-27",
+        "leg": 3,
+        "x": 51,
+        "z": -4000,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "bearings": 1,
+          "steel": 1,
+          "aluminum": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-28",
+        "leg": 3,
+        "x": -18,
+        "z": -4030,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "toaster": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-29",
+        "leg": 3,
+        "x": 29,
+        "z": -4060,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-30",
+        "leg": 3,
+        "x": -40,
+        "z": -4090,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 1,
+          "panel": 2,
+          "laptop": 1,
+          "screwdriver": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-31",
+        "leg": 3,
+        "x": 51,
+        "z": -4120,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "aluminum": 1,
+          "bearings": 1,
+          "steel": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-32",
+        "leg": 3,
+        "x": -18,
+        "z": -4150,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "rag": 1,
+          "wrapper": 1,
+          "can": 2
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-33",
+        "leg": 3,
+        "x": 29,
+        "z": -4180,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "wrench": 2,
+          "tire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-34",
+        "leg": 3,
+        "x": -40,
+        "z": -4210,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 1,
+          "panel": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-35",
+        "leg": 3,
+        "x": 51,
+        "z": -4240,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-36",
+        "leg": 3,
+        "x": -18,
+        "z": -4270,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-37",
+        "leg": 3,
+        "x": 29,
+        "z": -4300,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "wrench": 1,
+          "motor": 1,
+          "tire": 1,
+          "can": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-38",
+        "leg": 3,
+        "x": -40,
+        "z": -4330,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "laptop": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-39",
+        "leg": 3,
+        "x": 51,
+        "z": -4360,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "copper": 1,
+          "aluminum": 1,
+          "bearings": 2,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-40",
+        "leg": 3,
+        "x": -18,
+        "z": -4390,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "bottle": 2
+        },
+        "left": 0,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-41",
+        "leg": 3,
+        "x": 29,
+        "z": -4420,
+        "kind": "node",
+        "table": "garage",
+        "items": {},
+        "left": 4,
+        "resource": "copper",
+        "seen": false
+      },
+      {
+        "id": "field-3-42",
+        "leg": 3,
+        "x": -40,
+        "z": -4450,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "electronics": 1,
+          "panel": 1,
+          "screwdriver": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-43",
+        "leg": 3,
+        "x": 51,
+        "z": -4480,
+        "kind": "container",
+        "table": "industrial",
+        "items": {
+          "aluminum": 1,
+          "motor": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-44",
+        "leg": 3,
+        "x": -18,
+        "z": -4510,
+        "kind": "container",
+        "table": "household",
+        "items": {
+          "can": 1,
+          "rag": 1,
+          "wrapper": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-45",
+        "leg": 3,
+        "x": 29,
+        "z": -4540,
+        "kind": "container",
+        "table": "garage",
+        "items": {
+          "rag": 1,
+          "tire": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-46",
+        "leg": 3,
+        "x": -40,
+        "z": -4570,
+        "kind": "container",
+        "table": "electrical",
+        "items": {
+          "cells": 2,
+          "laptop": 1
+        },
+        "left": 0,
+        "resource": "steel",
+        "seen": false
+      },
+      {
+        "id": "field-3-47",
+        "leg": 3,
+        "x": 51,
+        "z": -4600,
+        "kind": "node",
+        "table": "industrial",
+        "items": {},
+        "left": 4,
+        "resource": "steel",
+        "seen": false
+      }
+    ],
+    "fuelTrades": 0
+  },
+  "energy": {
+    "unitKWh": 0.02,
+    "bikeKWh": 2,
+    "trailerKWh": 0.8,
+    "generatorKW": 12,
+    "fuelKWhPerLiter": 3,
+    "secondsPerGameHour": 300
+  },
+  "settlements": [
+    {
+      "id": "milepost",
+      "name": "MILEPOST 09 / REPAIR",
+      "leg": 1,
+      "x": -115,
+      "z": -150,
+      "style": "garage"
+    },
+    {
+      "id": "drywell",
+      "name": "DRYWELL / LAST STOP",
+      "leg": 1,
+      "x": 115,
+      "z": -560,
+      "style": "diner"
+    },
+    {
+      "id": "relaycottages",
+      "name": "RELAY WORKERS / VACANT",
+      "leg": 1,
+      "x": -115,
+      "z": -1160,
+      "style": "homes"
+    },
+    {
+      "id": "riverward",
+      "name": "RIVERWARD / COOPERATIVE",
+      "leg": 2,
+      "x": -120,
+      "z": -1890,
+      "style": "homes"
+    },
+    {
+      "id": "pumpworks",
+      "name": "PUMP WORKS / SERVICE",
+      "leg": 2,
+      "x": -115,
+      "z": -2470,
+      "style": "garage"
+    },
+    {
+      "id": "ferry",
+      "name": "FERRY ROAD / SHELTER",
+      "leg": 2,
+      "x": 160,
+      "z": -2830,
+      "style": "diner"
+    },
+    {
+      "id": "switchyard",
+      "name": "SWITCHYARD / MAINTENANCE",
+      "leg": 3,
+      "x": -125,
+      "z": -3380,
+      "style": "garage"
+    },
+    {
+      "id": "canteen",
+      "name": "NIGHT SHIFT / CANTEEN",
+      "leg": 3,
+      "x": 120,
+      "z": -3860,
+      "style": "diner"
+    },
+    {
+      "id": "quarters",
+      "name": "OPERATOR QUARTERS",
+      "leg": 3,
+      "x": -125,
+      "z": -4390,
+      "style": "homes"
+    }
+  ],
+  "residents": [
+    {
+      "id": "riggs",
+      "name": "Riggs",
+      "site": "milepost",
+      "role": "Mechanic",
+      "color": 9921349,
+      "cost": {
+        "steel": 2
+      },
+      "reward": {
+        "cutters": 1
+      },
+      "limit": 1,
+      "line": "Most of this road died one bearing at a time. Bring me steel and I will put cutters in your hand.",
+      "rumor": "Keep a wrench. Seized motors still hold copper, magnets and bearings."
+    },
+    {
+      "id": "vee",
+      "name": "Vee",
+      "site": "drywell",
+      "role": "Night rider",
+      "color": 5401720,
+      "cost": {
+        "wire": 2
+      },
+      "reward": {
+        "cells": 1
+      },
+      "limit": 2,
+      "line": "I ride when the towers stop humming. Nobody owns the shoulder. Trade wire for a working cell?",
+      "rumor": "Fuel is worth stopping for. Search maintenance yards, but save room in the trailer."
+    },
+    {
+      "id": "inez",
+      "name": "Inez",
+      "site": "riverward",
+      "role": "River keeper",
+      "color": 6650200,
+      "cost": {
+        "steel": 1
+      },
+      "reward": {
+        "rubber": 2
+      },
+      "limit": 3,
+      "line": "We patch the pipes before we patch the roofs. The river keeps us here. I can spare rubber for steel.",
+      "rumor": "Cal knows the intake. If the breakers refuse you, find the maintenance note before trying again."
+    },
+    {
+      "id": "sol",
+      "name": "Sol",
+      "site": "ferry",
+      "role": "Camp electrician",
+      "color": 10191953,
+      "cost": {
+        "copper": 2
+      },
+      "reward": {
+        "electronics": 2
+      },
+      "limit": 2,
+      "line": "Every working board here came out of something someone threw away. Copper buys you two assemblies.",
+      "rumor": "A dead laptop is a battery and a control board waiting for a screwdriver."
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "site": "switchyard",
+      "role": "Grid technician",
+      "color": 6850705,
+      "cost": {
+        "electronics": 2
+      },
+      "reward": {
+        "cells": 2
+      },
+      "limit": 1,
+      "line": "The security relays never got the shutdown order. I keep one reserve for riders heading north.",
+      "rumor": "Scout the security corridor. The engineer drone can reach switches a rider cannot."
+    },
+    {
+      "id": "kip",
+      "name": "Kip",
+      "site": "quarters",
+      "role": "Signal watcher",
+      "color": 8749151,
+      "cost": {
+        "wire": 1
+      },
+      "reward": {
+        "steel": 2
+      },
+      "limit": 3,
+      "line": "There is a person behind that transmission. I heard them stop to breathe. Spare wire? I have scrap.",
+      "rumor": "The last bank can light the camps or carry a message farther. That choice belongs to whoever gets there."
+    }
+  ],
+  "leg2": [
+    {
+      "id": "l2cal",
+      "name": "CAL / SPILLWAY CAMP",
+      "x": 45,
+      "z": -1810,
+      "y": 2
+    },
+    {
+      "id": "l2note",
+      "name": "MAINTENANCE LUNCHBOX",
+      "x": 70,
+      "z": -2260,
+      "y": 2
+    },
+    {
+      "id": "l2intake",
+      "name": "DRONE / INTAKE RELEASE",
+      "x": 118,
+      "z": -2380,
+      "y": 22
+    },
+    {
+      "id": "l2phase",
+      "name": "WATERWORKS BREAKERS",
+      "x": 65,
+      "z": -2355,
+      "y": 2
+    },
+    {
+      "id": "l2hydro",
+      "name": "RIVER / TURBINE DOCK",
+      "x": 60,
+      "z": -2340,
+      "y": 2
+    },
+    {
+      "id": "l2cache",
+      "name": "SERVICE CACHE",
+      "x": -35,
+      "z": -2720,
+      "y": 2
+    },
+    {
+      "id": "l2archive",
+      "name": "NORTH RELAY / ARCHIVE",
+      "x": 0,
+      "z": -3020,
+      "y": 2
+    }
+  ],
+  "leg3": [
+    {
+      "id": "l3security",
+      "name": "DRONE / SECURITY RELAY",
+      "x": 65,
+      "z": -3510,
+      "y": 20
+    },
+    {
+      "id": "l3key",
+      "name": "TECHNICIAN ARCHIVE",
+      "x": -55,
+      "z": -3780,
+      "y": 2
+    },
+    {
+      "id": "l3antenna",
+      "name": "ANTENNA CONTROL",
+      "x": 50,
+      "z": -3980,
+      "y": 2
+    },
+    {
+      "id": "l3supply",
+      "name": "RESERVE BATTERY STATION",
+      "x": -35,
+      "z": -4120,
+      "y": 2
+    },
+    {
+      "id": "l3capacitor",
+      "name": "CAPACITOR BANK",
+      "x": 60,
+      "z": -4310,
+      "y": 2
+    },
+    {
+      "id": "l3core",
+      "name": "BLACK START / CORE",
+      "x": 0,
+      "z": -4590,
+      "y": 2
+    }
+  ],
+  "profiles": {
+    "walking": [
+      {
+        "id": "eyes",
+        "label": "First person",
+        "distance": 0,
+        "height": 0,
+        "fov": -3
+      },
+      {
+        "id": "shoulder",
+        "label": "Over shoulder",
+        "distance": 3,
+        "height": 0.4,
+        "side": 0.65,
+        "fov": -3
+      },
+      {
+        "id": "third",
+        "label": "Third person",
+        "distance": 6,
+        "height": 1.4,
+        "fov": 0
+      }
+    ],
+    "bike": [
+      {
+        "id": "helmet",
+        "label": "Helmet",
+        "distance": 0,
+        "height": 0,
+        "fov": 0
+      },
+      {
+        "id": "bars",
+        "label": "Handlebar",
+        "distance": 0,
+        "height": -0.4,
+        "front": 0.55,
+        "fov": 4
+      },
+      {
+        "id": "chase",
+        "label": "Close chase",
+        "distance": 5,
+        "height": 1.6,
+        "fov": 0
+      },
+      {
+        "id": "wide",
+        "label": "Wide chase",
+        "distance": 9,
+        "height": 3,
+        "fov": 4
+      }
+    ],
+    "drone": [
+      {
+        "id": "fpv",
+        "label": "FPV nose",
+        "distance": 0,
+        "height": 0,
+        "fov": 12
+      },
+      {
+        "id": "recon",
+        "label": "Stabilized recon",
+        "distance": 0,
+        "height": 0,
+        "fov": -12
+      },
+      {
+        "id": "chase",
+        "label": "Drone chase",
+        "distance": 4,
+        "height": 1.5,
+        "fov": 3
+      },
+      {
+        "id": "overhead",
+        "label": "Inspection overhead",
+        "distance": 1,
+        "height": 9,
+        "fov": -5
+      }
+    ],
+    "inspection": [
+      {
+        "id": "close",
+        "label": "Close inspection",
+        "distance": 0,
+        "height": 0,
+        "fov": -12
+      },
+      {
+        "id": "context",
+        "label": "Context view",
+        "distance": 3,
+        "height": 1,
+        "fov": -3
+      }
+    ],
+    "power": [
+      {
+        "id": "meter",
+        "label": "Meter view",
+        "distance": 0,
+        "height": 0,
+        "fov": -8
+      },
+      {
+        "id": "context",
+        "label": "Connection overview",
+        "distance": 3,
+        "height": 1.8,
+        "fov": 0
+      }
+    ],
+    "camp": [
+      {
+        "id": "eyes",
+        "label": "Camp first person",
+        "distance": 0,
+        "height": 0,
+        "fov": -4
+      },
+      {
+        "id": "context",
+        "label": "Camp overview",
+        "distance": 5,
+        "height": 2,
+        "fov": 0
+      }
+    ]
+  }
+}
