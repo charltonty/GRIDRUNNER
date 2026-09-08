@@ -1,3 +1,4 @@
+import * as survival from './dist/survival.js';
 // Full module/DOM integration with real Three.js scene objects. WebGL is stubbed;
 // this suite does NOT claim GPU, screenshot, pointer-lock or audio listening QA.
 import {JSDOM} from 'jsdom';
@@ -10,7 +11,7 @@ const context2d=new Proxy({measureText:()=>({width:50}),createLinearGradient:()=
 w.HTMLCanvasElement.prototype.getContext=()=>context2d;
 w.HTMLCanvasElement.prototype.setPointerCapture=()=>{};w.document.exitPointerLock=()=>{};w.HTMLCanvasElement.prototype.requestPointerLock=()=>Promise.resolve();
 let frames=0;class NullRenderer{constructor(){this.shadowMap={};this.info={render:{calls:0}};}setPixelRatio(){}setSize(){}render(scene,camera){assert(scene.isScene&&camera.isPerspectiveCamera);frames++;}}
-const ctx=vm.createContext({T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
+const ctx=vm.createContext({...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
 const source=fs.readFileSync('dist/game.js','utf8').replace(/^import .*;\n/gm,'');
 vm.runInContext(source,ctx);const run=code=>vm.runInContext(code,ctx);
 const tick=(seconds)=>{for(let i=0;i<seconds*50;i++)run('update(.02)');run('hud();loop(performance.now()+20)');};
@@ -33,3 +34,18 @@ const legacy=run('snapshot()');delete legacy.state.droneSystem;delete legacy.sta
 // Check live scene numbers; shader compilation is deliberately outside this test.
 run('scene.updateMatrixWorld(true)');const stats=run('(()=>{let meshes=0,triangles=0;scene.traverse(o=>{if(o.isMesh){meshes++;triangles+=(o.geometry.index?.count||o.geometry.attributes.position.count)/3*(o.isInstancedMesh?o.count:1);if(o.matrixWorld.elements.some(n=>!Number.isFinite(n)))throw Error("Invalid transform");}});return {meshes,triangles};})()');
 console.log('PASS: full startup, actual DOM menus, input-driven bike/drone updates, commands, scan persistence, save/restore, presets, all three real mission chains and final save. Render stub frames:',frames,stats);
+// Fieldwork: real DOM events, transactions, mining and persistent depleted state.
+run('newExpedition();s.inv.toaster=1;open("supplies")');
+w.document.querySelector('[data-field=salvage][data-item=toaster]').click();assert.equal(run('s.inv.toaster'),0);assert.equal(run('s.inv.copper'),1);
+run('s.pos.copy(bike.position);open("supplies")');w.document.querySelector('[data-field=store][data-item=copper][data-storage=bike]').click();assert.equal(run('s.field.storage.bike.copper'),1);assert.equal(run('s.inv.copper'),0);
+w.document.querySelector('[data-field=retrieve][data-item=copper][data-storage=bike]').click();assert.equal(run('s.inv.copper'),1);
+run('s.inv.steel=4;s.inv.rubber=1;s.pos.copy(trailer.position);open("supplies")');w.document.querySelector('[data-field=craft][data-item=pickaxe]').click();assert.equal(run('s.inv.pickaxe'),1);
+run('activeField=s.field.world.find(p=>p.kind==="node").id;s.pos.set(s.field.world[5].x,1.7,s.field.world[5].z);open("supplies")');w.document.querySelector('[data-field=mine]').click();tick(4.2);assert.equal(run('s.field.world[5].left'),3);assert.equal(run('fieldJob'),null);
+run('s.inv.fuel=1;s.fuel=0;s.pos.copy(trailer.position);open("supplies")');w.document.querySelector('[data-field=refuel]').click();assert.equal(run('s.fuel'),1);assert.equal(run('s.inv.fuel'),0);
+assert(run('writeSave("manual1")'));run('s.field.storage.bike={};s.field.world[5].left=4;restore(getSave("manual1"))');assert.equal(run('s.field.world[5].left'),3);
+const old=run('snapshot()');delete old.state.field;assert.equal(expedition.validateSave(old).state.field.world.length,144);
+run('newExpedition();s.pos.set(54,1.7,-94);s.inv.steel=20');for(let i=0;i<3;i++){run('open("rig")');w.document.querySelector('[data-ui=fuel]').click();}assert.equal(run('s.field.fuelTrades'),2);assert.equal(run('s.inv.steel'),12);
+const inaccessible=run('s.field.world.filter(p=>solids.some(b=>Math.abs(p.x-b.x)<b.w+2&&Math.abs(p.z-b.z)<b.d+2)).map(p=>p.id)');console.log('Field sites near solid infrastructure:',inaccessible);
+console.log('PASS: DOM salvage, cargo transfer, fabrication, timed mining, fuel pour, finite trade, depletion save/reload and legacy field migration.');
+run('open("controls")');const launchSelect=w.document.querySelector('[data-remap=q]');launchSelect.value='z';launchSelect.dispatchEvent(new w.Event('change',{bubbles:true}));assert.equal(run('mappedKey("z")'),'q');assert.equal(run('mappedKey("q")'),'');run('play()');w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'z'}));assert.equal(run('s.mode'),'drone');assert.equal(JSON.parse(w.localStorage.getItem('gridrunner.keys')).q,'z');
+console.log('PASS: visible rebind UI, persisted launch mapping, old key disabled and real remapped launch event.');

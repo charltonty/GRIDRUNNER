@@ -1,3 +1,9 @@
+# GRIDRUNNER v7.2 — Fieldwork
+
+Play: https://charltonty.github.io/GRIDRUNNER/
+
+See [FIELDWORK-GUIDE.md](FIELDWORK-GUIDE.md) for changes, controls, architecture, content examples, tests and known limitations. This is the first playable foundations pass from the Compact Work Handoff.
+
 # GRIDRUNNER v7 — Ghost Signal, Legs 1–3
 
 An in-place upgrade of the supplied GRIDRUNNER prototype. Complete editable browser source is in `dist/`; no production compilation is required.
