@@ -1,0 +1,170 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://scripts/frontend.gd" type="Script" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="Panel"]
+bg_color = Color(0.035, 0.047, 0.048, 0.94)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35, 0.55, 0.46, 0.65)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Frontend" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.025, 0.035, 0.035, 1)
+
+[node name="Title" type="Label" parent="."]
+offset_left = 82.0
+offset_top = 70.0
+offset_right = 800.0
+offset_bottom = 130.0
+theme_override_font_sizes/font_size = 42
+text = "GRIDRUNNER // GHOST SIGNAL"
+
+[node name="Subtitle" type="Label" parent="."]
+offset_left = 86.0
+offset_top = 130.0
+offset_right = 700.0
+offset_bottom = 165.0
+text = "FIELD TERMINAL  •  BLACK CREEK FRONTIER"
+
+[node name="MainPanel" type="PanelContainer" parent="."]
+offset_left = 82.0
+offset_top = 215.0
+offset_right = 445.0
+offset_bottom = 615.0
+theme_override_styles/panel = SubResource("Panel")
+
+[node name="Buttons" type="VBoxContainer" parent="MainPanel"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Continue" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "CONTINUE"
+
+[node name="NewGame" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "NEW EXPEDITION"
+
+[node name="Load" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "LOAD GAME"
+
+[node name="Settings" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "SETTINGS"
+
+[node name="FieldManual" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "FIELD MANUAL"
+
+[node name="Accessibility" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "ACCESSIBILITY"
+
+[node name="Quit" type="Button" parent="MainPanel/Buttons"]
+layout_mode = 2
+text = "QUIT"
+
+[node name="NewGamePanel" type="PanelContainer" parent="."]
+visible = false
+offset_left = 500.0
+offset_top = 215.0
+offset_right = 920.0
+offset_bottom = 500.0
+theme_override_styles/panel = SubResource("Panel")
+
+[node name="Buttons" type="VBoxContainer" parent="NewGamePanel"]
+layout_mode = 2
+
+[node name="Heading" type="Label" parent="NewGamePanel/Buttons"]
+layout_mode = 2
+text = "NEW EXPEDITION"
+
+[node name="Standard" type="Button" parent="NewGamePanel/Buttons"]
+layout_mode = 2
+text = "STANDARD  // intended experience"
+
+[node name="Explorer" type="Button" parent="NewGamePanel/Buttons"]
+layout_mode = 2
+text = "EXPLORER  // lighter survival pressure"
+
+[node name="Survival" type="Button" parent="NewGamePanel/Buttons"]
+layout_mode = 2
+text = "SURVIVAL  // scarce resources"
+
+[node name="Custom" type="Button" parent="NewGamePanel/Buttons"]
+layout_mode = 2
+text = "CUSTOM"
+
+[node name="Back" type="Button" parent="NewGamePanel/Buttons"]
+layout_mode = 2
+text = "BACK"
+
+[node name="SettingsPanel" type="PanelContainer" parent="."]
+visible = false
+offset_left = 500.0
+offset_top = 215.0
+offset_right = 920.0
+offset_bottom = 500.0
+theme_override_styles/panel = SubResource("Panel")
+
+[node name="Buttons" type="VBoxContainer" parent="SettingsPanel"]
+layout_mode = 2
+
+[node name="Heading" type="Label" parent="SettingsPanel/Buttons"]
+layout_mode = 2
+text = "SETTINGS"
+
+[node name="Display" type="Button" parent="SettingsPanel/Buttons"]
+layout_mode = 2
+text = "VIDEO / DISPLAY"
+
+[node name="Audio" type="Button" parent="SettingsPanel/Buttons"]
+layout_mode = 2
+text = "AUDIO"
+
+[node name="Controls" type="Button" parent="SettingsPanel/Buttons"]
+layout_mode = 2
+text = "CONTROLS"
+
+[node name="Gameplay" type="Button" parent="SettingsPanel/Buttons"]
+layout_mode = 2
+text = "GAMEPLAY / HUD"
+
+[node name="Back" type="Button" parent="SettingsPanel/Buttons"]
+layout_mode = 2
+text = "BACK"
+
+[node name="Status" type="Label" parent="."]
+offset_left = 82.0
+offset_top = 650.0
+offset_right = 900.0
+offset_bottom = 690.0
+text = "BLACK CREEK FRONTIER // LINK OFFLINE"
+
+[connection signal="pressed" from="MainPanel/Buttons/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="MainPanel/Buttons/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="MainPanel/Buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MainPanel/Buttons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="NewGamePanel/Buttons/Standard" to="." method="_on_start_standard_pressed"]
+[connection signal="pressed" from="NewGamePanel/Buttons/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="SettingsPanel/Buttons/Back" to="." method="_on_back_pressed"]
