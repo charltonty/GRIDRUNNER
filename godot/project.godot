@@ -4,7 +4,7 @@ config_version=5
 
 [application]
 config/name="GRIDRUNNER: Ghost Signal"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/frontend.tscn"
 
 [display]
 window/size/viewport_width=1280
