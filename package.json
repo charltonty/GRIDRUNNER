@@ -1,11 +1,11 @@
 {
   "name": "gridrunner",
   "private": true,
-  "version": "7.3.0",
+  "version": "7.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite --config vite.config.js",
-    "test": "node verify-game.mjs && node verify-drone.mjs && node verify-audio.mjs && node verify-runtime.mjs && node verify-survival.mjs"
+    "test": "node verify-game.mjs && node verify-drone.mjs && node verify-audio.mjs && node verify-runtime.mjs && node verify-survival.mjs && node verify-experience.mjs"
   },
   "devDependencies": {
     "jsdom": "^30.0.1",

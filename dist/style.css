@@ -50,3 +50,14 @@ body[data-mode=drone] #flightHelp{top:auto;bottom:160px;left:240px}#dronePanel{d
 .residentCard{display:flex;align-items:center;gap:24px;padding:28px 0;border-block:1px solid #bca57e33;margin:20px 0}.residentMonogram{display:grid;place-items:center;flex:0 0 88px;height:112px;border:1px solid #bca57e77;background:repeating-linear-gradient(0deg,#45635922 0 2px,transparent 2px 5px),#203438;color:#d3af77;font:48px monospace}.dialogue{font-size:1.15rem;line-height:1.65;color:#ece1c2}.residentCard p{max-width:650px}.journalEntry{border-left:2px solid #ad916450}
 @media(max-width:600px){.residentCard{gap:12px;padding:14px 0}.residentMonogram{flex-basis:48px;height:76px;font-size:30px}}
 @media(prefers-reduced-motion:reduce){#panel button{transition:none}}
+/* Experience profiles share controls while changing framing and presentation. */
+#povBadge{position:fixed;top:76px;left:50%;transform:translateX(-50%);z-index:35;background:#14292ee8;border:1px solid #93c6b67a;color:#daebdc;font:11px monospace;padding:8px 14px;max-width:90vw;white-space:nowrap}
+#povBadge[hidden]{display:none}#visorFrame{position:fixed;inset:0;z-index:4;pointer-events:none;border:14px solid #07151b70;border-radius:14% / 9%;box-shadow:inset 0 0 65px #07151b88;transition:opacity .2s}
+body[data-experience=drone] #povBadge{color:#7df4eb;border-color:#66dcd5}
+body[data-experience=walking] #povBadge{color:#e7d6ad;border-color:#bea881}
+body[data-experience=power] #panel{border-color:#e8bb5b99}body[data-experience=camp] #panel{background:linear-gradient(135deg,#2b3028f5,#132522fa)}
+body[data-experience=inspection] #panel{border-color:#8fb4ce88}
+body[data-pov=recon] #reticle{outline:1px solid #76ead980;outline-offset:32px;border-radius:50%}
+#quest,#charging,#radio,#dronePanel{opacity:var(--hud-intensity,1)}
+body.reduced-motion #visorFrame{transition:none}
+@media(max-width:700px){#povBadge{top:58px;font-size:10px;padding:7px 9px}#visorFrame{border-width:6px}}

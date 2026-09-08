@@ -1,3 +1,4 @@
+import {migrateExperience} from './experience.js';
 import {residentState} from './settlements.js';
 import {validateInventory,validateField,ENERGY} from './survival.js';
 import {migrateDrone} from './drone-system.js';
@@ -29,7 +30,7 @@ export function validateSave(r){
  if(s.puzzleLock!==undefined&&!number(s.puzzleLock,0,60))bad();
  if(s.ending!==undefined&&!['','restore','transmit'].includes(s.ending))bad();
  if(s.phaseStep!==undefined&&(!Number.isInteger(s.phaseStep)||s.phaseStep<0||s.phaseStep>3))bad();
- validateInventory(s.inv);for(const k of ['wire','cells','electronics','steel'])if(s.inv[k]===undefined)s.inv[k]=0;s.field=validateField(s.field);s.residents=residentState(s.residents);
+ validateInventory(s.inv);for(const k of ['wire','cells','electronics','steel'])if(s.inv[k]===undefined)s.inv[k]=0;s.field=validateField(s.field);s.residents=residentState(s.residents);s.experience=migrateExperience(s.experience);
  if(s.powerTarget!==null&&!['ev','solar','grid','line','l2hydro','l3supply'].includes(s.powerTarget))bad();
  if(!number(s.temp,0,1000)||!number(s.chargeHeat,0,200))bad();
  if(!['scout','engineer'].includes(s.droneType)||!['off','fuel','solar','water'].includes(s.generator))bad();

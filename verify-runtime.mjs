@@ -1,3 +1,5 @@
+import * as experience from './dist/experience.js';
+import {CameraManager} from './dist/camera-manager.js';
 import * as settlements from './dist/settlements.js';
 import * as survival from './dist/survival.js';
 // Full module/DOM integration with real Three.js scene objects. WebGL is stubbed;
@@ -12,7 +14,7 @@ const context2d=new Proxy({measureText:()=>({width:50}),createLinearGradient:()=
 w.HTMLCanvasElement.prototype.getContext=()=>context2d;
 w.HTMLCanvasElement.prototype.setPointerCapture=()=>{};w.document.exitPointerLock=()=>{};w.HTMLCanvasElement.prototype.requestPointerLock=()=>Promise.resolve();
 let frames=0;class NullRenderer{constructor(){this.shadowMap={};this.info={render:{calls:0}};}setPixelRatio(){}setSize(){}render(scene,camera){assert(scene.isScene&&camera.isPerspectiveCamera);frames++;}}
-const ctx=vm.createContext({...settlements,...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
+const ctx=vm.createContext({...experience,CameraManager,augmentPOVPanel(){},...settlements,...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
 const source=fs.readFileSync('dist/game.js','utf8').replace(/^import .*;\n/gm,'');
 vm.runInContext(source,ctx);const run=code=>vm.runInContext(code,ctx);
 const tick=(seconds)=>{for(let i=0;i<seconds*50;i++)run('update(.02)');run('hud();loop(performance.now()+20)');};
@@ -57,3 +59,8 @@ const noResidents=run('snapshot()');delete noResidents.state.residents;assert.de
 run('s.pos.set(-126,1.7,-160)');const beforeZ=run('s.pos.z');run('move(0,-1)');assert(run('s.pos.z')<beforeZ,'Open front is walkable');
 for(const leg of [1,2,3]){run(`s.leg=${leg};settlementWorld.update(s,0,"LOW")`);assert.equal(run('settlementWorld.groups.filter(p=>p.g.visible&&p.site.leg!==s.leg).length'),0);}
 console.log('PASS: resident interaction, finite trade, journal, save/reload/migration, malformed stock rejection, walkable interior and settlement Leg culling.');
+run('newExpedition();settings.autosave=false');for(let i=0;i<8;i++){run('changePOV();loop(performance.now()+20)');assert.equal(run('s.mode'),'bike');}run('s.experience.preferred.bike="wide";s.mode="foot";changePOV();loop(performance.now()+20)');assert.equal(run('s.experience.preferred.walking'),'shoulder');assert.equal(run('s.experience.preferred.bike'),'wide');assert(run('walkingBody.visible'));
+run('s.mode="bike";issueDrone("MANUAL");s.experience.preferred.drone="chase";loop(performance.now()+20)');assert.equal(run('s.mode'),'drone');assert(run('scoutMesh.visible'));run('issueDrone("FOLLOW");loop(performance.now()+20)');assert.equal(run('s.mode'),'bike');assert.equal(run('s.experience.preferred.bike'),'wide');
+assert(run('writeSave("manual1")'));run('s.experience=createExperience();restore(getSave("manual1"))');assert.equal(run('s.experience.preferred.drone'),'chase');assert.equal(run('s.experience.preferred.walking'),'shoulder');const oldPOV=run('snapshot()');delete oldPOV.state.experience;assert.equal(expedition.validateSave(oldPOV).state.experience.preferred.bike,'helmet');
+run('open("settings")');assert.equal(w.document.querySelectorAll('[data-pov-state]').length,6);run('settings.reduceMotion=true;loop(performance.now()+20)');assert.equal(run('povCamera.transition'),0);
+console.log('PASS: repeated POV cycles, walking body, drone chase/return, independent view persistence, old-save defaults, settings UI and reduced-motion transitions.');

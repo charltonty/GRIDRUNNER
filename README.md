@@ -1,3 +1,9 @@
+# GRIDRUNNER v7.4 — Perspectives
+
+Play: https://jalapenoseed.github.io/GRIDRUNNER/
+
+Press H or tap the view badge to cycle cameras. See [PERSPECTIVES-v7.4.md](PERSPECTIVES-v7.4.md) for controls, architecture, validation and limitations.
+
 # GRIDRUNNER v7.3 — Settlements
 
 Play: https://charltonty.github.io/GRIDRUNNER/
