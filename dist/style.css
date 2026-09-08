@@ -40,3 +40,13 @@ body:not(.hide-navigation) #navigation,body:not(.hide-radio) #radio,body:not(.hi
 /* Keep the original panels usable beside the expanded FPV readout. */
 body[data-mode=drone] #flightHelp{top:auto;bottom:160px;left:240px}#dronePanel{display:none!important}body[data-mode=drone] #charging{top:300px}
 @media(max-width:760px){#droneCommands button{min-height:44px}#droneHUD{top:92px;width:196px}.telemetryGrid{grid-template-columns:repeat(4,1fr)}body[data-mode=drone] #charging{display:none}}
+
+/* v7.3: weathered field terminal styling, shared with settlement signage. */
+:root{--field-amber:#d3af77;--field-teal:#7cb6aa}
+#panel{border:1px solid #9bb3a448;background:linear-gradient(135deg,#152629f5,#0c191ef8);box-shadow:0 24px 90px #0009,inset 0 1px #f4e8c013}
+#panel h2{letter-spacing:.035em}#panel .eyebrow{color:var(--field-amber)}
+#panel button{border-radius:3px;transition:background .18s,border-color .18s}#panel button:hover:not(:disabled){border-color:var(--field-amber);background:#284041}
+#panel .primary{border-left:4px solid var(--field-amber)}.fieldNav{border-bottom:1px solid #d3af7733;padding-bottom:12px}
+.residentCard{display:flex;align-items:center;gap:24px;padding:28px 0;border-block:1px solid #bca57e33;margin:20px 0}.residentMonogram{display:grid;place-items:center;flex:0 0 88px;height:112px;border:1px solid #bca57e77;background:repeating-linear-gradient(0deg,#45635922 0 2px,transparent 2px 5px),#203438;color:#d3af77;font:48px monospace}.dialogue{font-size:1.15rem;line-height:1.65;color:#ece1c2}.residentCard p{max-width:650px}.journalEntry{border-left:2px solid #ad916450}
+@media(max-width:600px){.residentCard{gap:12px;padding:14px 0}.residentMonogram{flex-basis:48px;height:76px;font-size:30px}}
+@media(prefers-reduced-motion:reduce){#panel button{transition:none}}

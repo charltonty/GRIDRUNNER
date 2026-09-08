@@ -1,3 +1,4 @@
+import * as settlements from './dist/settlements.js';
 import * as survival from './dist/survival.js';
 // Full module/DOM integration with real Three.js scene objects. WebGL is stubbed;
 // this suite does NOT claim GPU, screenshot, pointer-lock or audio listening QA.
@@ -11,7 +12,7 @@ const context2d=new Proxy({measureText:()=>({width:50}),createLinearGradient:()=
 w.HTMLCanvasElement.prototype.getContext=()=>context2d;
 w.HTMLCanvasElement.prototype.setPointerCapture=()=>{};w.document.exitPointerLock=()=>{};w.HTMLCanvasElement.prototype.requestPointerLock=()=>Promise.resolve();
 let frames=0;class NullRenderer{constructor(){this.shadowMap={};this.info={render:{calls:0}};}setPixelRatio(){}setSize(){}render(scene,camera){assert(scene.isScene&&camera.isPerspectiveCamera);frames++;}}
-const ctx=vm.createContext({...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
+const ctx=vm.createContext({...settlements,...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
 const source=fs.readFileSync('dist/game.js','utf8').replace(/^import .*;\n/gm,'');
 vm.runInContext(source,ctx);const run=code=>vm.runInContext(code,ctx);
 const tick=(seconds)=>{for(let i=0;i<seconds*50;i++)run('update(.02)');run('hud();loop(performance.now()+20)');};
@@ -49,3 +50,10 @@ const inaccessible=run('s.field.world.filter(p=>solids.some(b=>Math.abs(p.x-b.x)
 console.log('PASS: DOM salvage, cargo transfer, fabrication, timed mining, fuel pour, finite trade, depletion save/reload and legacy field migration.');
 run('open("controls")');const launchSelect=w.document.querySelector('[data-remap=q]');launchSelect.value='z';launchSelect.dispatchEvent(new w.Event('change',{bubbles:true}));assert.equal(run('mappedKey("z")'),'q');assert.equal(run('mappedKey("q")'),'');run('play()');w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'z'}));assert.equal(run('s.mode'),'drone');assert.equal(JSON.parse(w.localStorage.getItem('gridrunner.keys')).q,'z');
 console.log('PASS: visible rebind UI, persisted launch mapping, old key disabled and real remapped launch event.');
+// Settlements: proximity-gated real interaction, finite barter and save migration.
+run('newExpedition();s.pos.set(-123,1.7,-146);s.inv.steel=4');tick(.02);assert.equal(run('nearest.id'),'riggs');run('interact()');assert(w.document.querySelector('#panel').textContent.includes('Riggs'));w.document.querySelector('[data-resident-trade=riggs]').click();assert.equal(run('s.inv.cutters'),1);assert.equal(run('s.inv.steel'),2);assert.equal(run('s.residents.riggs.trades'),1);assert(w.document.querySelector('[data-resident-trade=riggs]').disabled);
+assert(run('writeSave("manual1")'));run('s.residents={};restore(getSave("manual1"))');assert.equal(run('s.residents.riggs.trades'),1);run('open("journal")');assert(w.document.querySelector('#panel').textContent.includes('Seized motors'));
+const noResidents=run('snapshot()');delete noResidents.state.residents;assert.deepEqual(expedition.validateSave(noResidents).state.residents,{});const badResidents=run('snapshot()');badResidents.state.residents.riggs.trades=999;assert.throws(()=>expedition.validateSave(badResidents));
+run('s.pos.set(-126,1.7,-160)');const beforeZ=run('s.pos.z');run('move(0,-1)');assert(run('s.pos.z')<beforeZ,'Open front is walkable');
+for(const leg of [1,2,3]){run(`s.leg=${leg};settlementWorld.update(s,0,"LOW")`);assert.equal(run('settlementWorld.groups.filter(p=>p.g.visible&&p.site.leg!==s.leg).length'),0);}
+console.log('PASS: resident interaction, finite trade, journal, save/reload/migration, malformed stock rejection, walkable interior and settlement Leg culling.');

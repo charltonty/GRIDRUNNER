@@ -1,3 +1,9 @@
+# GRIDRUNNER v7.3 — Settlements
+
+Play: https://charltonty.github.io/GRIDRUNNER/
+
+See [SETTLEMENTS-v7.3.md](SETTLEMENTS-v7.3.md) for new buildings, NPCs, audio, styling, tests and limitations.
+
 # GRIDRUNNER v7.2 — Fieldwork
 
 Play: https://charltonty.github.io/GRIDRUNNER/
