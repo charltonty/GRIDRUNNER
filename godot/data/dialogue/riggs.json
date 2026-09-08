@@ -1,0 +1,31 @@
+{
+  "npc_id": "riggs",
+  "display_name": "Riggs",
+  "conversations": {
+    "first_meeting": {
+      "line": "That bike yours? Keep it off the shoulder past the old line yard. Ground's full of things that'll open a tire.",
+      "responses": [
+        {"text": "What happened to the line?", "next": "line"},
+        {"text": "I'm looking for charge.", "next": "charge"},
+        {"text": "Anything worth salvaging nearby?", "next": "salvage"},
+        {"text": "Leave", "next": "exit"}
+      ]
+    },
+    "line": {
+      "line": "Went dark in sections, then all at once. Substation east of here is the closest place worth checking. Don't assume dead means safe.",
+      "flags_set": ["knows_black_creek_substation"]
+    },
+    "charge": {
+      "line": "Substation east of here used to feed half the valley. Dead last I checked. Dry Creek's safer if you've got a turbine. Slower, though.",
+      "flags_set": ["knows_black_creek_substation", "knows_dry_creek_power"]
+    },
+    "salvage": {
+      "line": "Redline yard. Everybody picks the easy piles. Nobody wants to crawl under anything. That's why there's still good copper there.",
+      "flags_set": ["knows_redline_salvage"]
+    },
+    "after_signal": {
+      "requires": ["ghost_signal_heard"],
+      "line": "You hear that carrier last night? Don't tell me that was weather. Weather doesn't repeat itself."
+    }
+  }
+}
