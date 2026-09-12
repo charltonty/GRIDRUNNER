@@ -1,3 +1,11 @@
+# GRIDRUNNER v7.5 — The Relay House
+
+[Play GRIDRUNNER](https://jalapenoseed.github.io/GRIDRUNNER/)
+
+Rebuilt bike cockpit, attitude-based drone flight, Xbox controls, field-terminal menus, audio improvements, reused equipment assets and a complete 3D mystery compound. Follow the service track west near the opening road. **J** journal · **I** pack · **M** map. Flight mode and controller settings are in Settings.
+
+[Changes, controls and puzzle route](CHANGELOG-v7.5.md) · [Validation and device checks](QA-v7.5.md)
+
 # GRIDRUNNER v7.4 — Perspectives
 
 Play: https://jalapenoseed.github.io/GRIDRUNNER/

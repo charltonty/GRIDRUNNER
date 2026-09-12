@@ -19,9 +19,47 @@ export function makeTrailer(){
  const indicator=mesh(g,new T.SphereGeometry(.04,8,6),.29,1.52,-.66,palette.green,true);g.userData.panels=panels;g.userData.indicator=indicator;return g;
 }
 export function makeDrone(color=palette.green){const g=new T.Group();box(g,0,0,0,.44,.18,.56,palette.black);box(g,0,.11,0,.28,.07,.34,palette.edge);mesh(g,new T.SphereGeometry(.12,12,8),0,-.13,-.27,palette.black);mesh(g,new T.CircleGeometry(.055,12),0,-.13,-.375,0x376b77,true).rotation.y=Math.PI;const rotors=[];for(const x of [-.55,.55])for(const z of [-.5,.5]){rod(g,[x*.22,0,z*.22],[x,0,z],.04,palette.edge);mesh(g,new T.CylinderGeometry(.08,.06,.16,10),x,.06,z,palette.black);rod(g,[x,-.02,z],[x,-.2,z],.022,palette.black);mesh(g,new T.SphereGeometry(.028,6,4),x,-.12,z,color,true);const guard=mesh(g,new T.TorusGeometry(.39,.016,5,20),x,.13,z,palette.edge);guard.rotation.x=Math.PI/2;const rotor=new T.Group();rotor.position.set(x,.17,z);box(rotor,0,0,0,.67,.014,.048,palette.black);g.add(rotor);rotors.push(rotor);}rod(g,[.12,.12,0],[.12,.44,.08],.012,palette.steel);mesh(g,new T.SphereGeometry(.032,8,6),.12,.44,.08,color,true);if(color===0xffbd54){for(const side of [-1,1]){rod(g,[side*.16,-.1,0],[side*.23,-.4,-.05],.028,palette.amber);box(g,side*.18,-.41,-.05,.16,.045,.16,palette.steel);}}combine(g);g.userData.rotors=rotors;return g;}
-export function makeCockpit(){const g=new T.Group();for(const x of [-.54,.54]){rod(g,[x,-.38,-.68],[x*.3,-.48,-.85],.028,palette.edge);rod(g,[x-.13,-.38,-.68],[x+.13,-.38,-.68],.036,palette.rubber);box(g,x,-.39,-.66,.18,.105,.15,palette.black);for(let i=0;i<4;i++)box(g,x+(i-1.5)*.035,-.337,-.705,.027,.025,.07,palette.edge);const sleeve=box(g,x*1.22,-.56,-.38,.21,.4,.25,0x22272a);sleeve.rotation.x=-.65;sleeve.rotation.z=x>0?-.25:.25;rod(g,[x,-.35,-.7],[x*1.15,-.24,-.83],.01,palette.steel);box(g,x*.66,-.38,-.68,.075,.07,.08,palette.black);mesh(g,new T.SphereGeometry(.014,6,4),x*.66,-.34,-.64,x>0?palette.green:0xd64c37,true);}
-box(g,0,-.68,-.62,.34,.3,.65,palette.black);crate(g,0,-.55,-1.34,.72,.34,.47);box(g,0,-.395,-.83,.37,.22,.045,palette.edge);box(g,0,-.392,-.8,.33,.185,.018,palette.black);combine(g);
-const canvas=document.createElement('canvas');canvas.width=256;canvas.height=128;const tex=new T.CanvasTexture(canvas);tex.colorSpace=T.SRGBColorSpace;const display=new T.Mesh(new T.PlaneGeometry(.305,.151),new T.MeshBasicMaterial({map:tex}));display.position.set(0,-.389,-.788);g.add(display);g.userData.display={canvas,tex};return g;}
+export function makeCockpit(){
+ const g=new T.Group();g.name='BLACKLINE / machined cockpit';
+ const curve=(points,r,c)=>mesh(g,new T.TubeGeometry(new T.CatmullRomCurve3(points.map(p=>new T.Vector3(...p))),24,r,8,false),0,0,0,c);
+ // Bent alloy riser, clamped stem, fork crowns and independent hydraulic lines.
+ curve([[-.77,-.39,-.69],[-.5,-.42,-.77],[-.25,-.49,-.86],[0,-.5,-.87],[.25,-.49,-.86],[.5,-.42,-.77],[.77,-.39,-.69]],.029,palette.edge);
+ for(const side of [-1,1]){
+  const x=side*.59;
+  rod(g,[side*.13,-.55,-.88],[side*.13,-.78,-.62],.045,palette.steel);
+  box(g,side*.13,-.5,-.86,.1,.07,.13,palette.black);
+  for(const z of [-.81,-.9])mesh(g,new T.CylinderGeometry(.019,.019,.02,6),side*.13,-.455,z,palette.steel);
+  rod(g,[side*.51,-.4,-.74],[side*.78,-.39,-.69],.048,palette.rubber);
+  for(let i=0;i<13;i++){const t=i/12;const m=mesh(g,new T.TorusGeometry(.049,.0035,4,12),side*(.52+t*.24),-.399+t*.009,-.74+t*.05,palette.edge);m.rotation.y=Math.PI/2;}
+  box(g,side*.475,-.39,-.76,.085,.1,.09,palette.black);
+  box(g,side*.475,-.343,-.704,.048,.026,.016,side>0?0xbb4435:palette.amber);
+  const reservoir=box(g,side*.39,-.33,-.82,.13,.09,.13,palette.black);reservoir.rotation.y=side*.12;
+  box(g,side*.39,-.28,-.82,.14,.016,.14,palette.edge);
+  mesh(g,new T.SphereGeometry(.011,6,4),side*.475,-.316,-.77,palette.green,true);
+  curve([[side*.48,-.4,-.79],[side*.59,-.405,-.83],[side*.73,-.405,-.8]],.013,palette.steel);
+  curve([[side*.4,-.37,-.84],[side*.33,-.51,-1.03],[side*.07,-.67,-1.04],[side*.14,-.8,-.78]],.007,palette.rubber);
+  // Soft glove silhouettes, rounded knuckles, stitched cuffs; no box fingers.
+  const palm=mesh(g,new T.SphereGeometry(.085,12,8),x,-.374,-.655,palette.black);palm.scale.set(1.25,.68,1.25);
+  for(let i=0;i<4;i++){const finger=mesh(g,new T.CapsuleGeometry(.018,.054,3,6),x+side*(i-1.5)*.033,-.383,-.727,palette.rubber);finger.rotation.x=.85;}
+  const sleeve=mesh(g,new T.CapsuleGeometry(.085,.27,4,10),side*.74,-.55,-.4,0x343a37);sleeve.rotation.set(-.75,0,side*-.42);
+  box(g,side*.663,-.46,-.546,.145,.025,.085,palette.edge);
+ }
+ box(g,0,-.72,-.67,.3,.22,.46,palette.black);crate(g,0,-.57,-1.4,.66,.28,.44);
+ // Sun hood, chamfer impression, rubber gasket and captive fasteners.
+ box(g,0,-.395,-.859,.442,.254,.074,palette.edge);box(g,0,-.391,-.815,.405,.218,.024,palette.rubber);
+ box(g,0,-.257,-.82,.47,.025,.12,palette.black);
+ for(const x of [-.22,.22])box(g,x,-.36,-.818,.025,.21,.08,palette.black);
+ for(const x of [-.207,.207])for(const y of [-.49,-.29]){const screw=mesh(g,new T.CircleGeometry(.008,6),x,y,-.812,palette.steel);screw.rotation.z=.5;}
+ // Small radio to the left of the cluster, speaker grille and squelch knob.
+ box(g,-.31,-.5,-.76,.15,.2,.075,palette.black);
+ for(let i=0;i<6;i++)box(g,-.31,-.49+i*.011,-.716,.108,.003,.002,palette.edge);
+ const knob=mesh(g,new T.CylinderGeometry(.023,.023,.025,12),-.31,-.558,-.713,palette.steel);knob.rotation.x=Math.PI/2;
+ combine(g);
+ const canvas=document.createElement('canvas');canvas.width=512;canvas.height=256;
+ const tex=new T.CanvasTexture(canvas);tex.colorSpace=T.SRGBColorSpace;
+ const display=new T.Mesh(new T.PlaneGeometry(.384,.193),new T.MeshBasicMaterial({map:tex,toneMapped:false}));display.position.set(0,-.391,-.8);g.add(display);
+ g.userData.display={canvas,tex};return g;
+}
 export function makeWeapon(){const g=new T.Group();box(g,.28,-.3,-.67,.1,.13,.4,palette.black);box(g,.28,-.23,-.69,.045,.02,.32,palette.steel);box(g,.28,-.39,-.53,.07,.19,.08,palette.rubber);rod(g,[.28,-.28,-.85],[.28,-.28,-1.14],.025,palette.edge);box(g,.32,-.285,-.72,.015,.035,.1,palette.cyan);return combine(g);}
 export function makePerson(x,z,c){const g=new T.Group();box(g,0,1.42,0,.63,.8,.35,c);box(g,0,1.55,.21,.52,.48,.12,palette.black);for(const xx of [-.16,.16]){box(g,xx,.71,0,.23,.73,.25,0x343632);box(g,xx,.31,.08,.26,.14,.43,palette.black);rod(g,[xx*2,1.78,0],[xx*2.5,1.13,.15],.11,c);}mesh(g,new T.SphereGeometry(.235,10,8),0,2.01,0,0x302f29);box(g,0,2.035,.21,.33,.085,.05,0x1b424d);box(g,0,1.5,-.25,.48,.63,.23,palette.black);rod(g,[-.28,1.24,.25],[.38,1.45,.45],.045,palette.black);g.position.set(x,0,z);return combine(g);}
 export function heightAt(x,z){const edge=Math.max(0,Math.abs(x)-210);return edge*(.17+.13*Math.sin(z*.005+x*.01)**2)+Math.max(0,edge-75)*(.25+.19*Math.sin(z*.012+x*.019)*Math.cos(x*.017));}

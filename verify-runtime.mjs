@@ -1,3 +1,10 @@
+import {EnvironmentDetail} from './dist/environment-detail.js';
+import * as relay from './dist/relay-house.js';
+import * as relayWorldModule from './dist/relay-world.js';
+import * as relayUI from './dist/relay-ui.js';
+import {machineSettings} from './dist/control-settings.js';
+import {drawInstruments} from './dist/instruments.js';
+import {ControllerBridge} from './dist/controller-bridge.js';
 import * as experience from './dist/experience.js';
 import {CameraManager} from './dist/camera-manager.js';
 import * as settlements from './dist/settlements.js';
@@ -14,7 +21,7 @@ const context2d=new Proxy({measureText:()=>({width:50}),createLinearGradient:()=
 w.HTMLCanvasElement.prototype.getContext=()=>context2d;
 w.HTMLCanvasElement.prototype.setPointerCapture=()=>{};w.document.exitPointerLock=()=>{};w.HTMLCanvasElement.prototype.requestPointerLock=()=>Promise.resolve();
 let frames=0;class NullRenderer{constructor(){this.shadowMap={};this.info={render:{calls:0}};}setPixelRatio(){}setSize(){}render(scene,camera){assert(scene.isScene&&camera.isPerspectiveCamera);frames++;}}
-const ctx=vm.createContext({...experience,CameraManager,augmentPOVPanel(){},...settlements,...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
+const ctx=vm.createContext({EnvironmentDetail:class extends EnvironmentDetail{constructor(scene){super(scene,{textures:false});}},...relay,...relayWorldModule,...relayUI,makeRelayHouseWorld:(scene,solids)=>relayWorldModule.makeRelayHouseWorld(scene,solids,{assets:false}),machineSettings,drawInstruments,ControllerBridge,...experience,CameraManager,augmentPOVPanel(){},...settlements,...survival,T:{...Three,WebGLRenderer:NullRenderer},...drone,...immersion,...leg2,...leg3,...expedition,...visuals,FieldAudio,console,performance,Math,Date,JSON,Number,Map,Set,Float32Array,window:w,document:w.document,localStorage:w.localStorage,matchMedia:()=>({matches:false}),devicePixelRatio:1,innerWidth:1280,innerHeight:800,requestAnimationFrame(){},setTimeout(){},URL,Blob,location:{reload(){}},confirm:()=>true});
 const source=fs.readFileSync('dist/game.js','utf8').replace(/^import .*;\n/gm,'');
 vm.runInContext(source,ctx);const run=code=>vm.runInContext(code,ctx);
 const tick=(seconds)=>{for(let i=0;i<seconds*50;i++)run('update(.02)');run('hud();loop(performance.now()+20)');};
@@ -64,3 +71,25 @@ run('s.mode="bike";issueDrone("MANUAL");s.experience.preferred.drone="chase";loo
 assert(run('writeSave("manual1")'));run('s.experience=createExperience();restore(getSave("manual1"))');assert.equal(run('s.experience.preferred.drone'),'chase');assert.equal(run('s.experience.preferred.walking'),'shoulder');const oldPOV=run('snapshot()');delete oldPOV.state.experience;assert.equal(expedition.validateSave(oldPOV).state.experience.preferred.bike,'helmet');
 run('open("settings")');assert.equal(w.document.querySelectorAll('[data-pov-state]').length,6);run('settings.reduceMotion=true;loop(performance.now()+20)');assert.equal(run('povCamera.transition'),0);
 console.log('PASS: repeated POV cycles, walking body, drone chase/return, independent view persistence, old-save defaults, settings UI and reduced-motion transitions.');
+// Relay House: traverse actual porch and stair collision geometry, then solve
+// through the same DOM/interaction adapters used by players.
+run('newExpedition();settings.reduceMotion=false;s.mode="foot";s.pos.set(-86,1.7,-55);keys={};');
+function walkTo(x,z){for(let i=0;i<1400;i++){const p=run('s.pos.toArray()'),dx=x-p[0],dz=z-p[2],length=Math.hypot(dx,dz);if(length<.12)return;const step=Math.min(.08,length);run(`move(${dx/length*step},${dz/length*step});update(.02);`);}throw Error('Walking route blocked toward '+x+','+z+' at '+run('s.pos.toArray()'));}
+walkTo(-86,-76);assert(Math.abs(run('s.pos.y')-4.7)<.1,'Porch ramp reaches raised main floor');walkTo(-84,-86);walkTo(-84,-90);walkTo(-90,-90);walkTo(-98,-91.5);walkTo(-98,-103);assert(run('s.pos.y')<2.1,'Stairs descend to cellar');walkTo(-96.5,-103);walkTo(-94,-104);walkTo(-93,-102);
+assert.equal(run('nearest.id'),'toolbox');run('interact()');assert.equal(run('s.inv.fuse'),1);walkTo(-94,-104);walkTo(-96.5,-103);walkTo(-98,-103);walkTo(-98,-91.5);walkTo(-90,-90);walkTo(-84,-90);walkTo(-84,-86);walkTo(-77,-76);assert.equal(run('nearest.id'),'cook');run('interact()');assert(run('s.relayHouse.fuseSeated'));
+// Fixture positions below test machinery adapters after proving the walk route.
+function relayAt(id,mode='foot'){run(`s.mode='${mode}';s.pos.set(...(()=>{const p=RELAY_HOTSPOTS.find(p=>p.id==='${id}');return [p.x,p.y,p.z]})());keys={};s.speed=0;`);if(mode==='drone')run('s.droneSystem.pos=s.pos.toArray()');tick(.02);assert.equal(run('nearest?.id'),id,'Reachable '+id);}
+relayAt('generator');run('interact()');assert(run('s.relayHouse.power'));relayAt('board');run('interact()');relayAt('bunk');run('interact()');relayAt('terminal');run('interact()');assert.equal(run('screen'),'relayTerminal');assert(!run('paused'),'Diegetic terminal leaves world ticking');const elapsed=run('s.elapsed');tick(.1);assert(run('s.elapsed')>elapsed);
+run('relayTerminal.run("login GHOST-147");relayTerminal.run("tune 147.20");relayTerminal.run("exit")');assert(run('s.relayHouse.loggedIn'));
+relayAt('bench');run('interact()');w.document.querySelector('[data-field=craft][data-item=radioCoil]').click();assert.equal(run('s.inv.radioCoil'),1);w.document.querySelector('[data-field=craft][data-item=signalFilter]').click();assert.equal(run('s.inv.signalFilter'),1);run('play()');
+relayAt('radio');run('interact()');assert(run('s.relayHouse.filterInstalled'));run('issueDrone("MANUAL")');relayAt('dish','drone');run('interact()');assert(run('s.relayHouse.dishAligned'));run('issueDrone("HOLD")');relayAt('radio');run('interact()');assert(run('s.relayHouse.discovered'));assert(run('s.towerCode'));assert.equal(run('s.relay'),false,'Original campaign relay flag remains distinct');assert(run('writeSave("manual1")'));run('s.relayHouse=createRelayHouse();restore(getSave("manual1"))');assert(run('s.relayHouse.discovered'));run('open("journal")');assert(w.document.querySelector('#panel').textContent.includes('Someone changed the message'));
+// Roof volume blocks the real simulation below the dish instead of a visual-only slab.
+run('newExpedition();issueDrone("MANUAL");s.droneSystem.pos=[-82,6,-96];s.droneSystem.velocity=[0,12,0];s.pos.fromArray(s.droneSystem.pos);keys[" "]=true;');tick(2);assert(run('s.droneSystem.pos[1]')<8.1,'Cannot fly through the cabin roof');
+const oldHouse=run('snapshot()');delete oldHouse.state.relayHouse;assert.equal(expedition.validateSave(oldHouse).state.relayHouse.discovered,false);
+console.log('PASS: walkable raised porch and cellar stair, real machinery/terminal/crafting/dish adapters, live terminal clock, roof collision, distinct campaign flags and mystery save/reload.');
+// Real controller bridge with fresh polled device objects and DOM selection.
+let stubPads=[];Object.defineProperty(globalThis,'navigator',{configurable:true,value:{getGamepads:()=>stubPads}});globalThis.Event=w.Event;
+const stubPad={index:0,id:'Xbox runtime stub',mapping:'standard',connected:true,axes:[0,0,0,0],buttons:Array.from({length:17},()=>({value:0,pressed:false}))};stubPads=[stubPad];
+run('newExpedition();s.mode="foot";s.pos.set(54,1.7,-94);update(.02);');stubPad.buttons[0]={value:1,pressed:true};run('controller.poll(.02)');assert(run('s.met'),'Xbox A reaches actual interact adapter');stubPad.buttons[0]={value:0,pressed:false};run('controller.poll(.02);play();');
+stubPad.axes[1]=-1;run('controller.poll(.02);update(.02)');assert.equal(run('controller.device'),'gamepad');w.dispatchEvent(new w.KeyboardEvent('keydown',{key:'w'}));assert.equal(run('controller.device'),'keyboard','Latest keyboard activity wins');run('keys={};issueDrone("MANUAL")');stubPads=[];run('controller.poll(.02)');assert(run('paused'));assert.equal(run('s.droneSystem.mode'),'HOLD');assert.equal(run('s.mode'),'foot','Rider restored after controller loss');assert(w.document.querySelector('#toast').textContent.includes('Controller lost'));
+console.log('PASS: Xbox A interaction, last-device ownership, mid-FPV disconnect HOLD/pause and stationary rider restoration.');
