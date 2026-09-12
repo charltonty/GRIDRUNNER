@@ -1,0 +1,106 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS: HUD operating mode foot
+PASS: HUD operating mode bike
+PASS: HUD operating mode drone
+PASS: HUD hidden under pause panel
+PASS: HUD returns after pause
+PASS: Five step and landing variants / dirt
+PASS: Distinct sample bytes / dirt
+PASS: No adjacent sample repeat / dirt
+PASS: Five step and landing variants / dry_soil
+PASS: Distinct sample bytes / dry_soil
+PASS: No adjacent sample repeat / dry_soil
+PASS: Five step and landing variants / grass
+PASS: Distinct sample bytes / grass
+PASS: No adjacent sample repeat / grass
+PASS: Five step and landing variants / leaves
+PASS: Distinct sample bytes / leaves
+PASS: No adjacent sample repeat / leaves
+PASS: Five step and landing variants / gravel
+PASS: Distinct sample bytes / gravel
+PASS: No adjacent sample repeat / gravel
+PASS: Five step and landing variants / rock
+PASS: Distinct sample bytes / rock
+PASS: No adjacent sample repeat / rock
+PASS: Five step and landing variants / concrete
+PASS: Distinct sample bytes / concrete
+PASS: No adjacent sample repeat / concrete
+PASS: Five step and landing variants / asphalt
+PASS: Distinct sample bytes / asphalt
+PASS: No adjacent sample repeat / asphalt
+PASS: Five step and landing variants / wood
+PASS: Distinct sample bytes / wood
+PASS: No adjacent sample repeat / wood
+PASS: Five step and landing variants / metal
+PASS: Distinct sample bytes / metal
+PASS: No adjacent sample repeat / metal
+PASS: Five step and landing variants / mud
+PASS: Distinct sample bytes / mud
+PASS: No adjacent sample repeat / mud
+PASS: Five step and landing variants / water
+PASS: Distinct sample bytes / water
+PASS: No adjacent sample repeat / water
+PASS: Five step and landing variants / interior
+PASS: Distinct sample bytes / interior
+PASS: No adjacent sample repeat / interior
+PASS: No airborne footsteps
+PASS: No idle footsteps
+PASS: Distance-driven cadence produces step
+PASS: Landing frame suppresses ordinary step
+PASS: Crouch intensity substantially quieter
+PASS: Landing intensity follows fall velocity
+PASS: Metadata aliases and safe surface fallback
+PASS: Road physics metadata supplies asphalt surface
+PASS: Trial arms before timing starts
+PASS: Wrong plane approach rejected
+PASS: Reverse crossing rejected / 0
+PASS: Reverse crossing rejected / 1
+PASS: Reverse crossing rejected / 2
+PASS: Reverse crossing rejected / 3
+PASS: Reverse crossing rejected / 4
+PASS: Reverse crossing rejected / 5
+PASS: All six ordered crossings complete course
+PASS: Best time and medal recorded
+PASS: Slower finish preserves personal best
+PASS: Leaving FPV cancels trial
+PASS: Signal rises on approach
+PASS: Signal responds to antenna heading
+PASS: Hidden carrier is not a scan waypoint
+PASS: Close recon resolves signal
+PASS: Signal discovery cannot duplicate
+PASS: Gate repair requires resource
+PASS: Unpowered shortcut stays closed
+PASS: Repair consumes one wire once
+PASS: Powered shortcut removes physical gate
+PASS: Micro-POI loot is finite
+PASS: Ambient residents registered
+PASS: Chunked opening ecology exists
+PASS: New state saves and loads
+PASS: Records, shortcut and carrier persist
+PASS: Pre-polish saves remain compatible
+PASS: Malformed negative record rejected
+PASS: Malformed gate state rejected
+PASS: Physical service path segment 1 at (63.2817, 0.850941, -121.9604)
+PASS: Physical service path segment 2 at (71.45966, 0.850941, -138.8811)
+PASS: Physical service path segment 3 at (68.23199, 0.850941, -156.7934)
+PASS: Physical service path segment 4 at (53.91219, 0.850943, -173.1019)
+PASS: Physical service path segment 5 at (36.14851, 0.850941, -180.5239)
+PASS: Physical service path segment 6 at (17.27425, 0.850943, -180.0388)
+PATH CONTACT /root/GRIDRUNNER/@Node3D@2/@StaticBody3D@471 at (17.65263, 0.0, -179.7412) normal (0.0, 1.0, 0.0)
+PATH CONTACT /root/GRIDRUNNER/@Node3D@2/@StaticBody3D@471 at (17.64038, 0.0, -179.7409) normal (0.0, 1.0, 0.0)
+PATH CONTACT /root/GRIDRUNNER/@Node3D@2/@StaticBody3D@471 at (17.57425, 0.0, -179.7388) normal (0.0, 1.0, 0.0)
+PASS: Physical drone aperture 0
+PASS: Physical drone aperture 1
+PASS: Physical drone aperture 2
+PASS: Physical drone aperture 3
+PASS: Physical drone aperture 4
+PASS: Physical drone aperture 5
+PASS: Actual flight completes Creek Run
+PASS: Stable precision perch records once
+PASS: Resident uses imported anatomical head
+POLISH CHECKS: 96 / FAILURES: 0
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2378)
+ERROR: 1 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:614)

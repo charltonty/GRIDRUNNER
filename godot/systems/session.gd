@@ -1,6 +1,7 @@
 extends Node
 
 const SAVE_PATH = "user://gridrunner_native.json"
+var save_path := SAVE_PATH
 var content: Dictionary = {}
 var state: Dictionary = {}
 var load_requested := false
@@ -11,7 +12,10 @@ func _ready() -> void:
     reset()
 
 func reset() -> void:
-    state = {"version":1,"leg":1,"position":[0,1.5,15],"bike":[0,1.0,15],"drone_position":[0,2,15],"mode":"bike","yaw":0.0,"pitch":0.0,"battery":0.54,"reserve":0.496,"fuel":0.15,"drone":1.0,"hp":100.0,"drone_hp":100.0,"drone_mode":"DOCK","generator":"off","inv":{"steel":0,"wire":0,"cells":0,"electronics":0,"screwdriver":1,"wrench":1},"cargo":{},"flags":{},"met":{},"trades":{},"tags":[],"pov":{"walking":0,"bike":0,"drone":0},"field":content.field.world.duplicate(true),"elapsed":0.0}
+    state = {"version":1,"leg":1,"position":[54,1.0,-88],"bike":[48,1.0,-83],"drone_position":[48,2,-83],"mode":"foot","yaw":0.0,"pitch":0.0,"battery":0.54,"reserve":0.496,"fuel":0.15,"drone":1.0,"hp":100.0,"drone_hp":100.0,"drone_mode":"DOCK","generator":"off","inv":{"steel":0,"wire":0,"cells":0,"electronics":0,"screwdriver":1,"wrench":1},"cargo":{},"flags":{},"met":{},"trades":{},"tags":[],"pov":{"walking":0,"bike":0,"drone":0},"field":content.field.world.duplicate(true),"elapsed":0.0}
+
+    FieldStorage.initialize(state)
+    ScoutActivities.initialize(state)
 
 func mass(inv: Dictionary) -> float:
     var total := 0.0
@@ -27,22 +31,25 @@ func transact(inputs: Dictionary, outputs: Dictionary, capacity := 40.0) -> Stri
     for id in outputs:
         if not content.items.has(id): return "Unknown item"
         next[id] = int(next.get(id,0)) + int(outputs[id])
+        if next[id]>int(content.items[id].get("stack",999)): return "Stack limit reached"
     if mass(next) > capacity: return "Pack full; transfer cargo to the trailer"
     state.inv = next
     return ""
 
 func save_game() -> bool:
-    var file := FileAccess.open(SAVE_PATH + ".tmp", FileAccess.WRITE)
+    var file := FileAccess.open(save_path + ".tmp", FileAccess.WRITE)
     if file == null: return false
     file.store_string(JSON.stringify(state))
     file.close()
-    return DirAccess.rename_absolute(SAVE_PATH + ".tmp", SAVE_PATH) == OK
+    return DirAccess.rename_absolute(save_path + ".tmp", save_path) == OK
 
 func load_game() -> bool:
-    if not FileAccess.file_exists(SAVE_PATH): return false
-    var data = JSON.parse_string(FileAccess.get_file_as_string(SAVE_PATH))
+    if not FileAccess.file_exists(save_path): return false
+    var data = JSON.parse_string(FileAccess.get_file_as_string(save_path))
     if not validate(data): return false
     state = data
+    FieldStorage.initialize(state)
+    ScoutActivities.initialize(state)
     # Deployed aircraft return safely on loading; a remote pilot never teleports.
     state.mode = "bike" if state.mode == "drone" else state.mode
     state.drone_mode = "DOCK"
@@ -51,7 +58,11 @@ func load_game() -> bool:
 func validate(data) -> bool:
     if not data is Dictionary or data.get("version") != 1: return false
     for key in state:
+        if key in ["bike_heading","slice02","polish"]: continue # Optional in older native saves.
         if not data.has(key): return false
+    if data.has("polish") and not ScoutActivities.validate(data.polish):return false
+    if data.has("slice02") and not FieldStorage.validate(data.slice02,content.items): return false
+    if data.has("bike_heading") and (not (data.bike_heading is float or data.bike_heading is int) or not is_finite(float(data.bike_heading))): return false
     if int(data.leg) not in [1,2,3] or data.mode not in ["bike","foot","drone"]: return false
     for key in ["position","bike","drone_position"]:
         if not data[key] is Array or data[key].size()!=3: return false

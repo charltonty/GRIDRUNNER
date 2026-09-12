@@ -1,0 +1,5161 @@
+{
+  "milestone": "VS02 Asset Integration",
+  "assertions_passed": 211,
+  "files": [
+    {
+      "path": "ASSET_CREDITS.md",
+      "bytes": 3482,
+      "sha256": "9489933dcf6013f3cc8a99f8c35dc120bbabb1ebdf06a545fcb9f83963672e6a"
+    },
+    {
+      "path": "ASSET_INTEGRATION.md",
+      "bytes": 2670,
+      "sha256": "5d7c08b03487845e73c4a066c3e891e916f8ff60178bc9b3bdf7e5b49400fbb5"
+    },
+    {
+      "path": "ASSET_MANIFEST_POLISH.md",
+      "bytes": 3723,
+      "sha256": "e921d52ff3f6dfc7d05f666396409b1f0a8a6402cf5251208f21af798859ed9a"
+    },
+    {
+      "path": "CHANGELOG-NATIVE.md",
+      "bytes": 2826,
+      "sha256": "c716b8fa6c0710595115f10e51eb383ab0fb5a48a39b7caaed0b1313444117c9"
+    },
+    {
+      "path": "POLISH_MILESTONE.md",
+      "bytes": 4217,
+      "sha256": "e7c8bc2209f6c49af7dbd4d530a5a9ff8735976eee387ae1efcb331fb3ebfbfd"
+    },
+    {
+      "path": "POLISH_VALIDATION.md",
+      "bytes": 4977,
+      "sha256": "7eafff8964d5062c96ae9678f24a142ef3a647e974af408bb72f83c1c8391d50"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3071,
+      "sha256": "67fc8266ed790f549feaf899348d45317213b8ff3c2bd2dce1b9fd2850c1839a"
+    },
+    {
+      "path": "TEST_RESULTS.md",
+      "bytes": 3641,
+      "sha256": "1f459e6aaf9eb76802f28fc8988a684fbc13c92ce3a6c785dff18f8a8aef08bb"
+    },
+    {
+      "path": "WORK_COMPLETED.md",
+      "bytes": 6077,
+      "sha256": "3e994380fe9a521689ed09d68d9bc2f00db94e8aea67eb53161f0fd8eccb0dec"
+    },
+    {
+      "path": "art/asset_library.gd",
+      "bytes": 3728,
+      "sha256": "bda51d6937db2efefe0ff33d85751496cd71f2216663b1448ab50a81891aacfc"
+    },
+    {
+      "path": "art/asset_library.gd.uid",
+      "bytes": 19,
+      "sha256": "a30010021d3cb806178ac5ec59abd6f246f67014df1ddfd0bd791311c4664b82"
+    },
+    {
+      "path": "art/foliage.gdshader",
+      "bytes": 409,
+      "sha256": "8984c702f63bf974f16fb50a1383176baed22cc232fe40daab6fe3ce9bad6701"
+    },
+    {
+      "path": "art/foliage.gdshader.uid",
+      "bytes": 19,
+      "sha256": "7230ce1f396c757fe2e82616ccb4ed630750069f6bdd63eb0c1a896795af7961"
+    },
+    {
+      "path": "art/human_visual.gd",
+      "bytes": 2672,
+      "sha256": "6f0c650f1a9dd8f4a25844b78f21855f388c55e6364ab1b5b30a95fd6e8076b1"
+    },
+    {
+      "path": "art/human_visual.gd.uid",
+      "bytes": 20,
+      "sha256": "676ab35632e35b7ac381942c23f64f3872c51a81cca583b37ab64a7328c2bc2e"
+    },
+    {
+      "path": "art/item_visual.gd",
+      "bytes": 4170,
+      "sha256": "405c3b15d9e3b65adbefe79ef25f2dc8323dcb5b83f1b0be09cb608aafb61267"
+    },
+    {
+      "path": "art/item_visual.gd.uid",
+      "bytes": 20,
+      "sha256": "fe9ea9e77f2de6062b345db0f3968655c41b65eeb86a97673e7e5b4f4ba59823"
+    },
+    {
+      "path": "art/kit.gd",
+      "bytes": 24445,
+      "sha256": "ec71b0ac92ce6c0e9685786d45f11d543aa64089a5d0f49f12e082d3e5914c3b"
+    },
+    {
+      "path": "art/kit.gd.uid",
+      "bytes": 20,
+      "sha256": "7d69a4cf90f7098deaae4009c17667dee44e78238348bfc2b95a5a6d22598a45"
+    },
+    {
+      "path": "art/opening_world.gd",
+      "bytes": 4243,
+      "sha256": "eafeb08d868234d8996c2f7bd8df7dd35869c2300d6aebd5a4e972ee185a35c6"
+    },
+    {
+      "path": "art/opening_world.gd.uid",
+      "bytes": 20,
+      "sha256": "70f2826a0cd4282c6ade0e3ee5acf7f1ab092ba22f85c1d2d44489c123f16b59"
+    },
+    {
+      "path": "art/prop.gd",
+      "bytes": 604,
+      "sha256": "f0c325fda3ea5630c91c4e567b6ca33cc2343bc0fcc21d902817ec8a2db84253"
+    },
+    {
+      "path": "art/prop.gd.uid",
+      "bytes": 20,
+      "sha256": "3f2b8a3a3f2ab79b094d2791a80f6009ee13a5f83596332871ddfce3ae5a8b19"
+    },
+    {
+      "path": "assets/audio/container.wav",
+      "bytes": 13274,
+      "sha256": "017f6f9f061d0d43ee358a2ffd90096d844a3ee2f4f842f7f9fb142cc7316e66"
+    },
+    {
+      "path": "assets/audio/jump.wav",
+      "bytes": 7540,
+      "sha256": "47224f45be7ffe8e9d414d808bc86714923eb12c27f0876a6cebf6d34f1ffc20"
+    },
+    {
+      "path": "assets/audio/landing.wav",
+      "bytes": 10628,
+      "sha256": "e74af4c98f192841e07c172d7f683286cf66a7d3b5253f4ce460f195ee030554"
+    },
+    {
+      "path": "assets/audio/module.wav",
+      "bytes": 8422,
+      "sha256": "9212a13544c3a1128f748d109b874bf239f638f7c4c4824510fb6deb310e87d0"
+    },
+    {
+      "path": "assets/audio/motor.wav",
+      "bytes": 176444,
+      "sha256": "23453324288f5c03b6cc3d4fab838a2c1ece3321384a0882d88e82daa4b351f1"
+    },
+    {
+      "path": "assets/audio/pickup.wav",
+      "bytes": 5776,
+      "sha256": "ef8bd85cbc995b48cadbf9def4065cab8a48f527f1863c0c35fd3bbde9d40c8a"
+    },
+    {
+      "path": "assets/audio/polish/Kenney-LICENSE.txt",
+      "bytes": 608,
+      "sha256": "b49aa9c56b04528b95913de13e506a0f7c5e807b9925db9bfef86af1f91120db"
+    },
+    {
+      "path": "assets/audio/polish/asphalt_0.wav",
+      "bytes": 4990,
+      "sha256": "0ecff6abcd9fb5cfe55043961db285d9773598fe5411533f4897552c14d2405b"
+    },
+    {
+      "path": "assets/audio/polish/asphalt_1.wav",
+      "bytes": 5072,
+      "sha256": "7049fb52c6ddfebde454ee723c2105341534bd782c52c6e4dc4eb77294b520c4"
+    },
+    {
+      "path": "assets/audio/polish/asphalt_2.wav",
+      "bytes": 5318,
+      "sha256": "9b84fb331d90f4fb9c841183d936261d28628cdba1d07aad1e2fdda130286fdc"
+    },
+    {
+      "path": "assets/audio/polish/asphalt_3.wav",
+      "bytes": 5208,
+      "sha256": "389b92f0d75922ba76a3c6171aa4b7c236e714a8d9935929a0e6d70c8e95497e"
+    },
+    {
+      "path": "assets/audio/polish/asphalt_4.wav",
+      "bytes": 5394,
+      "sha256": "e356528b882c5d49b856fb05412a0dd7944271d633eab23de6249b8d5d95f4af"
+    },
+    {
+      "path": "assets/audio/polish/concrete_0.wav",
+      "bytes": 4990,
+      "sha256": "0bab3e35160f76724de1d4ae32b7cf1a45d87d5bfa1c40ed82b4bcd5ff9e3b70"
+    },
+    {
+      "path": "assets/audio/polish/concrete_1.wav",
+      "bytes": 5072,
+      "sha256": "c0a0b95f1a65800dd428acc8a76f9a1eaed980389c6069f279f3b893ff8c9350"
+    },
+    {
+      "path": "assets/audio/polish/concrete_2.wav",
+      "bytes": 5318,
+      "sha256": "0b3b4c12e84dd0143aea5ac75e1e2953babfdb5d364a01f53b0f2afdc1c4bea7"
+    },
+    {
+      "path": "assets/audio/polish/concrete_3.wav",
+      "bytes": 5208,
+      "sha256": "900a992cd8d51a7188e3819ffeae605561748289a31883374a0f830650c2ebc2"
+    },
+    {
+      "path": "assets/audio/polish/concrete_4.wav",
+      "bytes": 5394,
+      "sha256": "c79540a9a0a6c7ff0bb0c98356ba11b6b03250f3ece45ff31c94c4e1c1c46dd2"
+    },
+    {
+      "path": "assets/audio/polish/creek.wav",
+      "bytes": 672044,
+      "sha256": "527c0d33173926a868cf2998f37b25bc99e6e6c8f7c45a5e36f74858d4663eb1"
+    },
+    {
+      "path": "assets/audio/polish/dirt_0.wav",
+      "bytes": 37228,
+      "sha256": "732f53ab098bcfa4e6779195639cb373ecfd3090b70ad8f4b4a5ff66626cead4"
+    },
+    {
+      "path": "assets/audio/polish/dirt_1.wav",
+      "bytes": 32238,
+      "sha256": "c62accdb6f28e2f6109ee6c4f711b0248b3789449312eec44d7c92a36f7f8cea"
+    },
+    {
+      "path": "assets/audio/polish/dirt_2.wav",
+      "bytes": 33142,
+      "sha256": "920386d8f5fd05fcb827643223a762aa7f465d880745db532bd27d69c7edb28a"
+    },
+    {
+      "path": "assets/audio/polish/dirt_3.wav",
+      "bytes": 32032,
+      "sha256": "80a7b50dc3822878c70f337b6d8f7c6bec68270dab716158c3daa7e78e153ece"
+    },
+    {
+      "path": "assets/audio/polish/dirt_4.wav",
+      "bytes": 28236,
+      "sha256": "f6f221edccc4b26dc192f729effbc473fe4ff62d708af1f30ed7c10303e8b59e"
+    },
+    {
+      "path": "assets/audio/polish/dry_soil_0.wav",
+      "bytes": 37228,
+      "sha256": "0304e31e6bd4e155ce19d47ea3fb81cbe5f56eef5a239ab9d04b90938573427d"
+    },
+    {
+      "path": "assets/audio/polish/dry_soil_1.wav",
+      "bytes": 32238,
+      "sha256": "4c3d6d67e6df26fb10259b50097cf0bc44fdb6a8aac5fb5b49ab90f3d1dc04a4"
+    },
+    {
+      "path": "assets/audio/polish/dry_soil_2.wav",
+      "bytes": 33142,
+      "sha256": "bbcd4716435e6592d08ed223b4dc95a5e1f63f48dd98b59e0c5879154504bd34"
+    },
+    {
+      "path": "assets/audio/polish/dry_soil_3.wav",
+      "bytes": 32032,
+      "sha256": "eb5b093d58b437614f253ec88220e70e2bded36f3dbfba9963570102fca4d878"
+    },
+    {
+      "path": "assets/audio/polish/dry_soil_4.wav",
+      "bytes": 28236,
+      "sha256": "0fb5c2ba536f8d422760b1305a517f27662a901dba9ea282f308ac0ccdc81bd5"
+    },
+    {
+      "path": "assets/audio/polish/electrical.wav",
+      "bytes": 624044,
+      "sha256": "922b5b125fdd83ef64f469617dd2c915eda1a82abcfede884a622b1489891ac9"
+    },
+    {
+      "path": "assets/audio/polish/equipment_0.wav",
+      "bytes": 8056,
+      "sha256": "8e35262e5e7b2a4d755b25b232af6d59f51bc615bdcda83f4c1f6047fce31e56"
+    },
+    {
+      "path": "assets/audio/polish/equipment_1.wav",
+      "bytes": 6854,
+      "sha256": "af57df4c7144e9f24a5d52a1da31afb8122bc4a63f370c6648b9506ee02c097a"
+    },
+    {
+      "path": "assets/audio/polish/equipment_2.wav",
+      "bytes": 6854,
+      "sha256": "fec4336057edd6d44dbf5be6f57eb01cf29f56088fd5e1a3f7b05d1d41d0a96d"
+    },
+    {
+      "path": "assets/audio/polish/equipment_3.wav",
+      "bytes": 6854,
+      "sha256": "cfe4ab240ff40d41b60a57f09b4551decb6953e4a8d74d2c0b1eee080b11f7aa"
+    },
+    {
+      "path": "assets/audio/polish/equipment_4.wav",
+      "bytes": 6854,
+      "sha256": "c31bc2560a98894726cbf00721a9a35a5ed4df67e37cc9ee30914cfe40e7544a"
+    },
+    {
+      "path": "assets/audio/polish/freewheel.wav",
+      "bytes": 288044,
+      "sha256": "14bb1a3ed4516b45ddc9d99e4fcc7545f3e0323f37a67c7e8bd6bb5b43782e10"
+    },
+    {
+      "path": "assets/audio/polish/grass_0.wav",
+      "bytes": 37228,
+      "sha256": "05150a2ab69f9ff3c66626df22947bab2a86d5904075362f825891b47a788917"
+    },
+    {
+      "path": "assets/audio/polish/grass_1.wav",
+      "bytes": 32238,
+      "sha256": "8d0c61737d8ea2b94359ffd8fd595109a67eb8dc4cbc36b1936524b6680a8fa1"
+    },
+    {
+      "path": "assets/audio/polish/grass_2.wav",
+      "bytes": 33142,
+      "sha256": "bbbb0aeb618f0eb9f497c360dd4adbd803842575fcfbd100a67c84ee769163ce"
+    },
+    {
+      "path": "assets/audio/polish/grass_3.wav",
+      "bytes": 32032,
+      "sha256": "18d9c96d045fc10fdcf939f124fca4b59b90857920b023e7e07fc10938055a26"
+    },
+    {
+      "path": "assets/audio/polish/grass_4.wav",
+      "bytes": 28236,
+      "sha256": "1babfcfc54ff3f9b484a1b851c86b29996396fd37318093bb10c5a5461a0b65f"
+    },
+    {
+      "path": "assets/audio/polish/gravel_0.wav",
+      "bytes": 17868,
+      "sha256": "5d7cfcb71349f12a8b8f82036b837138397bc72e94fa5483dadc4b45af551084"
+    },
+    {
+      "path": "assets/audio/polish/gravel_1.wav",
+      "bytes": 17868,
+      "sha256": "c9e5949b7f0d1a0aae44a184b292c07dcbc2c3bb075c5e246be4b1c572d9fc5e"
+    },
+    {
+      "path": "assets/audio/polish/gravel_2.wav",
+      "bytes": 17868,
+      "sha256": "72a95e05f520b63f52aa339040256ecd870dfcf928d1d689c6ac7b4a11d1c364"
+    },
+    {
+      "path": "assets/audio/polish/gravel_3.wav",
+      "bytes": 17868,
+      "sha256": "19dd8b5c02d342ef138f3dc8b337c38947faa9c255607b11035ca8f2507cebd6"
+    },
+    {
+      "path": "assets/audio/polish/gravel_4.wav",
+      "bytes": 17868,
+      "sha256": "c98ab98ccd5544e072fd7d92733ca4a0148846255999f0cf12e7d6cb0e35e07a"
+    },
+    {
+      "path": "assets/audio/polish/insects.wav",
+      "bytes": 912044,
+      "sha256": "e22ffdfad853159e97631776de5d20b47e8aa6732c403bd6ed12406ed1dfc3d6"
+    },
+    {
+      "path": "assets/audio/polish/interior_0.wav",
+      "bytes": 8056,
+      "sha256": "0cf2c50234f813bacc7c754fb680c314f99c847d5d7667a5323d1fa21de74911"
+    },
+    {
+      "path": "assets/audio/polish/interior_1.wav",
+      "bytes": 6854,
+      "sha256": "cd560e75df7fe38610b0840829f88c7d372f4fd5bbcecc2cc9db309965a7ae54"
+    },
+    {
+      "path": "assets/audio/polish/interior_2.wav",
+      "bytes": 6854,
+      "sha256": "106dc2cd38b926c429b5872db214e4dac0b88eb4d93930f10592f2576eb3ee82"
+    },
+    {
+      "path": "assets/audio/polish/interior_3.wav",
+      "bytes": 6854,
+      "sha256": "d0162b3b7ca1160adcd68af276f2d70133db3e686b96f105b258409968f339ba"
+    },
+    {
+      "path": "assets/audio/polish/interior_4.wav",
+      "bytes": 6854,
+      "sha256": "c358caa382d19c32aca0e44428d95d72190edfd71461b2dc9894299378300153"
+    },
+    {
+      "path": "assets/audio/polish/land_asphalt_0.wav",
+      "bytes": 25330,
+      "sha256": "3efd71845192382af87524506692016df714a3547394269962e7fb21d577214a"
+    },
+    {
+      "path": "assets/audio/polish/land_asphalt_1.wav",
+      "bytes": 27362,
+      "sha256": "5a56ad1049a7c8aedd515f9615da4a26bab65213ffd173581eae97569b43ff19"
+    },
+    {
+      "path": "assets/audio/polish/land_asphalt_2.wav",
+      "bytes": 27376,
+      "sha256": "ff422fab9849497dd4cfdab878970a16c263f1774feb707b4ad6e302c76bc8c7"
+    },
+    {
+      "path": "assets/audio/polish/land_asphalt_3.wav",
+      "bytes": 26026,
+      "sha256": "17e05df0c496325db5142e8a19174f99ef52ea305042a0a8e99c64a54a930645"
+    },
+    {
+      "path": "assets/audio/polish/land_asphalt_4.wav",
+      "bytes": 23950,
+      "sha256": "cde5f10988054ec8e2cbdcdb878361555fe56abf4fdd88e6e34e205843a95ccb"
+    },
+    {
+      "path": "assets/audio/polish/land_concrete_0.wav",
+      "bytes": 25330,
+      "sha256": "cbb2c79ae0d4550113d1a66a61f809fa8349f64a328d203dfd7c9e51981fd481"
+    },
+    {
+      "path": "assets/audio/polish/land_concrete_1.wav",
+      "bytes": 27362,
+      "sha256": "93b4512763d774a69fd5dc4643ad61b8690d032962a190922cd760d09627038a"
+    },
+    {
+      "path": "assets/audio/polish/land_concrete_2.wav",
+      "bytes": 27376,
+      "sha256": "a34a6872cfdbc2805d6815148b1484fffbb891c2b33ced9ffe1e6527c8e85a5d"
+    },
+    {
+      "path": "assets/audio/polish/land_concrete_3.wav",
+      "bytes": 26026,
+      "sha256": "f7d1dbc6feb4b0e568e15f29a3b4a0ba13ce2931a94a5dd9d87e04a93d2148a3"
+    },
+    {
+      "path": "assets/audio/polish/land_concrete_4.wav",
+      "bytes": 23950,
+      "sha256": "9fe5ced96bca2cab1717d4163d0e30e2ae39c54e9b05d7921af0311ce5cfec99"
+    },
+    {
+      "path": "assets/audio/polish/land_dirt_0.wav",
+      "bytes": 37228,
+      "sha256": "d61ce3c0e64bd5992404b9d7bae70855efb5e5c256d4ca27e97583e78c6c059b"
+    },
+    {
+      "path": "assets/audio/polish/land_dirt_1.wav",
+      "bytes": 32238,
+      "sha256": "fb113ecdb2097e2c28225d722dd0180b775780d0935afde7db41d928b05ac181"
+    },
+    {
+      "path": "assets/audio/polish/land_dirt_2.wav",
+      "bytes": 33142,
+      "sha256": "953075d071aaa09908e03faa6a8e6a66917751cfcae1f70013a0d5aeab87fa9e"
+    },
+    {
+      "path": "assets/audio/polish/land_dirt_3.wav",
+      "bytes": 32032,
+      "sha256": "b96b37a06b40537d155166022fef5ab2d03e45ac61bc0825aca3005b9f39d716"
+    },
+    {
+      "path": "assets/audio/polish/land_dirt_4.wav",
+      "bytes": 28236,
+      "sha256": "10b6219cd40660de8f36d6b22dbb0da490ed8b1f879c1af57c30db18584fba4e"
+    },
+    {
+      "path": "assets/audio/polish/land_dry_soil_0.wav",
+      "bytes": 37228,
+      "sha256": "9568b35d57fb5d79e852a158cb364417a637f080a81b27e4a6356793d0416df9"
+    },
+    {
+      "path": "assets/audio/polish/land_dry_soil_1.wav",
+      "bytes": 32238,
+      "sha256": "7c931d6a143bae0b0146d4aa703fc6f42159768e568f97ff35145a45f713fe27"
+    },
+    {
+      "path": "assets/audio/polish/land_dry_soil_2.wav",
+      "bytes": 33142,
+      "sha256": "53cef4823dcbe5ecb06cc9bf29a9f3cd8649520893d9c5db21985a28e9d81fe0"
+    },
+    {
+      "path": "assets/audio/polish/land_dry_soil_3.wav",
+      "bytes": 32032,
+      "sha256": "55ebafe1b117e2014c3576ce9bde28d7c66441d3987b99de86e3de0f36eb9076"
+    },
+    {
+      "path": "assets/audio/polish/land_dry_soil_4.wav",
+      "bytes": 28236,
+      "sha256": "73a4019daee742968e8eb556612af2e1e1c1b92edccdc985de11ce843fced8e5"
+    },
+    {
+      "path": "assets/audio/polish/land_grass_0.wav",
+      "bytes": 37228,
+      "sha256": "dbb37f018a6f70cf35d3d4fa6674209f5cc8d14f8e69aaabf9f848b96405da25"
+    },
+    {
+      "path": "assets/audio/polish/land_grass_1.wav",
+      "bytes": 32238,
+      "sha256": "6492b3db465a1750f0eebb592b5137cab9325f7b7b8e77864caedc17483626cf"
+    },
+    {
+      "path": "assets/audio/polish/land_grass_2.wav",
+      "bytes": 33142,
+      "sha256": "c82d045697a923803d636a7070281a074a3c80f1dce07bdd08e52d6826a7a746"
+    },
+    {
+      "path": "assets/audio/polish/land_grass_3.wav",
+      "bytes": 32032,
+      "sha256": "b05da12daa2a068b3e1a1d6373ad2d3a1b0cb5ca105b2fccfb34002109864ca7"
+    },
+    {
+      "path": "assets/audio/polish/land_grass_4.wav",
+      "bytes": 28236,
+      "sha256": "f5d070cbdbcd834e100aa3ef3536dbbf737df6bc75198890883d25d6699b81ee"
+    },
+    {
+      "path": "assets/audio/polish/land_gravel_0.wav",
+      "bytes": 25330,
+      "sha256": "508591a0acadfa7a868807ee73e1736520616e6557eab87588c18ceffeff8ce1"
+    },
+    {
+      "path": "assets/audio/polish/land_gravel_1.wav",
+      "bytes": 27362,
+      "sha256": "abd723be056dc293b0766e2f988921563a9096c4e11eda0537c08470fa5f1461"
+    },
+    {
+      "path": "assets/audio/polish/land_gravel_2.wav",
+      "bytes": 27376,
+      "sha256": "fbc107a2fce3871684417b66142cbe1abc80b788941838449d782b2f0ce5985b"
+    },
+    {
+      "path": "assets/audio/polish/land_gravel_3.wav",
+      "bytes": 26026,
+      "sha256": "3c2f81b34a81a9f9e6b682e581654afedb210749c58cbda5043cd1057b49994b"
+    },
+    {
+      "path": "assets/audio/polish/land_gravel_4.wav",
+      "bytes": 23950,
+      "sha256": "1f1a56f3a2527090475776d4b410eac5457021accaa884b31555448c9cfd1e92"
+    },
+    {
+      "path": "assets/audio/polish/land_interior_0.wav",
+      "bytes": 25330,
+      "sha256": "23cd82cfec1e6d0d6d1546e96f9aa4e27684fc64b694dacb63280832d9524405"
+    },
+    {
+      "path": "assets/audio/polish/land_interior_1.wav",
+      "bytes": 27362,
+      "sha256": "caf0adc4ed33f00206e021ae9217330a1aa7da47227d349ad416768c6f9a6269"
+    },
+    {
+      "path": "assets/audio/polish/land_interior_2.wav",
+      "bytes": 27376,
+      "sha256": "b1bd3d0d4458ad6794e36195b5a8159c7f2814c57d8c9e5905fb7a8203f61808"
+    },
+    {
+      "path": "assets/audio/polish/land_interior_3.wav",
+      "bytes": 26026,
+      "sha256": "74f543a4d8ec1aee02f4ff4a82d07ec7a41800f1bedf33d8ba02ab1979e4ecba"
+    },
+    {
+      "path": "assets/audio/polish/land_interior_4.wav",
+      "bytes": 23950,
+      "sha256": "0ccb6ab0fd3249cda9301b489eec8dc1f7bef50d783e3e45fa60b6e73e9cda8f"
+    },
+    {
+      "path": "assets/audio/polish/land_leaves_0.wav",
+      "bytes": 37228,
+      "sha256": "e108ef489d8459dcce288c16c7ebc7d475b8fa197981f49a222e4ae034d330e6"
+    },
+    {
+      "path": "assets/audio/polish/land_leaves_1.wav",
+      "bytes": 32238,
+      "sha256": "3c6b122a9ae0f84b87b211fb943b571205ac490ccc14147f06ded096c4e45275"
+    },
+    {
+      "path": "assets/audio/polish/land_leaves_2.wav",
+      "bytes": 33142,
+      "sha256": "5ea9ba4350384772855999a2173466f2b76fd5d7ec396c182694a6c819f12aa4"
+    },
+    {
+      "path": "assets/audio/polish/land_leaves_3.wav",
+      "bytes": 32032,
+      "sha256": "5aedaea813f97fe9812d40e829c094b4bd0aba7f72d28ffeab4233e711933ec1"
+    },
+    {
+      "path": "assets/audio/polish/land_leaves_4.wav",
+      "bytes": 28236,
+      "sha256": "9c7c6f4855738651115573fa08a55c27a749c400ec65fb29927338311eb78fb0"
+    },
+    {
+      "path": "assets/audio/polish/land_metal_0.wav",
+      "bytes": 25330,
+      "sha256": "70ee8ba390a5ba9e4e86c7f74cab79a95da1c377945cbeb55773c199e777b245"
+    },
+    {
+      "path": "assets/audio/polish/land_metal_1.wav",
+      "bytes": 27362,
+      "sha256": "d176349e4dea39682af293681b85b13997f970009dd01114ff461b029158401b"
+    },
+    {
+      "path": "assets/audio/polish/land_metal_2.wav",
+      "bytes": 27376,
+      "sha256": "0fc6f53ba0ba5bdc3502947f3418682973a0012504b17e8318027270e4144d4f"
+    },
+    {
+      "path": "assets/audio/polish/land_metal_3.wav",
+      "bytes": 26026,
+      "sha256": "68ae2d79326b806b030b122f94c0d2b5465b082c57625e3ebad303c6a2d89dae"
+    },
+    {
+      "path": "assets/audio/polish/land_metal_4.wav",
+      "bytes": 23950,
+      "sha256": "d134d29d82992324e77ff50fad0bf1a3bca2447d81482373e7c31121f413679e"
+    },
+    {
+      "path": "assets/audio/polish/land_mud_0.wav",
+      "bytes": 25330,
+      "sha256": "58a27ca9de5a245a358ec009472b16bb5b9145d175106a57cea1ba5eb57ad910"
+    },
+    {
+      "path": "assets/audio/polish/land_mud_1.wav",
+      "bytes": 27362,
+      "sha256": "d471d330ac331c7c7f5f6db3374b1d66a0b94e7512c7344125fa64dc0c6b181b"
+    },
+    {
+      "path": "assets/audio/polish/land_mud_2.wav",
+      "bytes": 27376,
+      "sha256": "8427b9dd109237c2893fc0596e283eb5b400dfcd5f7bf83e5ed01dddb5ee844d"
+    },
+    {
+      "path": "assets/audio/polish/land_mud_3.wav",
+      "bytes": 26026,
+      "sha256": "002f9ac56967f0331338a50f6a2420a1e89a6891d4b42664755e00ef8d866700"
+    },
+    {
+      "path": "assets/audio/polish/land_mud_4.wav",
+      "bytes": 23950,
+      "sha256": "3b79277835a992601121e11406fda65a26193d0d17482425ae3ff107b3f25f62"
+    },
+    {
+      "path": "assets/audio/polish/land_rock_0.wav",
+      "bytes": 25330,
+      "sha256": "2084f999c38d91876491bfa5843c78480b8b8af28f8709a184e9b161e3d5a043"
+    },
+    {
+      "path": "assets/audio/polish/land_rock_1.wav",
+      "bytes": 27362,
+      "sha256": "eed1fc7c7a471400721197b0f9cab107ab23af66527a9bdbed1c1ce7640e9aec"
+    },
+    {
+      "path": "assets/audio/polish/land_rock_2.wav",
+      "bytes": 27376,
+      "sha256": "4f25abb43e78ef40b143bca3510c56c8c15af48851f9048da3b81679121a2df6"
+    },
+    {
+      "path": "assets/audio/polish/land_rock_3.wav",
+      "bytes": 26026,
+      "sha256": "0addc08139239f0a36234a933e7d96530726ba8e7883ae6333d2f21fb6a4216c"
+    },
+    {
+      "path": "assets/audio/polish/land_rock_4.wav",
+      "bytes": 23950,
+      "sha256": "c9b6d530053a77fdef4b0507791dcfaee563c9c39cc860a174779800cb7edaf2"
+    },
+    {
+      "path": "assets/audio/polish/land_water_0.wav",
+      "bytes": 25330,
+      "sha256": "00968560a4a219529b04d5042dbda7ef4c24d155e0e7be615ea97b1cf59fe74c"
+    },
+    {
+      "path": "assets/audio/polish/land_water_1.wav",
+      "bytes": 27362,
+      "sha256": "3a5f33976420bec602fc05f548141bd4037600406dcc0a39eda00e78906f4d83"
+    },
+    {
+      "path": "assets/audio/polish/land_water_2.wav",
+      "bytes": 27376,
+      "sha256": "ed64ef4092b0f557cba50f1e86b1469b79c7a55b09d2553d236e8dc30d3db333"
+    },
+    {
+      "path": "assets/audio/polish/land_water_3.wav",
+      "bytes": 26026,
+      "sha256": "71a917256204abfe1e031cccaeaf2d533956a09686b062a40facbe0705f84896"
+    },
+    {
+      "path": "assets/audio/polish/land_water_4.wav",
+      "bytes": 23950,
+      "sha256": "9df8b7355daa88c1db85b89c24e1c1e41fa5f6e05bc2427684f355634bd1f040"
+    },
+    {
+      "path": "assets/audio/polish/land_wood_0.wav",
+      "bytes": 25330,
+      "sha256": "8729f194151266a3459066d9d2d726378a83e92f88396cc2dad0d2680987e3fa"
+    },
+    {
+      "path": "assets/audio/polish/land_wood_1.wav",
+      "bytes": 27362,
+      "sha256": "530b0e733e143a630b5734f0c52c09a12b809d3414c96607dd5163c5bfc58085"
+    },
+    {
+      "path": "assets/audio/polish/land_wood_2.wav",
+      "bytes": 27376,
+      "sha256": "5dad7374f38463020b1b8049c091632d3760d091b3c502840cfad7aad4a34ed6"
+    },
+    {
+      "path": "assets/audio/polish/land_wood_3.wav",
+      "bytes": 26026,
+      "sha256": "d21d1ccef9ebe05df2545d04698e9414d304d35f1615e3f5a927a0bd59a62b18"
+    },
+    {
+      "path": "assets/audio/polish/land_wood_4.wav",
+      "bytes": 23950,
+      "sha256": "99aeb63320a8234ecb2a2a248eaed52590b15d08a36504899364ff7a162687e8"
+    },
+    {
+      "path": "assets/audio/polish/leaves_0.wav",
+      "bytes": 37228,
+      "sha256": "93dc9efccfac00d2adc66718123111b1823656be1e70477f6f965f3119053117"
+    },
+    {
+      "path": "assets/audio/polish/leaves_1.wav",
+      "bytes": 32238,
+      "sha256": "6d86d69ff8e5b614c8b5a24df50a3bb51f7a786dfba75cdd3fd54ea8da35df8b"
+    },
+    {
+      "path": "assets/audio/polish/leaves_2.wav",
+      "bytes": 33142,
+      "sha256": "1b7f55fa9ce4b76aabba2357c0a2bda1e0881dce21039a1c6c26a9bcc82f9bab"
+    },
+    {
+      "path": "assets/audio/polish/leaves_3.wav",
+      "bytes": 32032,
+      "sha256": "8fc12e251985f1b637838a1188788cc95c0f391b20f6df4a445f121014fc7083"
+    },
+    {
+      "path": "assets/audio/polish/leaves_4.wav",
+      "bytes": 28236,
+      "sha256": "6b9f6ead9047642a3923aabdcc75aae3b1aacab7be04c4a55c8c53b4dcb38663"
+    },
+    {
+      "path": "assets/audio/polish/leaves_wind.wav",
+      "bytes": 864044,
+      "sha256": "d0dd93d2c249e0e8e09f7591eedf29c33855b390f2a70bea62bbcda07e0c06fb"
+    },
+    {
+      "path": "assets/audio/polish/metal_0.wav",
+      "bytes": 17946,
+      "sha256": "be58555e069d2fc6f12b6e1564fd9c5c0fce288e855e03971c6ffb997e179335"
+    },
+    {
+      "path": "assets/audio/polish/metal_1.wav",
+      "bytes": 11994,
+      "sha256": "b00174bac7a6d42d6b1b3f486399d4e66ccf2d056c95f174dcbde3e0637b2c62"
+    },
+    {
+      "path": "assets/audio/polish/metal_2.wav",
+      "bytes": 11222,
+      "sha256": "f0fcfabfba5d35918c193d350e35f03ddf03b9d478836796b45b660ed3d6e878"
+    },
+    {
+      "path": "assets/audio/polish/metal_3.wav",
+      "bytes": 23182,
+      "sha256": "80955d577c70ea2bdb646b88a8efd36d472bd23365f9f09a3b4d019ba8b2010b"
+    },
+    {
+      "path": "assets/audio/polish/metal_4.wav",
+      "bytes": 10148,
+      "sha256": "4e767baf761893594af1598006de561d1b03b681e72458248761fc6076ec524d"
+    },
+    {
+      "path": "assets/audio/polish/mud_0.wav",
+      "bytes": 17868,
+      "sha256": "fecc6f6919fccf1c659e2cc30cc483266a40e5ac79958c0927ce4c3c22650b62"
+    },
+    {
+      "path": "assets/audio/polish/mud_1.wav",
+      "bytes": 17868,
+      "sha256": "48e4d7a625b0dfe3393a3a74a67d2de0b8e5934965f6ce98353fd0c0d6c3f2b9"
+    },
+    {
+      "path": "assets/audio/polish/mud_2.wav",
+      "bytes": 17868,
+      "sha256": "484650326c494cbfc704700f21fbea88f20234062b2f85ed420373cfe8553019"
+    },
+    {
+      "path": "assets/audio/polish/mud_3.wav",
+      "bytes": 17868,
+      "sha256": "c3302a306fc1f28cb2e6edc5671ddc5cd5a503e892214286a17e86c069dd8ac2"
+    },
+    {
+      "path": "assets/audio/polish/mud_4.wav",
+      "bytes": 17868,
+      "sha256": "191ad9f87387c9842b3bbb45e04b3983610cb1bf743e92fc72a9409b1e83bd2a"
+    },
+    {
+      "path": "assets/audio/polish/rock_0.wav",
+      "bytes": 4990,
+      "sha256": "5a74239a498d311ea2eb1d0dea5334c952d4f7d147d14b86e5ccf9ac3c88c6ce"
+    },
+    {
+      "path": "assets/audio/polish/rock_1.wav",
+      "bytes": 5072,
+      "sha256": "5cd2472e1c20a1ce40c2700f620aa821833e749c52698d5c4f51dc92181583b8"
+    },
+    {
+      "path": "assets/audio/polish/rock_2.wav",
+      "bytes": 5318,
+      "sha256": "5ec62d3648fdb4f80632b1f1909a82e8676088bbc248b0e69692d61da1f2f0e0"
+    },
+    {
+      "path": "assets/audio/polish/rock_3.wav",
+      "bytes": 5208,
+      "sha256": "644a1587e9a7ef77df5d44216c3ce6d6d4e675af7f4f7c6049ac685cd7bce29a"
+    },
+    {
+      "path": "assets/audio/polish/rock_4.wav",
+      "bytes": 5394,
+      "sha256": "b2dc331a203f8796675c7c7f1baf41ea7e6ed92b5a2e1c0639bb1121940a7a67"
+    },
+    {
+      "path": "assets/audio/polish/tire.wav",
+      "bytes": 384044,
+      "sha256": "c69498ce69d61684676728e4a59e856a07239a5b5840d9843e4daea0a9771c53"
+    },
+    {
+      "path": "assets/audio/polish/water_0.wav",
+      "bytes": 17868,
+      "sha256": "b8859ea89262bf115f473991ed4681927f06b23e984179468f236a5db0af0fb2"
+    },
+    {
+      "path": "assets/audio/polish/water_1.wav",
+      "bytes": 17868,
+      "sha256": "063de73fc095cfdedab4a133f86f7bd6a8654f88bd6c815659b8d02320c19931"
+    },
+    {
+      "path": "assets/audio/polish/water_2.wav",
+      "bytes": 17868,
+      "sha256": "6178e267150799d8dc39ba62521e48513b2e37b1c0a525ec7d14f2c13fa407d7"
+    },
+    {
+      "path": "assets/audio/polish/water_3.wav",
+      "bytes": 17868,
+      "sha256": "8f9983819812a2716d2ab798f69f5834c82ed7c0c73be09effd429dbbdc82a4b"
+    },
+    {
+      "path": "assets/audio/polish/water_4.wav",
+      "bytes": 17868,
+      "sha256": "052fff3aa893cca1666c7e927f69c25d1f0953ad5b284bc6364b67530162b1c9"
+    },
+    {
+      "path": "assets/audio/polish/wood_0.wav",
+      "bytes": 13070,
+      "sha256": "f93d062a67b4885700ea5d48f054b297cf9140d6b99a9611e65af8299a8aa61f"
+    },
+    {
+      "path": "assets/audio/polish/wood_1.wav",
+      "bytes": 11980,
+      "sha256": "71b8aca0b6aa4dc85513ae4f2d30c0b0de2f217fe4728d1088dbf1725ad021e2"
+    },
+    {
+      "path": "assets/audio/polish/wood_2.wav",
+      "bytes": 11972,
+      "sha256": "1b7c8af2bdb6eeecaf8ea4a1a7fd6c7b25edca982817258a256cb19ee7f496fe"
+    },
+    {
+      "path": "assets/audio/polish/wood_3.wav",
+      "bytes": 11978,
+      "sha256": "c69385ae49cbd896955c095b7b28379333635236e78923353d104346a125db12"
+    },
+    {
+      "path": "assets/audio/polish/wood_4.wav",
+      "bytes": 11804,
+      "sha256": "1baa3b5b616ce6544455ffe37ef08af636673a9999447118205ea75701991caa"
+    },
+    {
+      "path": "assets/audio/rotors.wav",
+      "bytes": 176444,
+      "sha256": "bc3202a7f7a40e796ad37009e8f12e9d1fd79385d3f19abbab398acab1c6dd28"
+    },
+    {
+      "path": "assets/audio/signal.wav",
+      "bytes": 92654,
+      "sha256": "83b3fbee38a1292dde26ad9f26b52e2a1dd702ecf9959ce479a6f709828dd71e"
+    },
+    {
+      "path": "assets/audio/step_asphalt.wav",
+      "bytes": 7982,
+      "sha256": "6f8a891c61cbc374953ed7a61f9d1aef5eac0e46506dcff2dc195ad4372e288a"
+    },
+    {
+      "path": "assets/audio/step_dirt.wav",
+      "bytes": 9746,
+      "sha256": "afc3df1c91722788b70c291ba2330f5b3b555fb8970d6d4b60d28784ab97a25d"
+    },
+    {
+      "path": "assets/audio/step_metal.wav",
+      "bytes": 8844,
+      "sha256": "c9e100dddd5e8365f592ea75f884e76480d7e287e1ea726c69f4464cc4ade431"
+    },
+    {
+      "path": "assets/audio/step_wood.wav",
+      "bytes": 8844,
+      "sha256": "3231d005a003b272769c8c073e1536d9d483fa7e168c46f131d52e20a76c9649"
+    },
+    {
+      "path": "assets/audio/wind.wav",
+      "bytes": 529244,
+      "sha256": "85c56799e4305b40d3f3da3748709a3ee1d5a36ef9e49469a7937e3fdc29fb6b"
+    },
+    {
+      "path": "assets/fonts/Barlow-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "assets/fonts/BarlowCondensed-SemiBold.ttf",
+      "bytes": 109428,
+      "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+    },
+    {
+      "path": "assets/fonts/IBM-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "assets/fonts/IBMPlexMono-Regular.ttf",
+      "bytes": 135580,
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "path": "assets/humans/MakeHuman-LICENSE.md",
+      "bytes": 3598,
+      "sha256": "edd99571ca62698f78c943fd4fffb159a413c315fa0d4819d3cec5cadaf8b4f1"
+    },
+    {
+      "path": "assets/humans/field_head.obj",
+      "bytes": 217338,
+      "sha256": "60592e51ba739edb72fe6e455f8f3e479bb880004d10decccd8c5ebf534ebe23"
+    },
+    {
+      "path": "assets/icons/items/aluminum.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/axle.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/bandage.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/battery_module.png",
+      "bytes": 6588,
+      "sha256": "8b14140ba2c5b4be5706f76831740016a75b917abf33e4880a6bf14a90ed3857"
+    },
+    {
+      "path": "assets/icons/items/bearings.png",
+      "bytes": 3938,
+      "sha256": "5b6f4495249e8ada5ef73ffeece6b139aa9b8f7717379742060a1d89815c40a8"
+    },
+    {
+      "path": "assets/icons/items/bike_battery.png",
+      "bytes": 6588,
+      "sha256": "8b14140ba2c5b4be5706f76831740016a75b917abf33e4880a6bf14a90ed3857"
+    },
+    {
+      "path": "assets/icons/items/bike_controller.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/bike_motor.png",
+      "bytes": 5889,
+      "sha256": "d5b8ec4ed68bd7fab881143b1bb326e80daed672e04e8c5efc1fa2aae343f6e5"
+    },
+    {
+      "path": "assets/icons/items/bolt.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/bottle.png",
+      "bytes": 1985,
+      "sha256": "7c198a9de4be0d7148f2096931a1b7c34b70c3aec0f27db9279bc0a058706e76"
+    },
+    {
+      "path": "assets/icons/items/bracket.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/brake_cable.png",
+      "bytes": 4320,
+      "sha256": "fe125ca5833f45586e0900b228c3126ef9470dc0b0c311bc0aa87062635b396c"
+    },
+    {
+      "path": "assets/icons/items/brake_disc.png",
+      "bytes": 3938,
+      "sha256": "5b6f4495249e8ada5ef73ffeece6b139aa9b8f7717379742060a1d89815c40a8"
+    },
+    {
+      "path": "assets/icons/items/brake_pad.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/breaker.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/busbar.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/cable_gland.png",
+      "bytes": 4320,
+      "sha256": "fe125ca5833f45586e0900b228c3126ef9470dc0b0c311bc0aa87062635b396c"
+    },
+    {
+      "path": "assets/icons/items/camera.png",
+      "bytes": 4133,
+      "sha256": "cb509ab35793bb23c049a8c8efbf8bc1bc97eb1b6582ab1e923c1de20d7c043e"
+    },
+    {
+      "path": "assets/icons/items/can.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/canteen.png",
+      "bytes": 1985,
+      "sha256": "7c198a9de4be0d7148f2096931a1b7c34b70c3aec0f27db9279bc0a058706e76"
+    },
+    {
+      "path": "assets/icons/items/capacitor.png",
+      "bytes": 6588,
+      "sha256": "8b14140ba2c5b4be5706f76831740016a75b917abf33e4880a6bf14a90ed3857"
+    },
+    {
+      "path": "assets/icons/items/carbon_fiber.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/cargo_hook.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/carrier_note.png",
+      "bytes": 4178,
+      "sha256": "39d7e068bd1cb12c8e85292f1362d5c0fe387a0663bba10c7c9eae7f46a6f351"
+    },
+    {
+      "path": "assets/icons/items/cells.png",
+      "bytes": 6588,
+      "sha256": "8b14140ba2c5b4be5706f76831740016a75b917abf33e4880a6bf14a90ed3857"
+    },
+    {
+      "path": "assets/icons/items/ceramic.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/chain.png",
+      "bytes": 4320,
+      "sha256": "fe125ca5833f45586e0900b228c3126ef9470dc0b0c311bc0aa87062635b396c"
+    },
+    {
+      "path": "assets/icons/items/charger.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/circuit_board.png",
+      "bytes": 4178,
+      "sha256": "39d7e068bd1cb12c8e85292f1362d5c0fe387a0663bba10c7c9eae7f46a6f351"
+    },
+    {
+      "path": "assets/icons/items/cloth_patch.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/connector.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/contactor.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/copper.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/copper_cable.png",
+      "bytes": 4320,
+      "sha256": "fe125ca5833f45586e0900b228c3126ef9470dc0b0c311bc0aa87062635b396c"
+    },
+    {
+      "path": "assets/icons/items/copper_ore.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/cord.png",
+      "bytes": 4320,
+      "sha256": "fe125ca5833f45586e0900b228c3126ef9470dc0b0c311bc0aa87062635b396c"
+    },
+    {
+      "path": "assets/icons/items/crimper.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/cutters.png",
+      "bytes": 2483,
+      "sha256": "51597940d7f1ad1d7c72d8d8442f2c07a69840c237facc7c13a78aadecefae3f"
+    },
+    {
+      "path": "assets/icons/items/damaged_radio.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/diode.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/drill.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/drone_battery.png",
+      "bytes": 6588,
+      "sha256": "8b14140ba2c5b4be5706f76831740016a75b917abf33e4880a6bf14a90ed3857"
+    },
+    {
+      "path": "assets/icons/items/drone_motor.png",
+      "bytes": 5889,
+      "sha256": "d5b8ec4ed68bd7fab881143b1bb326e80daed672e04e8c5efc1fa2aae343f6e5"
+    },
+    {
+      "path": "assets/icons/items/electronics.png",
+      "bytes": 4178,
+      "sha256": "39d7e068bd1cb12c8e85292f1362d5c0fe387a0663bba10c7c9eae7f46a6f351"
+    },
+    {
+      "path": "assets/icons/items/epoxy.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/fabric.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/file.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/flashlight.png",
+      "bytes": 4133,
+      "sha256": "cb509ab35793bb23c049a8c8efbf8bc1bc97eb1b6582ab1e923c1de20d7c043e"
+    },
+    {
+      "path": "assets/icons/items/food_tin.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/fuel.png",
+      "bytes": 9238,
+      "sha256": "10467760feb791e2b266547bd702600acc6af3012abd9fa1c8e1716ceb5bd527"
+    },
+    {
+      "path": "assets/icons/items/fuel_bottle.png",
+      "bytes": 1985,
+      "sha256": "7c198a9de4be0d7148f2096931a1b7c34b70c3aec0f27db9279bc0a058706e76"
+    },
+    {
+      "path": "assets/icons/items/fuse.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/gear.png",
+      "bytes": 5602,
+      "sha256": "eb2b1279dcfcfa5a892ffebb49d5f38fffa39386dccab370882d2151483951b0"
+    },
+    {
+      "path": "assets/icons/items/generator_tank.png",
+      "bytes": 9238,
+      "sha256": "10467760feb791e2b266547bd702600acc6af3012abd9fa1c8e1716ceb5bd527"
+    },
+    {
+      "path": "assets/icons/items/glass.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/hacksaw.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/hammer.png",
+      "bytes": 3573,
+      "sha256": "fc95869eefc7a9d436727bf602bc53d662a2aa947eb4e5af60d293968d5d181d"
+    },
+    {
+      "path": "assets/icons/items/heat_sink.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/hinge.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/hose_clamp.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/inner_tube.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/insulation_tape.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/inverter.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/iron_ore.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/jerry_can.png",
+      "bytes": 9238,
+      "sha256": "10467760feb791e2b266547bd702600acc6af3012abd9fa1c8e1716ceb5bd527"
+    },
+    {
+      "path": "assets/icons/items/junction_box.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/laptop.png",
+      "bytes": 4178,
+      "sha256": "39d7e068bd1cb12c8e85292f1362d5c0fe387a0663bba10c7c9eae7f46a6f351"
+    },
+    {
+      "path": "assets/icons/items/magnets.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/marker_pod.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/measuring_tape.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/medkit.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/mesh.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/meter_probe.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/motor.png",
+      "bytes": 5889,
+      "sha256": "d5b8ec4ed68bd7fab881143b1bb326e80daed672e04e8c5efc1fa2aae343f6e5"
+    },
+    {
+      "path": "assets/icons/items/multimeter.png",
+      "bytes": 4133,
+      "sha256": "cb509ab35793bb23c049a8c8efbf8bc1bc97eb1b6582ab1e923c1de20d7c043e"
+    },
+    {
+      "path": "assets/icons/items/nut.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/panel.png",
+      "bytes": 4178,
+      "sha256": "39d7e068bd1cb12c8e85292f1362d5c0fe387a0663bba10c7c9eae7f46a6f351"
+    },
+    {
+      "path": "assets/icons/items/pickaxe.png",
+      "bytes": 3573,
+      "sha256": "fc95869eefc7a9d436727bf602bc53d662a2aa947eb4e5af60d293968d5d181d"
+    },
+    {
+      "path": "assets/icons/items/plastic.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/pliers.png",
+      "bytes": 2483,
+      "sha256": "51597940d7f1ad1d7c72d8d8442f2c07a69840c237facc7c13a78aadecefae3f"
+    },
+    {
+      "path": "assets/icons/items/power_supply.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/propeller.png",
+      "bytes": 1748,
+      "sha256": "2f8e6f8934c81926eb348f4a692a2a7064952747c7b62bb8ed83ccbf5ac07133"
+    },
+    {
+      "path": "assets/icons/items/pulley.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/pump.png",
+      "bytes": 5889,
+      "sha256": "d5b8ec4ed68bd7fab881143b1bb326e80daed672e04e8c5efc1fa2aae343f6e5"
+    },
+    {
+      "path": "assets/icons/items/quartz.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/rag.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/ration.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/relay.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/repair_kit.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/resistor.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/route_map.png",
+      "bytes": 4178,
+      "sha256": "39d7e068bd1cb12c8e85292f1362d5c0fe387a0663bba10c7c9eae7f46a6f351"
+    },
+    {
+      "path": "assets/icons/items/rubber.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/screwdriver.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/sensor.png",
+      "bytes": 4133,
+      "sha256": "cb509ab35793bb23c049a8c8efbf8bc1bc97eb1b6582ab1e923c1de20d7c043e"
+    },
+    {
+      "path": "assets/icons/items/sheet_metal.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/signal_receiver.png",
+      "bytes": 4133,
+      "sha256": "cb509ab35793bb23c049a8c8efbf8bc1bc97eb1b6582ab1e923c1de20d7c043e"
+    },
+    {
+      "path": "assets/icons/items/silicon.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/sleeping_roll.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/socket_set.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/solder.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/soldering_iron.png",
+      "bytes": 2090,
+      "sha256": "d553c36e723cbf00669f159e10d2c7a5c76e3b87ee4479b8b2e9c4b643839713"
+    },
+    {
+      "path": "assets/icons/items/spotlight.png",
+      "bytes": 4133,
+      "sha256": "cb509ab35793bb23c049a8c8efbf8bc1bc97eb1b6582ab1e923c1de20d7c043e"
+    },
+    {
+      "path": "assets/icons/items/spring.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/sprocket.png",
+      "bytes": 5603,
+      "sha256": "022f40cc5316841150d6256b1c0823aeef4af10960d1f3636c701ba86e91f938"
+    },
+    {
+      "path": "assets/icons/items/steel.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/steel_coupler.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/stone.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/storage_case.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/switch.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/tarp.png",
+      "bytes": 5974,
+      "sha256": "47e694a7d83f4c7cef10f05cefd442fee3c0de9a67f598dabbd443352f65c6e5"
+    },
+    {
+      "path": "assets/icons/items/terminal_block.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/tire.png",
+      "bytes": 2375,
+      "sha256": "9ccc37e8bada38e3516c1a162766f1b5673ed6588b570afe74b73050f36bd111"
+    },
+    {
+      "path": "assets/icons/items/tire_patch.png",
+      "bytes": 2375,
+      "sha256": "9ccc37e8bada38e3516c1a162766f1b5673ed6588b570afe74b73050f36bd111"
+    },
+    {
+      "path": "assets/icons/items/toaster.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/transformer.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/tubing.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/utility_module.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/voltage_regulator.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/washer.png",
+      "bytes": 3938,
+      "sha256": "5b6f4495249e8ada5ef73ffeece6b139aa9b8f7717379742060a1d89815c40a8"
+    },
+    {
+      "path": "assets/icons/items/water.png",
+      "bytes": 1985,
+      "sha256": "7c198a9de4be0d7148f2096931a1b7c34b70c3aec0f27db9279bc0a058706e76"
+    },
+    {
+      "path": "assets/icons/items/wire.png",
+      "bytes": 4320,
+      "sha256": "fe125ca5833f45586e0900b228c3126ef9470dc0b0c311bc0aa87062635b396c"
+    },
+    {
+      "path": "assets/icons/items/wrapper.png",
+      "bytes": 5478,
+      "sha256": "7c2d9cc1326845544c3402250e0708a8723c85a52ad5d2e901dd814e755e4077"
+    },
+    {
+      "path": "assets/icons/items/wrench.png",
+      "bytes": 2698,
+      "sha256": "05209b7f19bbf2d46c1bdc4ab829edb6422a8a49cf479866b40535a56b6f98e4"
+    },
+    {
+      "path": "assets/icons/ui/bike.svg",
+      "bytes": 326,
+      "sha256": "3d64a9ea4f2608ef8d86283c13fc75fcebc21eb645a0082733ac2d718e09a5b5"
+    },
+    {
+      "path": "assets/icons/ui/charge.svg",
+      "bytes": 254,
+      "sha256": "a452f809a3993683e87cedfa538f73c55057cfde5fa16af1b486ac31b0afcb8c"
+    },
+    {
+      "path": "assets/icons/ui/condition.svg",
+      "bytes": 221,
+      "sha256": "8eae4e3c3e72341df934aa54c42159416cc76da4a096a36cd6f05cd82e0e8bb1"
+    },
+    {
+      "path": "assets/icons/ui/current.svg",
+      "bytes": 222,
+      "sha256": "69193a18d50568ccac9da24366a48590ca34a990cad18762a7f90dbf69ae58b0"
+    },
+    {
+      "path": "assets/icons/ui/damaged.svg",
+      "bytes": 232,
+      "sha256": "30cd5235e096b6ba05120e85aba87b794e5b2aae165e8e41b9af7bf9933c3c92"
+    },
+    {
+      "path": "assets/icons/ui/drone.svg",
+      "bytes": 300,
+      "sha256": "1cce60a4ce5bbdaae41fa349e52d35e7357879b66614cf856b52e2b483658f53"
+    },
+    {
+      "path": "assets/icons/ui/durability.svg",
+      "bytes": 235,
+      "sha256": "e0b1b6f44bc7de22ac65d1b24db637c9782f1ad8ca202c4e180f9ef49a7ae35d"
+    },
+    {
+      "path": "assets/icons/ui/electrical.svg",
+      "bytes": 224,
+      "sha256": "33cfa1687394b2464b8c2bdfb76a68257f0b17646bae7e65a3d289ba3cf82b31"
+    },
+    {
+      "path": "assets/icons/ui/food.svg",
+      "bytes": 236,
+      "sha256": "cd00e474f83a5e3359beb02fc719e09617df029b297f929a554dec54a4645518"
+    },
+    {
+      "path": "assets/icons/ui/fuel.svg",
+      "bytes": 260,
+      "sha256": "b7a0cb1054e5bd85731f0ce63f515a7897204293c62170cec2c98a2416595b69"
+    },
+    {
+      "path": "assets/icons/ui/hazard.svg",
+      "bytes": 227,
+      "sha256": "0dc77500c8090e42676224de1eee81a45726ac5fb6f83abc7ef6b38a322b8591"
+    },
+    {
+      "path": "assets/icons/ui/heat.svg",
+      "bytes": 267,
+      "sha256": "3acd8318d22e79ca53385f3e03a75fbb648f7c1cbabc750637e4ab25fc0c7f8a"
+    },
+    {
+      "path": "assets/icons/ui/kw.svg",
+      "bytes": 249,
+      "sha256": "3cfa26d73568a73fc25a9728fca0a81dd3bfbda6cc1d22a8413836024c9a2c5a"
+    },
+    {
+      "path": "assets/icons/ui/kwh.svg",
+      "bytes": 269,
+      "sha256": "77b1a1eb5bc369ca285a8e9d351ff39d1ef9307b3e5e559c3610085c227f3c4b"
+    },
+    {
+      "path": "assets/icons/ui/locked.svg",
+      "bytes": 249,
+      "sha256": "da005cf026f2e0eab9f94be3ab43efff3b4394a307a2aff557fa922eafdf8007"
+    },
+    {
+      "path": "assets/icons/ui/mechanical.svg",
+      "bytes": 227,
+      "sha256": "ede2b902ffeaa660d471c837b92a2f1373b856d1d65d8ae2cc14d7ed1307f619"
+    },
+    {
+      "path": "assets/icons/ui/medical.svg",
+      "bytes": 234,
+      "sha256": "38023b266c31b6c5226d2bbdee3604004523294a561a54829ed4ffae5a2f4261"
+    },
+    {
+      "path": "assets/icons/ui/powered.svg",
+      "bytes": 226,
+      "sha256": "445222fc17fd3325bb8903659cb40dcda19e68b1a5b770125e49141951afa07c"
+    },
+    {
+      "path": "assets/icons/ui/quest_signal.svg",
+      "bytes": 272,
+      "sha256": "100f125473a784f4b90eaa3b4f2e19c102643a22dea00d4e91aca87cd0ca6fac"
+    },
+    {
+      "path": "assets/icons/ui/raw_material.svg",
+      "bytes": 254,
+      "sha256": "7af8d79822d32d792f5f41a1e2ed0f2c25a25ff84ffe26b66099fb2abd2881bb"
+    },
+    {
+      "path": "assets/icons/ui/repairable.svg",
+      "bytes": 267,
+      "sha256": "0d70be5daccd83b4ac72f5303e0966ed7cd24547a036ca09a933fe3e72c73fbd"
+    },
+    {
+      "path": "assets/icons/ui/signal.svg",
+      "bytes": 233,
+      "sha256": "3eb63971ec1e5d100b152f53825f506a630736029507fed350c6391736ef4a0a"
+    },
+    {
+      "path": "assets/icons/ui/tool.svg",
+      "bytes": 265,
+      "sha256": "561c61c1bf64a14b838f437b6794d49f68257d0d53599a278c408c0d0ffb8b64"
+    },
+    {
+      "path": "assets/icons/ui/unpowered.svg",
+      "bytes": 237,
+      "sha256": "5066eab56f2f3b37246d98d3f52bc484123a9b703edff14cdd58c4c7973f2810"
+    },
+    {
+      "path": "assets/icons/ui/voltage.svg",
+      "bytes": 212,
+      "sha256": "e67607e24391c1068725a786b44b288b0b08f124de689d30cee56d53e2f61e95"
+    },
+    {
+      "path": "assets/icons/ui/water.svg",
+      "bytes": 252,
+      "sha256": "13072b6d7a70ae8621cb66269eee91475f65b94fd429138b99b8e2801bdbc873"
+    },
+    {
+      "path": "assets/icons/ui/weight.svg",
+      "bytes": 238,
+      "sha256": "c3f5bf838b5a69b913a3a8cbb7c359cd3d746c3f746d6a053d6a5a2cfcfa1610"
+    },
+    {
+      "path": "assets/kenney/LICENSE.txt",
+      "bytes": 715,
+      "sha256": "62c8356876481204fa4d40dc59183dfed777adf987d7f2a1390fffe8a699f3ff"
+    },
+    {
+      "path": "assets/kenney/Textures/colormap.png",
+      "bytes": 7440,
+      "sha256": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1"
+    },
+    {
+      "path": "assets/kenney/bedroll-packed.glb",
+      "bytes": 13680,
+      "sha256": "980c222917e8564c68aa184af025d701612c7395e8ad8ef55b5b00785637a98f"
+    },
+    {
+      "path": "assets/kenney/bedroll.glb",
+      "bytes": 14036,
+      "sha256": "2ad9baa2d800845195c7c92bd8423b0d99519530dee0afd3bd0ac4b2e255d728"
+    },
+    {
+      "path": "assets/kenney/bottle.glb",
+      "bytes": 10468,
+      "sha256": "23f847b8812838830df686fb8b472fa225693a3b85c526f2796f7b0790831a9a"
+    },
+    {
+      "path": "assets/kenney/box-large-open.glb",
+      "bytes": 17068,
+      "sha256": "b9a243c7c9aaaf211251ba6ad74f3221bd233613d91e228d7207200db01f40f7"
+    },
+    {
+      "path": "assets/kenney/box-open.glb",
+      "bytes": 17052,
+      "sha256": "2169e2291052ef9c378af4d6736df3fcff4ebca8fc39cbcdb4b7ad6accdff568"
+    },
+    {
+      "path": "assets/kenney/bucket.glb",
+      "bytes": 7816,
+      "sha256": "ff173908480929067cd634d5edfedba038428f1503db487521492975fa5c8274"
+    },
+    {
+      "path": "assets/kenney/metal-panel-screws.glb",
+      "bytes": 28256,
+      "sha256": "c7b5bcea3aa19ebbcfdbfdc2d52cbb0120176f798186b137231d3f9102e75932"
+    },
+    {
+      "path": "assets/kenney/resource-planks.glb",
+      "bytes": 8884,
+      "sha256": "d3804257474a3baab7ac067be91de5c3d6d18d5803775dc876cb6d9442c30873"
+    },
+    {
+      "path": "assets/kenney/rock-a.glb",
+      "bytes": 10812,
+      "sha256": "343bab63ea4c51a5b6c881a9d546f165789cfc26e1f60c517d59e4baa384c82a"
+    },
+    {
+      "path": "assets/kenney/rock-b.glb",
+      "bytes": 15184,
+      "sha256": "f0f4eec72f18722dee56f799c6045953835a91856929dff6fb71331602b12c2e"
+    },
+    {
+      "path": "assets/kenney/rock-c.glb",
+      "bytes": 11692,
+      "sha256": "a0f2e78460acfc4e02e029065472360f2e491c389d6e82f02837e3ed643b9d75"
+    },
+    {
+      "path": "assets/kenney/rock-flat.glb",
+      "bytes": 24780,
+      "sha256": "350f6440743ed400728d8889d711e0eb3eed56e8d7389e386352d9d98411a49d"
+    },
+    {
+      "path": "assets/kenney/tent-canvas.glb",
+      "bytes": 16864,
+      "sha256": "efc4bca46a22e4cc4fe391aeafba161c24bc39bfa75e192c57eaacaf686f9717"
+    },
+    {
+      "path": "assets/kenney/tool-shovel.glb",
+      "bytes": 11656,
+      "sha256": "20abb2420f0215c59694287207b7a6324114552b9f59846ab2a2673e3a7c1147"
+    },
+    {
+      "path": "assets/kenney/tree-log-small.glb",
+      "bytes": 9216,
+      "sha256": "5b416addc4cb01d9d6ad30ec282606a8fefb018043d3253d5e42c1e353aab3c8"
+    },
+    {
+      "path": "assets/materials/Asphalt011/Asphalt011_1K-JPG_Color.jpg",
+      "bytes": 1208387,
+      "sha256": "e3a728d738d8f0cec1d953c6ad8c2debb29869b097128bb5134a7da0680c9d70"
+    },
+    {
+      "path": "assets/materials/Asphalt011/Asphalt011_1K-JPG_NormalGL.jpg",
+      "bytes": 2150539,
+      "sha256": "5fd8549599247be6031d12bfc12e6421779222c1d2acfd78595bf1377871f3df"
+    },
+    {
+      "path": "assets/materials/Asphalt011/Asphalt011_1K-JPG_Roughness.jpg",
+      "bytes": 740298,
+      "sha256": "aa442fe0d4f4755866292cea4b1f93483a291a192d39eb88027fb8352e683a52"
+    },
+    {
+      "path": "assets/materials/Ground037/Ground037_1K-JPG_Color.jpg",
+      "bytes": 2187764,
+      "sha256": "d92bec8a35b9cb16ec79b421ca0f572a7400286eae109beafa266629ef49a6cf"
+    },
+    {
+      "path": "assets/materials/Ground037/Ground037_1K-JPG_NormalGL.jpg",
+      "bytes": 2474236,
+      "sha256": "ea59dbdcfa5bf2f28bdd4aa896d4e5f96c4cce5939100dcc6db4bbbcdebfe38d"
+    },
+    {
+      "path": "assets/materials/Ground037/Ground037_1K-JPG_Roughness.jpg",
+      "bytes": 694944,
+      "sha256": "3786b088e981aae562f06b6477972d379cffd09a5cc542ab42f9ffd94f9bcb0e"
+    },
+    {
+      "path": "assets/materials/Rock030/Rock030_1K-JPG_Color.jpg",
+      "bytes": 1483352,
+      "sha256": "1dca8a336518ce0adca4b5cbe2ab30819c8769388f1c15278082a99f022c615a"
+    },
+    {
+      "path": "assets/materials/Rock030/Rock030_1K-JPG_NormalGL.jpg",
+      "bytes": 2528233,
+      "sha256": "8fd1d22eb6c7b6e4a374196c0de791f724538b8b86eb9c7a946fec1f5834cb94"
+    },
+    {
+      "path": "assets/materials/Rock030/Rock030_1K-JPG_Roughness.jpg",
+      "bytes": 669875,
+      "sha256": "f37850f72994458994716d084683d80611528d1685264bde3071569e8ca53489"
+    },
+    {
+      "path": "assets/materials/Wood051/Wood051_1K-JPG_Color.jpg",
+      "bytes": 871537,
+      "sha256": "f3c6c5456457e8d05c1fee4d2f186f41d0aea2b8a06859b69ce2934e11aa8798"
+    },
+    {
+      "path": "assets/materials/Wood051/Wood051_1K-JPG_NormalGL.jpg",
+      "bytes": 1583401,
+      "sha256": "9078dc50c43b55831ae322460fc96b62df68c7a148400bd7755ab2788fec1708"
+    },
+    {
+      "path": "assets/materials/Wood051/Wood051_1K-JPG_Roughness.jpg",
+      "bytes": 680793,
+      "sha256": "b5736b940d721b49922cb14eebd52fd34f134b7ef99331ecf28565ce40358098"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse.glb",
+      "bytes": 7641432,
+      "sha256": "be7e84942f946b798db78eb7a0b9dcdb4f491d6a28e17dd1f1f4ca2cb130ac20"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse.json",
+      "bytes": 55889,
+      "sha256": "c6a34cfd8ff281a730bb5b7b201f50d3edd9e24d52b5e45e4a1b5e2b6eee18aa"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_aluminum_BaseColor.png",
+      "bytes": 224862,
+      "sha256": "284b4f2c5d1a04fd9a823d7f4a03dfeb8469b1528a17bcafe27441f6d72d55bc"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_aluminum_Normal.png",
+      "bytes": 335730,
+      "sha256": "18d029291a08bf465a14c22c5b40012fdacf5fb9ae9437f377994c0df61e1376"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_aluminum_Roughness.png",
+      "bytes": 79674,
+      "sha256": "a8536ebcfc60fb54d589558658f72d566a0d00b40a633f26c1a80477a2f78f54"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_concrete_dry_BaseColor.png",
+      "bytes": 124396,
+      "sha256": "3302f291fc06f82c9941b6f99c3523577807708203ec338f09348b45676811d9"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_concrete_dry_Normal.png",
+      "bytes": 145663,
+      "sha256": "cfa78a6579ed8539e29c12953776e6cba67d7579b2b3ecbc44e3aaba2a2885e9"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_concrete_dry_Roughness.png",
+      "bytes": 80055,
+      "sha256": "f5e3a3fd6c01d24930824fc2861bc2c7294dc814dabec1cea700b546bbc619b2"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_concrete_wet_BaseColor.png",
+      "bytes": 92627,
+      "sha256": "8124cb27560dee55823450d4abfb824342a369cce3ba412996689626a8acb160"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_concrete_wet_Normal.png",
+      "bytes": 140607,
+      "sha256": "81fd82a72cafb9e7308feaa807699b244846304481807e1d8327bfa05f5ddb80"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_concrete_wet_Roughness.png",
+      "bytes": 77289,
+      "sha256": "4713ced2881cc61ff3556ca7a8d9e0189f41ff08723bc5646b28787fd700a514"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_damp_BaseColor.png",
+      "bytes": 147818,
+      "sha256": "32527f2752083ca17734fd19b0da2583b788f229d46508f95b23b126cf4dd756"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_damp_Normal.png",
+      "bytes": 36614,
+      "sha256": "6f171ad48e4888f3a8ff05c9b440e5eb0353ed90a08f456d9da212d848d81073"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_damp_Roughness.png",
+      "bytes": 77454,
+      "sha256": "2ead520284e647f30f3bd79b85a73a059859888f6d081505e51c0d6e126ac27c"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_drywall_BaseColor.png",
+      "bytes": 145579,
+      "sha256": "e69214cf6511d448d066c311f746a3785d4f304e1cc408f03d98c5b1c0feea5f"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_drywall_Normal.png",
+      "bytes": 142992,
+      "sha256": "d6801b0b65e75925eb2e9b3f3c88bdd956e20fffa4d5329c0cfa1a51b85eee00"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_drywall_Roughness.png",
+      "bytes": 77562,
+      "sha256": "0619ad5288028275f582e1e6a7a6351157fa1276dd2db6a6322344f09de8f1ca"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_galvanized_BaseColor.png",
+      "bytes": 241968,
+      "sha256": "9dff90a179808c73be8bc58dafb333526d1d4539c3e83396499a9cca096ec60b"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_galvanized_Normal.png",
+      "bytes": 335426,
+      "sha256": "d943890eb4dbcf9716b685fdec23b08451bfca2ac329b77304da5122d89e21d4"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_galvanized_Roughness.png",
+      "bytes": 77489,
+      "sha256": "fd114fc29a13b59a8f76189acfa6f9eb29a98098510f2aa105b23fe3863dadaa"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_leaf_BaseColor.png",
+      "bytes": 64416,
+      "sha256": "40be0fac27aebbaacfddf81e7607e91fab88dcf029541149dcbb37c9ba48f466"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_leaf_Normal.png",
+      "bytes": 143769,
+      "sha256": "a49f812db93486616c2d9edb665afe3d5c60b692e4599c4732ca1fe84927e6f0"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_leaf_Roughness.png",
+      "bytes": 79805,
+      "sha256": "472f0a4d0c65fdda7265b6c95ee082ff680fcbb7b7f20acbb0d573a45bdbd52e"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_limestone_BaseColor.png",
+      "bytes": 163573,
+      "sha256": "1297c8bf6b093f8f03c5428f0bbd4038d8c8a559fed541dfd799fb5c85b25380"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_limestone_Normal.png",
+      "bytes": 140356,
+      "sha256": "f0dc7103372a46823f24b652277bfc79df129dffb884362fcf301a9adcf46793"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_limestone_Roughness.png",
+      "bytes": 79383,
+      "sha256": "044204290ffa1cac286731cc28907d6b57466a7199c9d7c69c1eb27957471af1"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_paint_steel_BaseColor.png",
+      "bytes": 107453,
+      "sha256": "7ec14eac8fe209d7dc373e1dd2c0287f6d63df20c6e14efe1ad09b0848b16f89"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_paint_steel_Normal.png",
+      "bytes": 300831,
+      "sha256": "acf423992f80f1dd031e78a759780b9cc07392b743dba45051dc1a5bd3a1bdc2"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_paint_steel_Roughness.png",
+      "bytes": 80182,
+      "sha256": "0829f06f89b9827e60461ed9d145677226e592f432ce5667ef1a2ab10900ee81"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_paint_white_BaseColor.png",
+      "bytes": 167984,
+      "sha256": "b58324c0468676f85b2b706c6039a2d865c7ab1ead134581462225df9601ff43"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_paint_white_Normal.png",
+      "bytes": 143833,
+      "sha256": "7cfab44e440f984e43efc77352038ce8c792fb5c06971d0edafc1c7c859372d7"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_paint_white_Roughness.png",
+      "bytes": 77424,
+      "sha256": "2583c6d5d083bdecc9d265e8392eeca26aafcf36059f4de56843bf88254a2943"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_plywood_BaseColor.png",
+      "bytes": 230223,
+      "sha256": "0d533fc21d5beda71383fddc43f18655610a286025815a4418f0c54c8160e208"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_plywood_Normal.png",
+      "bytes": 164947,
+      "sha256": "6280c24b2d3d025de383f6b59c6b83046da2cbff60c5273757ec20a50ebaf120"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_plywood_Roughness.png",
+      "bytes": 79697,
+      "sha256": "1d97f1697590e17e68aafad93fda2cb5d930500f476665f4caf00f02a403f595"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_roof_metal_BaseColor.png",
+      "bytes": 163701,
+      "sha256": "fbe45919b19933a9db1a0d1559d0324d2762a97d3b501c2ce469102ef37be825"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_roof_metal_Normal.png",
+      "bytes": 336736,
+      "sha256": "9fcffd429cf8be6138638fdf8b183a8302c5f2f84ef0b82c6628fefcafbe87bf"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_roof_metal_Roughness.png",
+      "bytes": 80624,
+      "sha256": "b8454c02ff056c17e3ec5af6ac0ce6560864f97f86d94d91e6c33f273d11b9a5"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_rubber_BaseColor.png",
+      "bytes": 30417,
+      "sha256": "581782dd6c37353694f2f00dd9400c034cbb74bf405049bc66cb69721e311df1"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_rubber_Normal.png",
+      "bytes": 143353,
+      "sha256": "98777e9a285094ce59cfa54a4bcf2ae27cc6d3607778259d0f1cc7c1c0d257f1"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_rubber_Roughness.png",
+      "bytes": 78818,
+      "sha256": "1b796860381ef4291703e77469c16706d5feb3d435461b677afc1e56b846ca3c"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_wood_aged_BaseColor.png",
+      "bytes": 198541,
+      "sha256": "a2b56ca97b9f187816fe92599bb357cbeba806b8c2e1498df382a8d018950606"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_wood_aged_Normal.png",
+      "bytes": 165854,
+      "sha256": "c79461ad8025a45ff279aa2c77defd3b74dca45ace5629f02c8af30ed39593ee"
+    },
+    {
+      "path": "assets/packs/GR05_01_UtilityHouse_GR05_wood_aged_Roughness.png",
+      "bytes": 79547,
+      "sha256": "583f5cdfc499192983df597927a388ddc8cf4c0b8e3d14f144e5a33fa736d689"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore.glb",
+      "bytes": 8571032,
+      "sha256": "52e26ad3121fddb96cbd3c1c64bf0663447ac183f0289720c7d4c27a032a7876"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore.json",
+      "bytes": 73059,
+      "sha256": "e4d9ca951f3111b7aceaad3b82e4bf3aba43dacd7712ada1675c1446975e197f"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_aluminum_BaseColor.png",
+      "bytes": 224862,
+      "sha256": "284b4f2c5d1a04fd9a823d7f4a03dfeb8469b1528a17bcafe27441f6d72d55bc"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_aluminum_Normal.png",
+      "bytes": 335730,
+      "sha256": "18d029291a08bf465a14c22c5b40012fdacf5fb9ae9437f377994c0df61e1376"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_aluminum_Roughness.png",
+      "bytes": 79674,
+      "sha256": "a8536ebcfc60fb54d589558658f72d566a0d00b40a633f26c1a80477a2f78f54"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_brick_BaseColor.png",
+      "bytes": 83209,
+      "sha256": "73410b01aa776091206d05e84d3a7b71d585f748f61ee9ef7331b04bd70270dd"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_brick_Normal.png",
+      "bytes": 141960,
+      "sha256": "13b589f16cf00772ef3e240783e6f81074586fa83377c51e1b2e7f4c8ec7d404"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_brick_Roughness.png",
+      "bytes": 78191,
+      "sha256": "c211bae3077cd0c1991c2719b2d65bc9bba304266b8ce16495f3285513a9c8a9"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_concrete_dry_BaseColor.png",
+      "bytes": 124396,
+      "sha256": "3302f291fc06f82c9941b6f99c3523577807708203ec338f09348b45676811d9"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_concrete_dry_Normal.png",
+      "bytes": 145663,
+      "sha256": "cfa78a6579ed8539e29c12953776e6cba67d7579b2b3ecbc44e3aaba2a2885e9"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_concrete_dry_Roughness.png",
+      "bytes": 80055,
+      "sha256": "f5e3a3fd6c01d24930824fc2861bc2c7294dc814dabec1cea700b546bbc619b2"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_concrete_wet_BaseColor.png",
+      "bytes": 92627,
+      "sha256": "8124cb27560dee55823450d4abfb824342a369cce3ba412996689626a8acb160"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_concrete_wet_Normal.png",
+      "bytes": 140607,
+      "sha256": "81fd82a72cafb9e7308feaa807699b244846304481807e1d8327bfa05f5ddb80"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_concrete_wet_Roughness.png",
+      "bytes": 77289,
+      "sha256": "4713ced2881cc61ff3556ca7a8d9e0189f41ff08723bc5646b28787fd700a514"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_damp_BaseColor.png",
+      "bytes": 147818,
+      "sha256": "32527f2752083ca17734fd19b0da2583b788f229d46508f95b23b126cf4dd756"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_damp_Normal.png",
+      "bytes": 36614,
+      "sha256": "6f171ad48e4888f3a8ff05c9b440e5eb0353ed90a08f456d9da212d848d81073"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_damp_Roughness.png",
+      "bytes": 77454,
+      "sha256": "2ead520284e647f30f3bd79b85a73a059859888f6d081505e51c0d6e126ac27c"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_drywall_BaseColor.png",
+      "bytes": 145579,
+      "sha256": "e69214cf6511d448d066c311f746a3785d4f304e1cc408f03d98c5b1c0feea5f"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_drywall_Normal.png",
+      "bytes": 142992,
+      "sha256": "d6801b0b65e75925eb2e9b3f3c88bdd956e20fffa4d5329c0cfa1a51b85eee00"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_drywall_Roughness.png",
+      "bytes": 77562,
+      "sha256": "0619ad5288028275f582e1e6a7a6351157fa1276dd2db6a6322344f09de8f1ca"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_galvanized_BaseColor.png",
+      "bytes": 241968,
+      "sha256": "9dff90a179808c73be8bc58dafb333526d1d4539c3e83396499a9cca096ec60b"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_galvanized_Normal.png",
+      "bytes": 335426,
+      "sha256": "d943890eb4dbcf9716b685fdec23b08451bfca2ac329b77304da5122d89e21d4"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_galvanized_Roughness.png",
+      "bytes": 77489,
+      "sha256": "fd114fc29a13b59a8f76189acfa6f9eb29a98098510f2aa105b23fe3863dadaa"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_leaf_BaseColor.png",
+      "bytes": 64416,
+      "sha256": "40be0fac27aebbaacfddf81e7607e91fab88dcf029541149dcbb37c9ba48f466"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_leaf_Normal.png",
+      "bytes": 143769,
+      "sha256": "a49f812db93486616c2d9edb665afe3d5c60b692e4599c4732ca1fe84927e6f0"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_leaf_Roughness.png",
+      "bytes": 79805,
+      "sha256": "472f0a4d0c65fdda7265b6c95ee082ff680fcbb7b7f20acbb0d573a45bdbd52e"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_paint_steel_BaseColor.png",
+      "bytes": 107453,
+      "sha256": "7ec14eac8fe209d7dc373e1dd2c0287f6d63df20c6e14efe1ad09b0848b16f89"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_paint_steel_Normal.png",
+      "bytes": 300831,
+      "sha256": "acf423992f80f1dd031e78a759780b9cc07392b743dba45051dc1a5bd3a1bdc2"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_paint_steel_Roughness.png",
+      "bytes": 80182,
+      "sha256": "0829f06f89b9827e60461ed9d145677226e592f432ce5667ef1a2ab10900ee81"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_paint_white_BaseColor.png",
+      "bytes": 167984,
+      "sha256": "b58324c0468676f85b2b706c6039a2d865c7ab1ead134581462225df9601ff43"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_paint_white_Normal.png",
+      "bytes": 143833,
+      "sha256": "7cfab44e440f984e43efc77352038ce8c792fb5c06971d0edafc1c7c859372d7"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_paint_white_Roughness.png",
+      "bytes": 77424,
+      "sha256": "2583c6d5d083bdecc9d265e8392eeca26aafcf36059f4de56843bf88254a2943"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_plywood_BaseColor.png",
+      "bytes": 230223,
+      "sha256": "0d533fc21d5beda71383fddc43f18655610a286025815a4418f0c54c8160e208"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_plywood_Normal.png",
+      "bytes": 164947,
+      "sha256": "6280c24b2d3d025de383f6b59c6b83046da2cbff60c5273757ec20a50ebaf120"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_plywood_Roughness.png",
+      "bytes": 79697,
+      "sha256": "1d97f1697590e17e68aafad93fda2cb5d930500f476665f4caf00f02a403f595"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_pvc_BaseColor.png",
+      "bytes": 149765,
+      "sha256": "315b6436f4b8fc2691a6028c8d1b76b6938d3a7a5e148e8385af787c756e5289"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_pvc_Normal.png",
+      "bytes": 300901,
+      "sha256": "5c6b061f87aab878504129a25dbcdae0334490456befac9bd1852de1e4db2334"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_pvc_Roughness.png",
+      "bytes": 79233,
+      "sha256": "2701c0fb49086e4c6cbdad3275afaf50985b75de5b1b171ddd2e7fdd10b2ac26"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_roof_metal_BaseColor.png",
+      "bytes": 163701,
+      "sha256": "fbe45919b19933a9db1a0d1559d0324d2762a97d3b501c2ce469102ef37be825"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_roof_metal_Normal.png",
+      "bytes": 336736,
+      "sha256": "9fcffd429cf8be6138638fdf8b183a8302c5f2f84ef0b82c6628fefcafbe87bf"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_roof_metal_Roughness.png",
+      "bytes": 80624,
+      "sha256": "b8454c02ff056c17e3ec5af6ac0ce6560864f97f86d94d91e6c33f273d11b9a5"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_rubber_BaseColor.png",
+      "bytes": 30417,
+      "sha256": "581782dd6c37353694f2f00dd9400c034cbb74bf405049bc66cb69721e311df1"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_rubber_Normal.png",
+      "bytes": 143353,
+      "sha256": "98777e9a285094ce59cfa54a4bcf2ae27cc6d3607778259d0f1cc7c1c0d257f1"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_rubber_Roughness.png",
+      "bytes": 78818,
+      "sha256": "1b796860381ef4291703e77469c16706d5feb3d435461b677afc1e56b846ca3c"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_wood_aged_BaseColor.png",
+      "bytes": 198541,
+      "sha256": "a2b56ca97b9f187816fe92599bb357cbeba806b8c2e1498df382a8d018950606"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_wood_aged_Normal.png",
+      "bytes": 165854,
+      "sha256": "c79461ad8025a45ff279aa2c77defd3b74dca45ace5629f02c8af30ed39593ee"
+    },
+    {
+      "path": "assets/packs/GR05_02_RoadsideStore_GR05_wood_aged_Roughness.png",
+      "bytes": 79547,
+      "sha256": "583f5cdfc499192983df597927a388ddc8cf4c0b8e3d14f144e5a33fa736d689"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse.glb",
+      "bytes": 11505440,
+      "sha256": "0e1cd80ac5df9fddace7965d3ef0412d2144a46103b4cee4f4f9e0faa04e8510"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse.json",
+      "bytes": 155265,
+      "sha256": "2698f0f38fee43983ccb35b5627c1c0d4cd7f77a4b84f60ad0b883c4dee86d8f"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_aluminum_BaseColor.png",
+      "bytes": 224862,
+      "sha256": "284b4f2c5d1a04fd9a823d7f4a03dfeb8469b1528a17bcafe27441f6d72d55bc"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_aluminum_Normal.png",
+      "bytes": 335730,
+      "sha256": "18d029291a08bf465a14c22c5b40012fdacf5fb9ae9437f377994c0df61e1376"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_aluminum_Roughness.png",
+      "bytes": 79674,
+      "sha256": "a8536ebcfc60fb54d589558658f72d566a0d00b40a633f26c1a80477a2f78f54"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_ceramic_BaseColor.png",
+      "bytes": 143110,
+      "sha256": "1f62c9b825c04aa6a3bfceb28731f74a54b5f4f7a7c43a2dc10cd93874516793"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_ceramic_Normal.png",
+      "bytes": 141628,
+      "sha256": "6c6d5fbd67d4617dd8bc336842762ae1243c49ee1c88cf1d041be56129fc41f3"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_ceramic_Roughness.png",
+      "bytes": 78792,
+      "sha256": "645a354215830488f0be5ba921d67f86c257418138c768b9ef45de1b4af0459d"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_concrete_dry_BaseColor.png",
+      "bytes": 124396,
+      "sha256": "3302f291fc06f82c9941b6f99c3523577807708203ec338f09348b45676811d9"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_concrete_dry_Normal.png",
+      "bytes": 145663,
+      "sha256": "cfa78a6579ed8539e29c12953776e6cba67d7579b2b3ecbc44e3aaba2a2885e9"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_concrete_dry_Roughness.png",
+      "bytes": 80055,
+      "sha256": "f5e3a3fd6c01d24930824fc2861bc2c7294dc814dabec1cea700b546bbc619b2"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_concrete_wet_BaseColor.png",
+      "bytes": 92627,
+      "sha256": "8124cb27560dee55823450d4abfb824342a369cce3ba412996689626a8acb160"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_concrete_wet_Normal.png",
+      "bytes": 140607,
+      "sha256": "81fd82a72cafb9e7308feaa807699b244846304481807e1d8327bfa05f5ddb80"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_concrete_wet_Roughness.png",
+      "bytes": 77289,
+      "sha256": "4713ced2881cc61ff3556ca7a8d9e0189f41ff08723bc5646b28787fd700a514"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_damp_BaseColor.png",
+      "bytes": 147818,
+      "sha256": "32527f2752083ca17734fd19b0da2583b788f229d46508f95b23b126cf4dd756"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_damp_Normal.png",
+      "bytes": 36614,
+      "sha256": "6f171ad48e4888f3a8ff05c9b440e5eb0353ed90a08f456d9da212d848d81073"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_damp_Roughness.png",
+      "bytes": 77454,
+      "sha256": "2ead520284e647f30f3bd79b85a73a059859888f6d081505e51c0d6e126ac27c"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_drywall_BaseColor.png",
+      "bytes": 145579,
+      "sha256": "e69214cf6511d448d066c311f746a3785d4f304e1cc408f03d98c5b1c0feea5f"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_drywall_Normal.png",
+      "bytes": 142992,
+      "sha256": "d6801b0b65e75925eb2e9b3f3c88bdd956e20fffa4d5329c0cfa1a51b85eee00"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_drywall_Roughness.png",
+      "bytes": 77562,
+      "sha256": "0619ad5288028275f582e1e6a7a6351157fa1276dd2db6a6322344f09de8f1ca"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_fabric_BaseColor.png",
+      "bytes": 144855,
+      "sha256": "7b2f04d029f1ab2717f4f95c07dec59f96c474348f57f8bb844c1415e5caa781"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_fabric_Normal.png",
+      "bytes": 336738,
+      "sha256": "dfff219a145468236188bd942b23219338534e8245bc1dbd38bd7a682c75c7f9"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_fabric_Roughness.png",
+      "bytes": 70938,
+      "sha256": "97aba7904ee4c78b65dccf2d0cd132549c8d2fde85a5af0b0f3eaa5d856d41c7"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_galvanized_BaseColor.png",
+      "bytes": 241968,
+      "sha256": "9dff90a179808c73be8bc58dafb333526d1d4539c3e83396499a9cca096ec60b"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_galvanized_Normal.png",
+      "bytes": 335426,
+      "sha256": "d943890eb4dbcf9716b685fdec23b08451bfca2ac329b77304da5122d89e21d4"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_galvanized_Roughness.png",
+      "bytes": 77489,
+      "sha256": "fd114fc29a13b59a8f76189acfa6f9eb29a98098510f2aa105b23fe3863dadaa"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_leaf_BaseColor.png",
+      "bytes": 64416,
+      "sha256": "40be0fac27aebbaacfddf81e7607e91fab88dcf029541149dcbb37c9ba48f466"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_leaf_Normal.png",
+      "bytes": 143769,
+      "sha256": "a49f812db93486616c2d9edb665afe3d5c60b692e4599c4732ca1fe84927e6f0"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_leaf_Roughness.png",
+      "bytes": 79805,
+      "sha256": "472f0a4d0c65fdda7265b6c95ee082ff680fcbb7b7f20acbb0d573a45bdbd52e"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_limestone_BaseColor.png",
+      "bytes": 163573,
+      "sha256": "1297c8bf6b093f8f03c5428f0bbd4038d8c8a559fed541dfd799fb5c85b25380"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_limestone_Normal.png",
+      "bytes": 140356,
+      "sha256": "f0dc7103372a46823f24b652277bfc79df129dffb884362fcf301a9adcf46793"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_limestone_Roughness.png",
+      "bytes": 79383,
+      "sha256": "044204290ffa1cac286731cc28907d6b57466a7199c9d7c69c1eb27957471af1"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_paint_steel_BaseColor.png",
+      "bytes": 107453,
+      "sha256": "7ec14eac8fe209d7dc373e1dd2c0287f6d63df20c6e14efe1ad09b0848b16f89"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_paint_steel_Normal.png",
+      "bytes": 300831,
+      "sha256": "acf423992f80f1dd031e78a759780b9cc07392b743dba45051dc1a5bd3a1bdc2"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_paint_steel_Roughness.png",
+      "bytes": 80182,
+      "sha256": "0829f06f89b9827e60461ed9d145677226e592f432ce5667ef1a2ab10900ee81"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_plywood_BaseColor.png",
+      "bytes": 230223,
+      "sha256": "0d533fc21d5beda71383fddc43f18655610a286025815a4418f0c54c8160e208"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_plywood_Normal.png",
+      "bytes": 164947,
+      "sha256": "6280c24b2d3d025de383f6b59c6b83046da2cbff60c5273757ec20a50ebaf120"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_plywood_Roughness.png",
+      "bytes": 79697,
+      "sha256": "1d97f1697590e17e68aafad93fda2cb5d930500f476665f4caf00f02a403f595"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_roof_metal_BaseColor.png",
+      "bytes": 163701,
+      "sha256": "fbe45919b19933a9db1a0d1559d0324d2762a97d3b501c2ce469102ef37be825"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_roof_metal_Normal.png",
+      "bytes": 336736,
+      "sha256": "9fcffd429cf8be6138638fdf8b183a8302c5f2f84ef0b82c6628fefcafbe87bf"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_roof_metal_Roughness.png",
+      "bytes": 80624,
+      "sha256": "b8454c02ff056c17e3ec5af6ac0ce6560864f97f86d94d91e6c33f273d11b9a5"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_rubber_BaseColor.png",
+      "bytes": 30417,
+      "sha256": "581782dd6c37353694f2f00dd9400c034cbb74bf405049bc66cb69721e311df1"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_rubber_Normal.png",
+      "bytes": 143353,
+      "sha256": "98777e9a285094ce59cfa54a4bcf2ae27cc6d3607778259d0f1cc7c1c0d257f1"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_rubber_Roughness.png",
+      "bytes": 78818,
+      "sha256": "1b796860381ef4291703e77469c16706d5feb3d435461b677afc1e56b846ca3c"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_tile_BaseColor.png",
+      "bytes": 126754,
+      "sha256": "0ec8733b4e4663f7c39bf9b41d34d9951f7a08477633a09470646cca493118c5"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_tile_Normal.png",
+      "bytes": 144033,
+      "sha256": "19cd625815a08b91d2f79534e8e9efa7cd9415b99df082514a4343c9a8c73114"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_tile_Roughness.png",
+      "bytes": 81647,
+      "sha256": "4420fbfbb4883ecec4caa062c01f0f70d484a75c740c03e8188586a37941e960"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_vinyl_BaseColor.png",
+      "bytes": 109354,
+      "sha256": "cb1d048251b860844d026bd104270905c015f948c56714c80998be1ac59f76a3"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_vinyl_Normal.png",
+      "bytes": 142637,
+      "sha256": "1339623ba3cd19dd9d3ab54e7259a31ba14b8ab2d5e4761a38efef60b9b113dc"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_vinyl_Roughness.png",
+      "bytes": 79967,
+      "sha256": "ad6abbf0c4a8517655044a08a1bad525762a9e140e1f270d2082b73ef65c57bc"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_wood_aged_BaseColor.png",
+      "bytes": 198541,
+      "sha256": "a2b56ca97b9f187816fe92599bb357cbeba806b8c2e1498df382a8d018950606"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_wood_aged_Normal.png",
+      "bytes": 165854,
+      "sha256": "c79461ad8025a45ff279aa2c77defd3b74dca45ace5629f02c8af30ed39593ee"
+    },
+    {
+      "path": "assets/packs/GR05_03_TexasHouse_GR05_wood_aged_Roughness.png",
+      "bytes": 79547,
+      "sha256": "583f5cdfc499192983df597927a388ddc8cf4c0b8e3d14f144e5a33fa736d689"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance.glb",
+      "bytes": 7723696,
+      "sha256": "c0383e8b855a72e121ff9a79b6aaa1b91bd6aca854e758174d6e25037c57a047"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance.json",
+      "bytes": 124204,
+      "sha256": "171a83172b4a391dbeb41426c45639b5449000a654be62bc6225b57505186316"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_aluminum_BaseColor.png",
+      "bytes": 224862,
+      "sha256": "284b4f2c5d1a04fd9a823d7f4a03dfeb8469b1528a17bcafe27441f6d72d55bc"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_aluminum_Normal.png",
+      "bytes": 335730,
+      "sha256": "18d029291a08bf465a14c22c5b40012fdacf5fb9ae9437f377994c0df61e1376"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_aluminum_Roughness.png",
+      "bytes": 79674,
+      "sha256": "a8536ebcfc60fb54d589558658f72d566a0d00b40a633f26c1a80477a2f78f54"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_cmu_BaseColor.png",
+      "bytes": 109864,
+      "sha256": "2c349f83d126b763ad0c36f0de4cc636bf56ac77133158e01c9708fcaa72305b"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_cmu_Normal.png",
+      "bytes": 138778,
+      "sha256": "34261dcd8791faa4f8087bd5a0c83a1b29e7bb878eec64a6151a7d2e24c20fed"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_cmu_Roughness.png",
+      "bytes": 76943,
+      "sha256": "200a8bdfda73ced7af6342a23a2139e8c4f237765050c4b406baeff46afb88db"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_concrete_dry_BaseColor.png",
+      "bytes": 124396,
+      "sha256": "3302f291fc06f82c9941b6f99c3523577807708203ec338f09348b45676811d9"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_concrete_dry_Normal.png",
+      "bytes": 145663,
+      "sha256": "cfa78a6579ed8539e29c12953776e6cba67d7579b2b3ecbc44e3aaba2a2885e9"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_concrete_dry_Roughness.png",
+      "bytes": 80055,
+      "sha256": "f5e3a3fd6c01d24930824fc2861bc2c7294dc814dabec1cea700b546bbc619b2"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_concrete_wet_BaseColor.png",
+      "bytes": 92627,
+      "sha256": "8124cb27560dee55823450d4abfb824342a369cce3ba412996689626a8acb160"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_concrete_wet_Normal.png",
+      "bytes": 140607,
+      "sha256": "81fd82a72cafb9e7308feaa807699b244846304481807e1d8327bfa05f5ddb80"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_concrete_wet_Roughness.png",
+      "bytes": 77289,
+      "sha256": "4713ced2881cc61ff3556ca7a8d9e0189f41ff08723bc5646b28787fd700a514"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_damp_BaseColor.png",
+      "bytes": 147818,
+      "sha256": "32527f2752083ca17734fd19b0da2583b788f229d46508f95b23b126cf4dd756"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_damp_Normal.png",
+      "bytes": 36614,
+      "sha256": "6f171ad48e4888f3a8ff05c9b440e5eb0353ed90a08f456d9da212d848d81073"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_damp_Roughness.png",
+      "bytes": 77454,
+      "sha256": "2ead520284e647f30f3bd79b85a73a059859888f6d081505e51c0d6e126ac27c"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_drywall_BaseColor.png",
+      "bytes": 145579,
+      "sha256": "e69214cf6511d448d066c311f746a3785d4f304e1cc408f03d98c5b1c0feea5f"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_drywall_Normal.png",
+      "bytes": 142992,
+      "sha256": "d6801b0b65e75925eb2e9b3f3c88bdd956e20fffa4d5329c0cfa1a51b85eee00"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_drywall_Roughness.png",
+      "bytes": 77562,
+      "sha256": "0619ad5288028275f582e1e6a7a6351157fa1276dd2db6a6322344f09de8f1ca"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_galvanized_BaseColor.png",
+      "bytes": 241968,
+      "sha256": "9dff90a179808c73be8bc58dafb333526d1d4539c3e83396499a9cca096ec60b"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_galvanized_Normal.png",
+      "bytes": 335426,
+      "sha256": "d943890eb4dbcf9716b685fdec23b08451bfca2ac329b77304da5122d89e21d4"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_galvanized_Roughness.png",
+      "bytes": 77489,
+      "sha256": "fd114fc29a13b59a8f76189acfa6f9eb29a98098510f2aa105b23fe3863dadaa"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_paint_steel_BaseColor.png",
+      "bytes": 107453,
+      "sha256": "7ec14eac8fe209d7dc373e1dd2c0287f6d63df20c6e14efe1ad09b0848b16f89"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_paint_steel_Normal.png",
+      "bytes": 300831,
+      "sha256": "acf423992f80f1dd031e78a759780b9cc07392b743dba45051dc1a5bd3a1bdc2"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_paint_steel_Roughness.png",
+      "bytes": 80182,
+      "sha256": "0829f06f89b9827e60461ed9d145677226e592f432ce5667ef1a2ab10900ee81"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_paint_white_BaseColor.png",
+      "bytes": 167984,
+      "sha256": "b58324c0468676f85b2b706c6039a2d865c7ab1ead134581462225df9601ff43"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_paint_white_Normal.png",
+      "bytes": 143833,
+      "sha256": "7cfab44e440f984e43efc77352038ce8c792fb5c06971d0edafc1c7c859372d7"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_paint_white_Roughness.png",
+      "bytes": 77424,
+      "sha256": "2583c6d5d083bdecc9d265e8392eeca26aafcf36059f4de56843bf88254a2943"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_plywood_BaseColor.png",
+      "bytes": 230223,
+      "sha256": "0d533fc21d5beda71383fddc43f18655610a286025815a4418f0c54c8160e208"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_plywood_Normal.png",
+      "bytes": 164947,
+      "sha256": "6280c24b2d3d025de383f6b59c6b83046da2cbff60c5273757ec20a50ebaf120"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_plywood_Roughness.png",
+      "bytes": 79697,
+      "sha256": "1d97f1697590e17e68aafad93fda2cb5d930500f476665f4caf00f02a403f595"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_roof_metal_BaseColor.png",
+      "bytes": 163701,
+      "sha256": "fbe45919b19933a9db1a0d1559d0324d2762a97d3b501c2ce469102ef37be825"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_roof_metal_Normal.png",
+      "bytes": 336736,
+      "sha256": "9fcffd429cf8be6138638fdf8b183a8302c5f2f84ef0b82c6628fefcafbe87bf"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_roof_metal_Roughness.png",
+      "bytes": 80624,
+      "sha256": "b8454c02ff056c17e3ec5af6ac0ce6560864f97f86d94d91e6c33f273d11b9a5"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_rubber_BaseColor.png",
+      "bytes": 30417,
+      "sha256": "581782dd6c37353694f2f00dd9400c034cbb74bf405049bc66cb69721e311df1"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_rubber_Normal.png",
+      "bytes": 143353,
+      "sha256": "98777e9a285094ce59cfa54a4bcf2ae27cc6d3607778259d0f1cc7c1c0d257f1"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_rubber_Roughness.png",
+      "bytes": 78818,
+      "sha256": "1b796860381ef4291703e77469c16706d5feb3d435461b677afc1e56b846ca3c"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_wood_aged_BaseColor.png",
+      "bytes": 198541,
+      "sha256": "a2b56ca97b9f187816fe92599bb357cbeba806b8c2e1498df382a8d018950606"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_wood_aged_Normal.png",
+      "bytes": 165854,
+      "sha256": "c79461ad8025a45ff279aa2c77defd3b74dca45ace5629f02c8af30ed39593ee"
+    },
+    {
+      "path": "assets/packs/GR05_04_Maintenance_GR05_wood_aged_Roughness.png",
+      "bytes": 79547,
+      "sha256": "583f5cdfc499192983df597927a388ddc8cf4c0b8e3d14f144e5a33fa736d689"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump.glb",
+      "bytes": 6736092,
+      "sha256": "276dbe65985208fcc53da50a9b391e3792c1da4bbc7372d3db6894205d6eb927"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump.json",
+      "bytes": 47256,
+      "sha256": "243636d01bb85a298c62fd8946c322c5604a1039a4660aa057d57933309efab9"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_aluminum_BaseColor.png",
+      "bytes": 224862,
+      "sha256": "284b4f2c5d1a04fd9a823d7f4a03dfeb8469b1528a17bcafe27441f6d72d55bc"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_aluminum_Normal.png",
+      "bytes": 335730,
+      "sha256": "18d029291a08bf465a14c22c5b40012fdacf5fb9ae9437f377994c0df61e1376"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_aluminum_Roughness.png",
+      "bytes": 79674,
+      "sha256": "a8536ebcfc60fb54d589558658f72d566a0d00b40a633f26c1a80477a2f78f54"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_cmu_BaseColor.png",
+      "bytes": 109864,
+      "sha256": "2c349f83d126b763ad0c36f0de4cc636bf56ac77133158e01c9708fcaa72305b"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_cmu_Normal.png",
+      "bytes": 138778,
+      "sha256": "34261dcd8791faa4f8087bd5a0c83a1b29e7bb878eec64a6151a7d2e24c20fed"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_cmu_Roughness.png",
+      "bytes": 76943,
+      "sha256": "200a8bdfda73ced7af6342a23a2139e8c4f237765050c4b406baeff46afb88db"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_concrete_dry_BaseColor.png",
+      "bytes": 124396,
+      "sha256": "3302f291fc06f82c9941b6f99c3523577807708203ec338f09348b45676811d9"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_concrete_dry_Normal.png",
+      "bytes": 145663,
+      "sha256": "cfa78a6579ed8539e29c12953776e6cba67d7579b2b3ecbc44e3aaba2a2885e9"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_concrete_dry_Roughness.png",
+      "bytes": 80055,
+      "sha256": "f5e3a3fd6c01d24930824fc2861bc2c7294dc814dabec1cea700b546bbc619b2"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_concrete_wet_BaseColor.png",
+      "bytes": 92627,
+      "sha256": "8124cb27560dee55823450d4abfb824342a369cce3ba412996689626a8acb160"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_concrete_wet_Normal.png",
+      "bytes": 140607,
+      "sha256": "81fd82a72cafb9e7308feaa807699b244846304481807e1d8327bfa05f5ddb80"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_concrete_wet_Roughness.png",
+      "bytes": 77289,
+      "sha256": "4713ced2881cc61ff3556ca7a8d9e0189f41ff08723bc5646b28787fd700a514"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_damp_BaseColor.png",
+      "bytes": 147818,
+      "sha256": "32527f2752083ca17734fd19b0da2583b788f229d46508f95b23b126cf4dd756"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_damp_Normal.png",
+      "bytes": 36614,
+      "sha256": "6f171ad48e4888f3a8ff05c9b440e5eb0353ed90a08f456d9da212d848d81073"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_damp_Roughness.png",
+      "bytes": 77454,
+      "sha256": "2ead520284e647f30f3bd79b85a73a059859888f6d081505e51c0d6e126ac27c"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_drywall_BaseColor.png",
+      "bytes": 145579,
+      "sha256": "e69214cf6511d448d066c311f746a3785d4f304e1cc408f03d98c5b1c0feea5f"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_drywall_Normal.png",
+      "bytes": 142992,
+      "sha256": "d6801b0b65e75925eb2e9b3f3c88bdd956e20fffa4d5329c0cfa1a51b85eee00"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_drywall_Roughness.png",
+      "bytes": 77562,
+      "sha256": "0619ad5288028275f582e1e6a7a6351157fa1276dd2db6a6322344f09de8f1ca"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_galvanized_BaseColor.png",
+      "bytes": 241968,
+      "sha256": "9dff90a179808c73be8bc58dafb333526d1d4539c3e83396499a9cca096ec60b"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_galvanized_Normal.png",
+      "bytes": 335426,
+      "sha256": "d943890eb4dbcf9716b685fdec23b08451bfca2ac329b77304da5122d89e21d4"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_galvanized_Roughness.png",
+      "bytes": 77489,
+      "sha256": "fd114fc29a13b59a8f76189acfa6f9eb29a98098510f2aa105b23fe3863dadaa"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_leaf_BaseColor.png",
+      "bytes": 64416,
+      "sha256": "40be0fac27aebbaacfddf81e7607e91fab88dcf029541149dcbb37c9ba48f466"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_leaf_Normal.png",
+      "bytes": 143769,
+      "sha256": "a49f812db93486616c2d9edb665afe3d5c60b692e4599c4732ca1fe84927e6f0"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_leaf_Roughness.png",
+      "bytes": 79805,
+      "sha256": "472f0a4d0c65fdda7265b6c95ee082ff680fcbb7b7f20acbb0d573a45bdbd52e"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_paint_steel_BaseColor.png",
+      "bytes": 107453,
+      "sha256": "7ec14eac8fe209d7dc373e1dd2c0287f6d63df20c6e14efe1ad09b0848b16f89"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_paint_steel_Normal.png",
+      "bytes": 300831,
+      "sha256": "acf423992f80f1dd031e78a759780b9cc07392b743dba45051dc1a5bd3a1bdc2"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_paint_steel_Roughness.png",
+      "bytes": 80182,
+      "sha256": "0829f06f89b9827e60461ed9d145677226e592f432ce5667ef1a2ab10900ee81"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_roof_metal_BaseColor.png",
+      "bytes": 163701,
+      "sha256": "fbe45919b19933a9db1a0d1559d0324d2762a97d3b501c2ce469102ef37be825"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_roof_metal_Normal.png",
+      "bytes": 336736,
+      "sha256": "9fcffd429cf8be6138638fdf8b183a8302c5f2f84ef0b82c6628fefcafbe87bf"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_roof_metal_Roughness.png",
+      "bytes": 80624,
+      "sha256": "b8454c02ff056c17e3ec5af6ac0ce6560864f97f86d94d91e6c33f273d11b9a5"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_rubber_BaseColor.png",
+      "bytes": 30417,
+      "sha256": "581782dd6c37353694f2f00dd9400c034cbb74bf405049bc66cb69721e311df1"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_rubber_Normal.png",
+      "bytes": 143353,
+      "sha256": "98777e9a285094ce59cfa54a4bcf2ae27cc6d3607778259d0f1cc7c1c0d257f1"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_rubber_Roughness.png",
+      "bytes": 78818,
+      "sha256": "1b796860381ef4291703e77469c16706d5feb3d435461b677afc1e56b846ca3c"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_wood_aged_BaseColor.png",
+      "bytes": 198541,
+      "sha256": "a2b56ca97b9f187816fe92599bb357cbeba806b8c2e1498df382a8d018950606"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_wood_aged_Normal.png",
+      "bytes": 165854,
+      "sha256": "c79461ad8025a45ff279aa2c77defd3b74dca45ace5629f02c8af30ed39593ee"
+    },
+    {
+      "path": "assets/packs/GR05_05_CreekPump_GR05_wood_aged_Roughness.png",
+      "bytes": 79547,
+      "sha256": "583f5cdfc499192983df597927a388ddc8cf4c0b8e3d14f144e5a33fa736d689"
+    },
+    {
+      "path": "assets/packs/GRIDRUNNER-Architecture-Pack-05_manifest.json",
+      "bytes": 10877,
+      "sha256": "b598a04b2a183c7a1b2e173b90e091df317e14dd1ebbc307ce7796f38181ce77"
+    },
+    {
+      "path": "assets/packs/GRIDRUNNER-Electrical-Pack-01_manifest.json",
+      "bytes": 3500,
+      "sha256": "8a1e029339084135357d7b79b741391f2388951c474a3d0266e971e71c0a0467"
+    },
+    {
+      "path": "assets/packs/GRIDRUNNER-Field-Camp-Pack-02(1)_manifest.json",
+      "bytes": 3566,
+      "sha256": "62ccdc88e490901b96b14a0628821fa98364d9ad97e9f3bc7ab4dcd2b73514dc"
+    },
+    {
+      "path": "assets/packs/GRIDRUNNER-Routes-Pack-03(1)_manifest.json",
+      "bytes": 3443,
+      "sha256": "fc7547684c5f8212ba468684947faef3441e2e3b153796b91ad243bca149f75a"
+    },
+    {
+      "path": "assets/packs/GRIDRUNNER-Salvage-Pack-04(1)_manifest.json",
+      "bytes": 3515,
+      "sha256": "6fab59ba3cc41eea87fa4a77821277d7170b4f3f14b106376e8ef5fa13679aaa"
+    },
+    {
+      "path": "assets/packs/GR_AccessHatch_03.glb",
+      "bytes": 1235852,
+      "sha256": "79969afabdaf077fe2ccd9b962d30de98622e44aee895c2d97b39c66e65f0f03"
+    },
+    {
+      "path": "assets/packs/GR_AccessHatch_03.json",
+      "bytes": 139,
+      "sha256": "03c0af7a54c95e19d743cb26ee1cf9b940a01131f285f4750217b2754118156c"
+    },
+    {
+      "path": "assets/packs/GR_AccessHatch_03_GR_AccessHatch_03_color.png",
+      "bytes": 292907,
+      "sha256": "6f1185cead371169f119d566b7b62a2b1eb6033e74eaed471ad0e423954dc412"
+    },
+    {
+      "path": "assets/packs/GR_AccessHatch_03_GR_AccessHatch_03_orm.png",
+      "bytes": 16252,
+      "sha256": "eec11fa38983f5ff305869f31eaaaa68399f8fd336f1af81c336ed59ff3fb093"
+    },
+    {
+      "path": "assets/packs/GR_Alternator_04.glb",
+      "bytes": 578300,
+      "sha256": "cc412b723d3d8d1f100c9793bb46e4c1be95866e6265d37b7b00d8936c7dc5f7"
+    },
+    {
+      "path": "assets/packs/GR_Alternator_04.json",
+      "bytes": 142,
+      "sha256": "78178ac4d1f172b5fa4df2be71d7dab52c067302174585fbf11e477a787a21ac"
+    },
+    {
+      "path": "assets/packs/GR_Alternator_04_GR_Alternator_04_color.png",
+      "bytes": 281867,
+      "sha256": "bb0ba59e3c56054888e2babac73c9679f8e63b473e30efe2ef1a8d68e353d8ad"
+    },
+    {
+      "path": "assets/packs/GR_Alternator_04_GR_Alternator_04_orm.png",
+      "bytes": 29507,
+      "sha256": "5586cef90408c21682801446b01ce30b2e8bb5872537683f780985fdbeae298e"
+    },
+    {
+      "path": "assets/packs/GR_AluminumHeatsink_04.glb",
+      "bytes": 639112,
+      "sha256": "25eebd81dd898482ed5a606962eb4503711eed2019597efb9cfcfbca7a5f2ed6"
+    },
+    {
+      "path": "assets/packs/GR_AluminumHeatsink_04.json",
+      "bytes": 146,
+      "sha256": "49af532df0e2f5394890ac6a40d31cf735e4c4cd3200a828861ca09a840fe878"
+    },
+    {
+      "path": "assets/packs/GR_AluminumHeatsink_04_GR_AluminumHeatsink_04_color.png",
+      "bytes": 327691,
+      "sha256": "f069ff14f6f00ac75bf32b89b5edb61113a5fa03e6124162941588a8dc22c43d"
+    },
+    {
+      "path": "assets/packs/GR_AluminumHeatsink_04_GR_AluminumHeatsink_04_orm.png",
+      "bytes": 11449,
+      "sha256": "bf38a7c7a8359176c92dacb7d5b77aeddb372596856b0770d00e39519274053d"
+    },
+    {
+      "path": "assets/packs/GR_AsphaltSection_03.glb",
+      "bytes": 215788,
+      "sha256": "b110341825edff01db60a74c815b71b6d35f084b3a61d648beb26e5dfe739674"
+    },
+    {
+      "path": "assets/packs/GR_AsphaltSection_03.json",
+      "bytes": 143,
+      "sha256": "0eecaf6c35aaf0248c299dc8406ec7878bb87a0905aa1e43feaf3d94b60e8e4a"
+    },
+    {
+      "path": "assets/packs/GR_AsphaltSection_03_GR_AsphaltSection_03_color.png",
+      "bytes": 144112,
+      "sha256": "983553bb3465562a7399f1d601ec03ba9c61af847a221d9ae56e42bfe0322c15"
+    },
+    {
+      "path": "assets/packs/GR_AsphaltSection_03_GR_AsphaltSection_03_orm.png",
+      "bytes": 62070,
+      "sha256": "50964bbe4b428b91f1d3a632474ae45614db72c2d293f7af5baef2461b690e8e"
+    },
+    {
+      "path": "assets/packs/GR_BatteryCase_02.glb",
+      "bytes": 594588,
+      "sha256": "a36912d1ec5f33afdb71da83c5d92e76e32695fde715a3e2af08c865329520a1"
+    },
+    {
+      "path": "assets/packs/GR_BatteryCase_02.json",
+      "bytes": 147,
+      "sha256": "ce436650c505c55cedc027708465536d534aae250ede0d93405601b56f46823f"
+    },
+    {
+      "path": "assets/packs/GR_BatteryCase_02_GR_BatteryCase_02_color.png",
+      "bytes": 288618,
+      "sha256": "16fa34ea6a3b08f98304caf7469a2c8bb68777627ecdb7a26cb4eede614a46f5"
+    },
+    {
+      "path": "assets/packs/GR_BatteryCase_02_GR_BatteryCase_02_orm.png",
+      "bytes": 21000,
+      "sha256": "9a682b745d68674a12b8504eebc083a50e8679e62b33e3bc381d401742ec7770"
+    },
+    {
+      "path": "assets/packs/GR_BicycleWheel_04.glb",
+      "bytes": 692084,
+      "sha256": "e66321e147e6dfccac064ce538d6ece765714b091dccbdb8daa3844748ea39fc"
+    },
+    {
+      "path": "assets/packs/GR_BicycleWheel_04.json",
+      "bytes": 140,
+      "sha256": "f5f265f3697a03c57df44a2af5c903a22b3c342854b8b0152aeae8165174b90d"
+    },
+    {
+      "path": "assets/packs/GR_BicycleWheel_04_GR_BicycleWheel_04_color.png",
+      "bytes": 198333,
+      "sha256": "6369daea57e6020cc77be5696740b405405426f56561161c3db24864be927b67"
+    },
+    {
+      "path": "assets/packs/GR_BicycleWheel_04_GR_BicycleWheel_04_orm.png",
+      "bytes": 21808,
+      "sha256": "4fc91c699cca7ce76d1c95d0a35159bc62cf18988c2795c875adf5393854be6e"
+    },
+    {
+      "path": "assets/packs/GR_BikeRepairStand_02.glb",
+      "bytes": 506560,
+      "sha256": "4fd80e716c39f1c3731c442f52fd447dfb720ea51310205d32d6b30beb116575"
+    },
+    {
+      "path": "assets/packs/GR_BikeRepairStand_02.json",
+      "bytes": 148,
+      "sha256": "7097e2821610922487f3e2e2bdcc594a61ee09ad3610a1502a77e2948ba44b0e"
+    },
+    {
+      "path": "assets/packs/GR_BikeRepairStand_02_GR_BikeRepairStand_02_color.png",
+      "bytes": 259657,
+      "sha256": "4b4ad374d1d9d010dd37f723afeab264ba506466d7fea63fa858061c762efe6a"
+    },
+    {
+      "path": "assets/packs/GR_BikeRepairStand_02_GR_BikeRepairStand_02_orm.png",
+      "bytes": 18810,
+      "sha256": "8fc322b19fd747736c45a5af458394968e9b282eee113609045a0a87a15cf8e8"
+    },
+    {
+      "path": "assets/packs/GR_Boardwalk_03.glb",
+      "bytes": 1592952,
+      "sha256": "f9e5da0f135fcd00fe45fe01d933fe1b41070b12f6bb14c8a04398e893ae5568"
+    },
+    {
+      "path": "assets/packs/GR_Boardwalk_03.json",
+      "bytes": 137,
+      "sha256": "56667e2b00ed427dc73f41a675193c36bcce5b4dbe909d5db9a7d1cf96d9b13e"
+    },
+    {
+      "path": "assets/packs/GR_Boardwalk_03_GR_Boardwalk_03_color.png",
+      "bytes": 256773,
+      "sha256": "89571ed85d2493ba5dabe0fd6138064f638b44f3bb460ced384020b800ed2eef"
+    },
+    {
+      "path": "assets/packs/GR_Boardwalk_03_GR_Boardwalk_03_orm.png",
+      "bytes": 22107,
+      "sha256": "4d8eaad26113ba4a3a61a72f2aaf846b6280eb9a469722ab9f5e22230114de85"
+    },
+    {
+      "path": "assets/packs/GR_BollardSet_01.glb",
+      "bytes": 962248,
+      "sha256": "b3a5935a8bf0e498940f19a68a96611009ac3f0ebf5fcb1620bf3dd603664921"
+    },
+    {
+      "path": "assets/packs/GR_BollardSet_01.json",
+      "bytes": 139,
+      "sha256": "056570789933561a4bf61f447fd51b118b65f73fe68d6e8a542b18757ef65f75"
+    },
+    {
+      "path": "assets/packs/GR_BollardSet_01_GR_BollardSet_01_color.png",
+      "bytes": 346632,
+      "sha256": "73743fc02845b245b9910f57117daa732ed21c0f9c0576f077076c08b31e1dc8"
+    },
+    {
+      "path": "assets/packs/GR_BollardSet_01_GR_BollardSet_01_orm.png",
+      "bytes": 34647,
+      "sha256": "275287fb0c671d9127f7055d9767b63d0b580ab81647b0fd852b8040af6fd4fe"
+    },
+    {
+      "path": "assets/packs/GR_BreakerPanel_01.glb",
+      "bytes": 920248,
+      "sha256": "b9de57f59842a9413aa49d0a6704d79d288e6bb10bca8806b4df38dcf2a45cdf"
+    },
+    {
+      "path": "assets/packs/GR_BreakerPanel_01.json",
+      "bytes": 143,
+      "sha256": "5285bca20788608a08e32b3bbff012434002bbae21db5c80d13d3cbf7b5420bc"
+    },
+    {
+      "path": "assets/packs/GR_BreakerPanel_01_GR_BreakerPanel_01_color.png",
+      "bytes": 303295,
+      "sha256": "56fde60e6b5dc79f8764d9c42d3c7b8a1729c7a5672b9245bf32e8259d356506"
+    },
+    {
+      "path": "assets/packs/GR_BreakerPanel_01_GR_BreakerPanel_01_orm.png",
+      "bytes": 29661,
+      "sha256": "26f9c36129721d27af8e1c4b0065f24f6e80478019378aae0aef5a84bbb3177f"
+    },
+    {
+      "path": "assets/packs/GR_CableSpool_01.glb",
+      "bytes": 1154012,
+      "sha256": "dd5dfdfc5b73fce1ae846a65e2808467c97c45c0cbdbb365d5875a019eba9d8b"
+    },
+    {
+      "path": "assets/packs/GR_CableSpool_01.json",
+      "bytes": 144,
+      "sha256": "e79a45f4b1a12d58594ca23674912cdabd5fb837258ba07b47384f90456308f3"
+    },
+    {
+      "path": "assets/packs/GR_CableSpool_01_GR_CableSpool_01_color.png",
+      "bytes": 252350,
+      "sha256": "7d97e8b66bce9835164f8ebb573f5a466e0c2a1036e454a4bda49eef0083399f"
+    },
+    {
+      "path": "assets/packs/GR_CableSpool_01_GR_CableSpool_01_orm.png",
+      "bytes": 70731,
+      "sha256": "c5d689dc80d31929227c6e421ded8e46084c5d9c9f3ea10cc82ed5eaaf411379"
+    },
+    {
+      "path": "assets/packs/GR_CableTray_01.glb",
+      "bytes": 498116,
+      "sha256": "a9d4e1440a2c4bc5e6aa7f7bfc22ced214b2b43ccbd52a2637e096331cb473ff"
+    },
+    {
+      "path": "assets/packs/GR_CableTray_01.json",
+      "bytes": 141,
+      "sha256": "565c3fa0733c782deaa0e47c69babc96c080dd74ef168e92308c33c19e642cca"
+    },
+    {
+      "path": "assets/packs/GR_CableTray_01_GR_CableTray_01_color.png",
+      "bytes": 255446,
+      "sha256": "c051fa9fcfae96eb0002d8d74f7e902fe725959f6379c608dc00fc2e66756b70"
+    },
+    {
+      "path": "assets/packs/GR_CableTray_01_GR_CableTray_01_orm.png",
+      "bytes": 13587,
+      "sha256": "34d21114c6d2ac58e544c7cc28b51c0c178f7f93c0ef2c00bbe2186d8b1825b1"
+    },
+    {
+      "path": "assets/packs/GR_CampCot_02.glb",
+      "bytes": 510788,
+      "sha256": "49d01d49797836020b037a0711325fdc47a343ed248b220f68f6f98b7de7591c"
+    },
+    {
+      "path": "assets/packs/GR_CampCot_02.json",
+      "bytes": 141,
+      "sha256": "1703f096843836caa30031a3eec41c495017b89a3b689763a263f89ec5916667"
+    },
+    {
+      "path": "assets/packs/GR_CampCot_02_GR_CampCot_02_color.png",
+      "bytes": 281035,
+      "sha256": "ad3f73003289d21dfbcba5de5df0645d5e7e157e25ac193eb82d81f682c089d0"
+    },
+    {
+      "path": "assets/packs/GR_CampCot_02_GR_CampCot_02_orm.png",
+      "bytes": 14450,
+      "sha256": "d9beb81e96ba13732a587cf8b53a72762683b95be07893b76e59b3ec88639472"
+    },
+    {
+      "path": "assets/packs/GR_CampStove_02.glb",
+      "bytes": 559732,
+      "sha256": "a4b4422bb87a9a7036fa44c74e266f4bd4c5405339f43a6e0093e22daae2b8ae"
+    },
+    {
+      "path": "assets/packs/GR_CampStove_02.json",
+      "bytes": 143,
+      "sha256": "60d257d19138f27e54dc2e3a1987a2e7fa45e78cafcc6ed1ef5a4720a26f804e"
+    },
+    {
+      "path": "assets/packs/GR_CampStove_02_GR_CampStove_02_color.png",
+      "bytes": 296050,
+      "sha256": "a9acf8df91b29e76157536bf279e0b2ffb4e69563ded863fd9f5d9cb2c8b90b6"
+    },
+    {
+      "path": "assets/packs/GR_CampStove_02_GR_CampStove_02_orm.png",
+      "bytes": 21919,
+      "sha256": "05b6029ccb0cf9498bc558e5b6b6f0597d3ebb5323ad15a721a968c3277fb803"
+    },
+    {
+      "path": "assets/packs/GR_ChainSprocket_04.glb",
+      "bytes": 1763892,
+      "sha256": "46633c072b6770d44299f11f19c67f6d5715ff350bb715aaf055dd9645ddf45d"
+    },
+    {
+      "path": "assets/packs/GR_ChainSprocket_04.json",
+      "bytes": 145,
+      "sha256": "39794ae38102b99bd8159846d76e7f28327b7bc531cd246fa591acde95fba5db"
+    },
+    {
+      "path": "assets/packs/GR_ChainSprocket_04_GR_ChainSprocket_04_color.png",
+      "bytes": 379206,
+      "sha256": "951ee3b3b7a8ebf3ff241e7cef1a5a368578fd80cbc48a5ae4dff1549138824d"
+    },
+    {
+      "path": "assets/packs/GR_ChainSprocket_04_GR_ChainSprocket_04_orm.png",
+      "bytes": 111108,
+      "sha256": "0dced43a83c1ae922bd7faf2fece5da46bfffe00807f22a1a093c40c6c687eef"
+    },
+    {
+      "path": "assets/packs/GR_ChainlinkPanel_03.glb",
+      "bytes": 1548800,
+      "sha256": "2dc50a9189681ae3af22dbc5765361604724abde6dbde0b53aec8e886a4eba0b"
+    },
+    {
+      "path": "assets/packs/GR_ChainlinkPanel_03.json",
+      "bytes": 142,
+      "sha256": "e6608d90f333dc99b342977544de2615f5105810c3a3c2ad38f13e0bcaf0faa7"
+    },
+    {
+      "path": "assets/packs/GR_ChainlinkPanel_03_GR_ChainlinkPanel_03_color.png",
+      "bytes": 167496,
+      "sha256": "f9a2ea5cb20454db12ddd5e12a229ea07f8e4d562c11b6fa286dc777f36065d8"
+    },
+    {
+      "path": "assets/packs/GR_ChainlinkPanel_03_GR_ChainlinkPanel_03_orm.png",
+      "bytes": 19503,
+      "sha256": "d374590e34ce27ac087be710faefc81b351c3bef2db2c81d65255e224f03420d"
+    },
+    {
+      "path": "assets/packs/GR_ChargingStation_02.glb",
+      "bytes": 982164,
+      "sha256": "c9c323e1f551805597b567ea99dadcedf1bc8c3c9d57a96e2c2e1fcdaf5ff657"
+    },
+    {
+      "path": "assets/packs/GR_ChargingStation_02.json",
+      "bytes": 149,
+      "sha256": "d5be5d130ad7638641add23dd823f9981aa9e95842345a41acf421180cb496d7"
+    },
+    {
+      "path": "assets/packs/GR_ChargingStation_02_GR_ChargingStation_02_color.png",
+      "bytes": 281037,
+      "sha256": "b3ecb07c42c89aa0e521355ed3de2c3845bbd2cc58a3f1d5b871a386a9bc1de8"
+    },
+    {
+      "path": "assets/packs/GR_ChargingStation_02_GR_ChargingStation_02_orm.png",
+      "bytes": 33338,
+      "sha256": "4e79e60d47da7ca9c4c2d4c8e7fb079b70d2a5426f43cb9fa584458aae609fa9"
+    },
+    {
+      "path": "assets/packs/GR_ChicanePosts_03.glb",
+      "bytes": 555972,
+      "sha256": "d60c7494711d5c108779e3fde35f07e435f2501321521d1c50d8cdd457889dd8"
+    },
+    {
+      "path": "assets/packs/GR_ChicanePosts_03.json",
+      "bytes": 138,
+      "sha256": "03c2096ca26cb82b790c0565e1fbc06ff11e8daaa8d2cf48196f5b2892aaa77f"
+    },
+    {
+      "path": "assets/packs/GR_ChicanePosts_03_GR_ChicanePosts_03_color.png",
+      "bytes": 317516,
+      "sha256": "d468c2c38ede89af4105bad2e07f34fe1f201f469899e356734e43f426a2743f"
+    },
+    {
+      "path": "assets/packs/GR_ChicanePosts_03_GR_ChicanePosts_03_orm.png",
+      "bytes": 17865,
+      "sha256": "a11426bf5ee5c417b76b87add58b9326548256ce2259012c4010c7ea051843a0"
+    },
+    {
+      "path": "assets/packs/GR_CombinationPliers_04.glb",
+      "bytes": 512368,
+      "sha256": "88642419cc6def5ac922e8aabb3437aab97ccc60a9976d310fe09a9006a4845d"
+    },
+    {
+      "path": "assets/packs/GR_CombinationPliers_04.json",
+      "bytes": 150,
+      "sha256": "474631da98b45cced1918679c0630e5b5ef3c031d58ec935c6eb31c75e3c8887"
+    },
+    {
+      "path": "assets/packs/GR_CombinationPliers_04_GR_CombinationPliers_04_color.png",
+      "bytes": 298347,
+      "sha256": "a538f61439ff157f3e63706ff54a87800f891d88998a87d7671e4016150cd2f8"
+    },
+    {
+      "path": "assets/packs/GR_CombinationPliers_04_GR_CombinationPliers_04_orm.png",
+      "bytes": 21464,
+      "sha256": "5d13740d0bf5b8095c509d809b31116189a9a0d1c14ea77dc9556d209d7fe44a"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteBarrier_01.glb",
+      "bytes": 269584,
+      "sha256": "9d091032d2098c6c78985ba81661d3cbd6e1f62288c05d3b554a75562b17fd5a"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteBarrier_01.json",
+      "bytes": 143,
+      "sha256": "aad5806f5af5731774ec0f89dc2a34e5be31d6cfae517ba6138185b18ee66487"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteBarrier_01_GR_ConcreteBarrier_01_color.png",
+      "bytes": 190109,
+      "sha256": "9cac454a6be387d901ce77eb5d56c149d21e9dac9a34d3f56197633c0d03ad81"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteBarrier_01_GR_ConcreteBarrier_01_orm.png",
+      "bytes": 9140,
+      "sha256": "aea0acf35a399901ddacb1e715922cd00d8ac199c1f04231bdef58519d12b117"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteCulvert_03.glb",
+      "bytes": 338624,
+      "sha256": "0505aedff3d0eceac8ba0c6a9bc5481c49922f15029e61a74ed5d504a1521a6d"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteCulvert_03.json",
+      "bytes": 144,
+      "sha256": "c66c9f006c232bf27ad4d919551d423d3658873dc85a93044c6b0c821cdea0ec"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteCulvert_03_GR_ConcreteCulvert_03_color.png",
+      "bytes": 208292,
+      "sha256": "7ec4ee3b0c17f32bd19dad42a32b55953462e48fb74e75b1e7e30573a3d91c18"
+    },
+    {
+      "path": "assets/packs/GR_ConcreteCulvert_03_GR_ConcreteCulvert_03_orm.png",
+      "bytes": 19989,
+      "sha256": "a563255b0713676e2756608237aaad2edc573fe8e67d229ec8b90ca6ec7b2ad1"
+    },
+    {
+      "path": "assets/packs/GR_ConcretePad_01.glb",
+      "bytes": 334080,
+      "sha256": "dd8b75ae75cd77933300bdd9cfbc0858eea36ae8c1f640b96da689a4cbc08b59"
+    },
+    {
+      "path": "assets/packs/GR_ConcretePad_01.json",
+      "bytes": 140,
+      "sha256": "a04461f35e82f95fb3b37fff997643bf230917ac0028c91670cfa1bb9881e5ec"
+    },
+    {
+      "path": "assets/packs/GR_ConcretePad_01_GR_ConcretePad_01_color.png",
+      "bytes": 169985,
+      "sha256": "fade8db5357e4b499bc7d2222cd9118bc5230453c6350493db92605a4ab35179"
+    },
+    {
+      "path": "assets/packs/GR_ConcretePad_01_GR_ConcretePad_01_orm.png",
+      "bytes": 9647,
+      "sha256": "6f4687311f98f39b4a1336977410dab0900993657621c696374a62dc48144d61"
+    },
+    {
+      "path": "assets/packs/GR_ConduitAssembly_01.glb",
+      "bytes": 665928,
+      "sha256": "cae4b687585b99ef10af9d4e77edfe99eb172437895c49f2829b52850c4d9adf"
+    },
+    {
+      "path": "assets/packs/GR_ConduitAssembly_01.json",
+      "bytes": 145,
+      "sha256": "3806581f1a360f6a761847a509bbb24390d71dfa3ead3b813f9021f0c56d7e3f"
+    },
+    {
+      "path": "assets/packs/GR_ConduitAssembly_01_GR_ConduitAssembly_01_color.png",
+      "bytes": 216820,
+      "sha256": "b9aacbdf3731fcc9912468b36fc12699a7465510a98ddb308b6ad77d00e7b9e9"
+    },
+    {
+      "path": "assets/packs/GR_ConduitAssembly_01_GR_ConduitAssembly_01_orm.png",
+      "bytes": 23806,
+      "sha256": "edd45cf7fb33d38596338964051d36b858121b5a9940a8ee5a533da5be6bd317"
+    },
+    {
+      "path": "assets/packs/GR_ConeSet_03.glb",
+      "bytes": 381812,
+      "sha256": "1773f31ce3a7fdbd9865ef8ca68926b87a750256db4c5fc0ca5eb6624d6d075e"
+    },
+    {
+      "path": "assets/packs/GR_ConeSet_03.json",
+      "bytes": 135,
+      "sha256": "d486ad8750c4be6d3d922d41d3f5cd8c83d9029926ec01f653eca6bff7598792"
+    },
+    {
+      "path": "assets/packs/GR_ConeSet_03_GR_ConeSet_03_color.png",
+      "bytes": 274502,
+      "sha256": "a14d2431476840b37f01fdef285751894f983b2450080958e409cacd61eb83dd"
+    },
+    {
+      "path": "assets/packs/GR_ConeSet_03_GR_ConeSet_03_orm.png",
+      "bytes": 26820,
+      "sha256": "22b654bd2bc48b6aa169e3e21c33089b10704ba1cf33930be12e26d6d5829706"
+    },
+    {
+      "path": "assets/packs/GR_ControlBoard_04.glb",
+      "bytes": 630188,
+      "sha256": "89f99f1f10b89fc80a4adb9e7d377f0bd6297d4c947459e4c5d2965a45fde673"
+    },
+    {
+      "path": "assets/packs/GR_ControlBoard_04.json",
+      "bytes": 143,
+      "sha256": "d5690f97b47280f1eeb7896b09c32452cf5e138d702596a50fc47980eb7d9d83"
+    },
+    {
+      "path": "assets/packs/GR_ControlBoard_04_GR_ControlBoard_04_color.png",
+      "bytes": 313091,
+      "sha256": "40cbd70bb68b77297a78db708740853dbb052a40a611216906777876f9a067ed"
+    },
+    {
+      "path": "assets/packs/GR_ControlBoard_04_GR_ControlBoard_04_orm.png",
+      "bytes": 37181,
+      "sha256": "9f20b6d45c65babbcbc01f27b39c96aba91bf7a91652e7aa20f3d0d996b05fb5"
+    },
+    {
+      "path": "assets/packs/GR_CopperTubeCoil_04.glb",
+      "bytes": 349832,
+      "sha256": "1ed3bbdbed0b6ae6cafed7517a2d3fe078c39d0ca97d8e4040094eb7d4ea4d3b"
+    },
+    {
+      "path": "assets/packs/GR_CopperTubeCoil_04.json",
+      "bytes": 146,
+      "sha256": "5a5de7886d4fc3d6f58e1d117151d48b41744f84272d647ca56007f81774f669"
+    },
+    {
+      "path": "assets/packs/GR_CopperTubeCoil_04_GR_CopperTubeCoil_04_color.png",
+      "bytes": 205137,
+      "sha256": "f0e94b0829c79109ea50adb5f0a6bf9ae8ca1dbbe818d96b30ae884bb2419752"
+    },
+    {
+      "path": "assets/packs/GR_CopperTubeCoil_04_GR_CopperTubeCoil_04_orm.png",
+      "bytes": 29429,
+      "sha256": "72a56563dfc03e44c68c33cd11cbec27c3a989a771d50a90cf49b16e02d43b62"
+    },
+    {
+      "path": "assets/packs/GR_CordlessDrill_04.glb",
+      "bytes": 504988,
+      "sha256": "951985b936c223675b89cc2fcb07d268fec4d464a0dcc530a76de8ea25df954a"
+    },
+    {
+      "path": "assets/packs/GR_CordlessDrill_04.json",
+      "bytes": 143,
+      "sha256": "144af2838ad5d45a9adb702de3ca64f34c26ffea48cf0c01be5abab474e35d55"
+    },
+    {
+      "path": "assets/packs/GR_CordlessDrill_04_GR_CordlessDrill_04_color.png",
+      "bytes": 297357,
+      "sha256": "f84e7050062e1ea54e9a6211429019dfea27fc8f1ce68017d86576ce7b0022ca"
+    },
+    {
+      "path": "assets/packs/GR_CordlessDrill_04_GR_CordlessDrill_04_orm.png",
+      "bytes": 22012,
+      "sha256": "4b0e6dd98c888bb470eea593f414146e1d4bead6095740b40a3f2fa9be5b2327"
+    },
+    {
+      "path": "assets/packs/GR_CreekSign_03.glb",
+      "bytes": 415128,
+      "sha256": "87975717b934372caef24007068ed212f9c05c8545db8078d21f28e7cccb4e53"
+    },
+    {
+      "path": "assets/packs/GR_CreekSign_03.json",
+      "bytes": 134,
+      "sha256": "6c10d016d89f9dfc0786d3780ac83d395c9601062e0d10d5b6bf2c897e6d82ec"
+    },
+    {
+      "path": "assets/packs/GR_CreekSign_03_GR_CreekSign_03_color.png",
+      "bytes": 206087,
+      "sha256": "cb4459044284af779ad0717ae6b986474e1639965d7b7b01c4262ef0a936ab79"
+    },
+    {
+      "path": "assets/packs/GR_CreekSign_03_GR_CreekSign_03_orm.png",
+      "bytes": 13393,
+      "sha256": "d771b0e0d58eb0097267ae78756bb18d2999f5a7e140a49f6cb0e170bb60505e"
+    },
+    {
+      "path": "assets/packs/GR_CurbGutter_03.glb",
+      "bytes": 230068,
+      "sha256": "79fee032ad46522f6fc010724dc94e87b8a438d09acc1228c8c6bd0bb49b9949"
+    },
+    {
+      "path": "assets/packs/GR_CurbGutter_03.json",
+      "bytes": 138,
+      "sha256": "259e9037d8d0153e50ce5efb9f3adbc3771e83318cb5910a80c5dedda2fb15f0"
+    },
+    {
+      "path": "assets/packs/GR_CurbGutter_03_GR_CurbGutter_03_color.png",
+      "bytes": 193025,
+      "sha256": "bb8d06f4c11838ea78aff6354dbae49e4921c56a83ac30cab8bc13e625aa2804"
+    },
+    {
+      "path": "assets/packs/GR_CurbGutter_03_GR_CurbGutter_03_orm.png",
+      "bytes": 6947,
+      "sha256": "d18ae22405ecc1c48cb5f26901d4e845663e56fb8070ce6a4334e922fc7b195d"
+    },
+    {
+      "path": "assets/packs/GR_DINContactor_04.glb",
+      "bytes": 554420,
+      "sha256": "c2eef7d94908b95eefa278c4c0049ad153c4c369ba3eff38622c4c317d2ccbe7"
+    },
+    {
+      "path": "assets/packs/GR_DINContactor_04.json",
+      "bytes": 142,
+      "sha256": "43d2ffd4fcbde62229c3559caf2b336e565561c9dd7c3edd344a4fb00b7ca001"
+    },
+    {
+      "path": "assets/packs/GR_DINContactor_04_GR_DINContactor_04_color.png",
+      "bytes": 299120,
+      "sha256": "89ecb0079979bb99b1aec747d817011f1aa55878ed19111f7a21b5ec68949519"
+    },
+    {
+      "path": "assets/packs/GR_DINContactor_04_GR_DINContactor_04_orm.png",
+      "bytes": 26256,
+      "sha256": "102f6ca3926dcd851dc8a40c0a14e83367873dacdac8abf52c19c69968f67f35"
+    },
+    {
+      "path": "assets/packs/GR_DigitalMultimeter_04.glb",
+      "bytes": 461740,
+      "sha256": "4a4ab54deb5b9dff701e38a04b5153ba8cf2102b6685c92890461edaff6f62e6"
+    },
+    {
+      "path": "assets/packs/GR_DigitalMultimeter_04.json",
+      "bytes": 151,
+      "sha256": "c42160bc660611b225acba598aa11608a20a1f75702df7fe1e20815f52a5275e"
+    },
+    {
+      "path": "assets/packs/GR_DigitalMultimeter_04_GR_DigitalMultimeter_04_color.png",
+      "bytes": 214646,
+      "sha256": "6078633ce562f17d75dbb7d4e4ced3995a071357717b910ed49f801a0a3e4aca"
+    },
+    {
+      "path": "assets/packs/GR_DigitalMultimeter_04_GR_DigitalMultimeter_04_orm.png",
+      "bytes": 30159,
+      "sha256": "6d8822232fcd077134241ef2f69ff53ec5fb698960ff3f330e78847316501d58"
+    },
+    {
+      "path": "assets/packs/GR_Disconnect_01.glb",
+      "bytes": 984672,
+      "sha256": "fcbdf293a40da9a3f20826aa536157e011785e4773907f0cc59d8e437c42829d"
+    },
+    {
+      "path": "assets/packs/GR_Disconnect_01.json",
+      "bytes": 142,
+      "sha256": "5a6474b9e9c4845f4e549347c191b9e8cc2ed1ee9c37c52e54aa07ef1a3c57b0"
+    },
+    {
+      "path": "assets/packs/GR_Disconnect_01_GR_Disconnect_01_color.png",
+      "bytes": 312270,
+      "sha256": "c9649e8bc772cf8f7870c263aa8399325c421de4a51c66173e409bd34b53fbaf"
+    },
+    {
+      "path": "assets/packs/GR_Disconnect_01_GR_Disconnect_01_orm.png",
+      "bytes": 31743,
+      "sha256": "d0c67f8775039ae5b497aabd8fdcb44bfb69d280ee9a33b2ab9ba49dd6da58b0"
+    },
+    {
+      "path": "assets/packs/GR_DistributionCabinet_01.glb",
+      "bytes": 897000,
+      "sha256": "1714f2cdf2c63c1d7908f0ef8999b85fabdc85e2008a9a7cd3f1de98d8ad7fea"
+    },
+    {
+      "path": "assets/packs/GR_DistributionCabinet_01.json",
+      "bytes": 150,
+      "sha256": "86493e81dc11ed50adee377538098ab1a905b875907ce4da44369d7b112c072e"
+    },
+    {
+      "path": "assets/packs/GR_DistributionCabinet_01_GR_DistributionCabinet_01_color.png",
+      "bytes": 280634,
+      "sha256": "8f87809b4a07c0cca1386384783fbaba6dd2f299fa5cf829a209842c02daaad2"
+    },
+    {
+      "path": "assets/packs/GR_DistributionCabinet_01_GR_DistributionCabinet_01_orm.png",
+      "bytes": 24825,
+      "sha256": "90a1486be9e01dcf4dbf4eb130fe00a2d01cfc802aa359535f58148c8d433d26"
+    },
+    {
+      "path": "assets/packs/GR_DitchChannel_03.glb",
+      "bytes": 276892,
+      "sha256": "901823746d811b16597ecea3a4d8e2813187b0ce9d363cba402c7aa285fbda78"
+    },
+    {
+      "path": "assets/packs/GR_DitchChannel_03.json",
+      "bytes": 140,
+      "sha256": "241e7b145c604fc9b1a76750e976cce2ce1ff23ec7dbd0c46dfc371fc50b10d5"
+    },
+    {
+      "path": "assets/packs/GR_DitchChannel_03_GR_DitchChannel_03_color.png",
+      "bytes": 174585,
+      "sha256": "73afddf55ea1c7829839cb1f0fed03d54506b55f5765572281e4b42cb930fefb"
+    },
+    {
+      "path": "assets/packs/GR_DitchChannel_03_GR_DitchChannel_03_orm.png",
+      "bytes": 6836,
+      "sha256": "a37155f506a2b767dac6f569c40a0d5f1b675d6e84c1b03e094cceec286a74d5"
+    },
+    {
+      "path": "assets/packs/GR_DrainageGrate_03.glb",
+      "bytes": 594728,
+      "sha256": "d4f11504e060ea7abac30cd0a14b12148ad13379aa110872a14a5af25a2f7d98"
+    },
+    {
+      "path": "assets/packs/GR_DrainageGrate_03.json",
+      "bytes": 143,
+      "sha256": "7281439d75112880c80e7507d7de820a6d40aa6f1e5a281272dff8e9da6bd25a"
+    },
+    {
+      "path": "assets/packs/GR_DrainageGrate_03_GR_DrainageGrate_03_color.png",
+      "bytes": 259711,
+      "sha256": "261366b37e754342c571bafe99ab0e63ab946aa23646f228c56a2582d6651d1f"
+    },
+    {
+      "path": "assets/packs/GR_DrainageGrate_03_GR_DrainageGrate_03_orm.png",
+      "bytes": 13960,
+      "sha256": "94034b094f6146ad988ec7fa07a96c6ee1cd7a944ccbf24a93784821349c1a34"
+    },
+    {
+      "path": "assets/packs/GR_DroneHardCase_02.glb",
+      "bytes": 516020,
+      "sha256": "502cd138f34b9a306def0205bade5ab80ebca870e0f13f68d714ec4ad0e1ebb8"
+    },
+    {
+      "path": "assets/packs/GR_DroneHardCase_02.json",
+      "bytes": 148,
+      "sha256": "5870bd27a6ac17c0e4dc04a9aa6e4703cc6fd816e08f3e9cb3e6c60afcc49df3"
+    },
+    {
+      "path": "assets/packs/GR_DroneHardCase_02_GR_DroneHardCase_02_color.png",
+      "bytes": 234312,
+      "sha256": "8db8f1d56025004974a42935fec01032f754543ea7910bad99623211851d5c5f"
+    },
+    {
+      "path": "assets/packs/GR_DroneHardCase_02_GR_DroneHardCase_02_orm.png",
+      "bytes": 23677,
+      "sha256": "8d9f27b29b6829b5dd2d894525c3f8733367462cf4bd81f6b0b864728635bdc0"
+    },
+    {
+      "path": "assets/packs/GR_ElectricalSalvage_01.glb",
+      "bytes": 574104,
+      "sha256": "e9b6630b17f89fbfa3208cff6343ff4481d01adafce1083f1994d6bd6006f134"
+    },
+    {
+      "path": "assets/packs/GR_ElectricalSalvage_01.json",
+      "bytes": 146,
+      "sha256": "99badef2b2e4353ce99821e778168eebba82cf02b3e7771fa12c5633c3766039"
+    },
+    {
+      "path": "assets/packs/GR_ElectricalSalvage_01_GR_ElectricalSalvage_01_color.png",
+      "bytes": 282308,
+      "sha256": "c7ac432b8510db761f571cbc14957f84f5024bd4518d7afa03104ef011568158"
+    },
+    {
+      "path": "assets/packs/GR_ElectricalSalvage_01_GR_ElectricalSalvage_01_orm.png",
+      "bytes": 44189,
+      "sha256": "ca681dcce8d5c4466fdbd9416163f1318c91f0af09f14cfb053b081a009af204"
+    },
+    {
+      "path": "assets/packs/GR_ExtensionReel_02.glb",
+      "bytes": 619608,
+      "sha256": "eb52fa45e53fe0aa71e95eee64bb5e0dc6ea940c9eecbfcd2064c39e08874c34"
+    },
+    {
+      "path": "assets/packs/GR_ExtensionReel_02.json",
+      "bytes": 149,
+      "sha256": "691b193ea50c820de9c84ea0463aabc23345e7758427979fef96ba2ebd2528cc"
+    },
+    {
+      "path": "assets/packs/GR_ExtensionReel_02_GR_ExtensionReel_02_color.png",
+      "bytes": 257824,
+      "sha256": "0dbbdf032cc23f1673c10f99e3e0f212573a688edacc67133029d15c997c258a"
+    },
+    {
+      "path": "assets/packs/GR_ExtensionReel_02_GR_ExtensionReel_02_orm.png",
+      "bytes": 64408,
+      "sha256": "6a7f8554506a0128eb3ec12440d2f92b2a9bc7491b7cd0d914860d4f452d2f02"
+    },
+    {
+      "path": "assets/packs/GR_FastenerPot_04.glb",
+      "bytes": 918752,
+      "sha256": "a20fd006e23bb49c64d75d2a3a743b9dbf6f51e36bf33770e9c415b62ef7bb0c"
+    },
+    {
+      "path": "assets/packs/GR_FastenerPot_04.json",
+      "bytes": 143,
+      "sha256": "2763faaa0057bcec40c2359c80338dce16ecffc402a149b904428409bd10c1ff"
+    },
+    {
+      "path": "assets/packs/GR_FastenerPot_04_GR_FastenerPot_04_color.png",
+      "bytes": 296960,
+      "sha256": "209baced7aa6c4a7229243d7c3b14842caafce9b335e3234c994cdcbe13e38a4"
+    },
+    {
+      "path": "assets/packs/GR_FastenerPot_04_GR_FastenerPot_04_orm.png",
+      "bytes": 37176,
+      "sha256": "60d8bf0394a43f01ae4c2f9ad0c83c22dfbbf628d26ed923a2db6ff6742b77fd"
+    },
+    {
+      "path": "assets/packs/GR_FieldRadio_02.glb",
+      "bytes": 704964,
+      "sha256": "306659a241f1bbb98a3431b73bc997bd36cf6a68e314b79dacc3390712c65032"
+    },
+    {
+      "path": "assets/packs/GR_FieldRadio_02.json",
+      "bytes": 144,
+      "sha256": "af833eb265d441a6077d8dd5efe81513f5e01eb6b4248f052b29afd081810fca"
+    },
+    {
+      "path": "assets/packs/GR_FieldRadio_02_GR_FieldRadio_02_color.png",
+      "bytes": 302799,
+      "sha256": "8bf53d87c959ead651156cf1c482dfa1993ea5df428ad5c619a26b6e6f761b7e"
+    },
+    {
+      "path": "assets/packs/GR_FieldRadio_02_GR_FieldRadio_02_orm.png",
+      "bytes": 25124,
+      "sha256": "df290fbfba5bbba2c70a697b0ac86dacdebb2cbedb1235dc13faee0e1e4a6efb"
+    },
+    {
+      "path": "assets/packs/GR_FieldStorageCase_02.glb",
+      "bytes": 532316,
+      "sha256": "9e4403ceeb8fcfcc50d04548411f7a3564754ebc811b72d424363048e1430863"
+    },
+    {
+      "path": "assets/packs/GR_FieldStorageCase_02.json",
+      "bytes": 153,
+      "sha256": "a67b0023276b103576c63885a9f4d80ff9f2da4739b711a099f1170d0f75a5de"
+    },
+    {
+      "path": "assets/packs/GR_FieldStorageCase_02_GR_FieldStorageCase_02_color.png",
+      "bytes": 286385,
+      "sha256": "3f9d40738d0b904c478ab45df3e321f9d95a6ed894e94bd9584a6a98e880c91f"
+    },
+    {
+      "path": "assets/packs/GR_FieldStorageCase_02_GR_FieldStorageCase_02_orm.png",
+      "bytes": 21503,
+      "sha256": "6875bff7ce908bd20b2805e53516a378e21474c85c2346a562edf886c5574aad"
+    },
+    {
+      "path": "assets/packs/GR_FirstAidCase_02.glb",
+      "bytes": 529564,
+      "sha256": "84003bd475b8c84ab885f2c1e5f6c39b5737acd8b9df724586f8b7d2c0f84a5b"
+    },
+    {
+      "path": "assets/packs/GR_FirstAidCase_02.json",
+      "bytes": 149,
+      "sha256": "8dc72d643c542e9bf241fd15e72088d8540a0dcd1edb4ee6b1534dc650a9422b"
+    },
+    {
+      "path": "assets/packs/GR_FirstAidCase_02_GR_FirstAidCase_02_color.png",
+      "bytes": 300355,
+      "sha256": "837a257495be1ffdb29e24a9d77f5727d795633a9ff5d04b21cee26fef79cc3c"
+    },
+    {
+      "path": "assets/packs/GR_FirstAidCase_02_GR_FirstAidCase_02_orm.png",
+      "bytes": 17299,
+      "sha256": "762394ab6831a1aab8fc99c94e04dbd082333256d9d6bd7bdacf54dd0869af51"
+    },
+    {
+      "path": "assets/packs/GR_FoldingBarricade_03.glb",
+      "bytes": 466000,
+      "sha256": "b4ea640b57409ef695e9c456d3abe2460cd3326a965b3fae1a2c21a120d7a24f"
+    },
+    {
+      "path": "assets/packs/GR_FoldingBarricade_03.json",
+      "bytes": 147,
+      "sha256": "dc5cbf83bc4eb8ead4795dce43599576ca1e57322bbf06dd5a8a5c91640ad446"
+    },
+    {
+      "path": "assets/packs/GR_FoldingBarricade_03_GR_FoldingBarricade_03_color.png",
+      "bytes": 282791,
+      "sha256": "dd8921e5427a97ff695d643de29aa4f22bed18ce604dfd1e5316f4b77f8f8c7e"
+    },
+    {
+      "path": "assets/packs/GR_FoldingBarricade_03_GR_FoldingBarricade_03_orm.png",
+      "bytes": 15615,
+      "sha256": "428836d91da4d7a682ef9de8a1a48f5da53f869b801f2392e4dc102cd9532d1a"
+    },
+    {
+      "path": "assets/packs/GR_FoldingChair_02.glb",
+      "bytes": 425888,
+      "sha256": "18bc50648dd80760b96e9c9efa7498559b6c60a40a2963be1459405e1461588c"
+    },
+    {
+      "path": "assets/packs/GR_FoldingChair_02.json",
+      "bytes": 147,
+      "sha256": "43f93b393cbce011968ab7a820eabf2bfcce1f9061a5aca33e9e56a04a9114a1"
+    },
+    {
+      "path": "assets/packs/GR_FoldingChair_02_GR_FoldingChair_02_color.png",
+      "bytes": 244633,
+      "sha256": "71262916f8ec7af1465cf485179ff939b36d64e166978da64f55594362265699"
+    },
+    {
+      "path": "assets/packs/GR_FoldingChair_02_GR_FoldingChair_02_orm.png",
+      "bytes": 9764,
+      "sha256": "22f18da18e6974fd1e31041978c0358419962c439769068a622be30fb4624d3a"
+    },
+    {
+      "path": "assets/packs/GR_FuseTray_04.glb",
+      "bytes": 879008,
+      "sha256": "b9c3a64892fa4fc104af174fd511b6c3c40534873c53a40946dae4221d23ecf0"
+    },
+    {
+      "path": "assets/packs/GR_FuseTray_04.json",
+      "bytes": 135,
+      "sha256": "c824c91ca7971910c3cc746f15bcb04eee2c174d5ea4f7ec00fa1f36cf5a5f74"
+    },
+    {
+      "path": "assets/packs/GR_FuseTray_04_GR_FuseTray_04_color.png",
+      "bytes": 307350,
+      "sha256": "a910ef27d839629779300f57748668c7ed1cdce2d8698e9055e9776b41ad21ff"
+    },
+    {
+      "path": "assets/packs/GR_FuseTray_04_GR_FuseTray_04_orm.png",
+      "bytes": 27704,
+      "sha256": "c23e1617c7447f48f0375a38479f719b9154b4669dfe27f036cd31170360708f"
+    },
+    {
+      "path": "assets/packs/GR_Generator_01.glb",
+      "bytes": 732472,
+      "sha256": "083ff4a2bc0f80ed61f5626699719aa7be5586dbf8e8263ed86005641b56ff65"
+    },
+    {
+      "path": "assets/packs/GR_Generator_01.json",
+      "bytes": 140,
+      "sha256": "fcc651d9efdeab7c016e06b12ab99b2441b939f8485c524149c9dbcdc89a5060"
+    },
+    {
+      "path": "assets/packs/GR_Generator_01_GR_Generator_01_color.png",
+      "bytes": 286812,
+      "sha256": "acc85dd8d82872496b80f66547e757b4eeb19ce2369d347ce036cf852ee99a30"
+    },
+    {
+      "path": "assets/packs/GR_Generator_01_GR_Generator_01_orm.png",
+      "bytes": 28314,
+      "sha256": "7161d1f917a4613661bafe997b96d39b686eb1d6056fac71efc5ad13235685a9"
+    },
+    {
+      "path": "assets/packs/GR_GroundingKit_01.glb",
+      "bytes": 564244,
+      "sha256": "ede9aabf7d14bbb72c4711e06fad777a2a26fcdb75d8959a0c2e132088eedf75"
+    },
+    {
+      "path": "assets/packs/GR_GroundingKit_01.json",
+      "bytes": 144,
+      "sha256": "de912a8157b70d44af7590baa91053996d220385bcbcf81720382b8f1a50c37a"
+    },
+    {
+      "path": "assets/packs/GR_GroundingKit_01_GR_GroundingKit_01_color.png",
+      "bytes": 209672,
+      "sha256": "2c327ab89ad0fc4c252fecddff17611cb48b46cc6d985a61eb0392f9c1901935"
+    },
+    {
+      "path": "assets/packs/GR_GroundingKit_01_GR_GroundingKit_01_orm.png",
+      "bytes": 21560,
+      "sha256": "95b9258351c31036bfdabe92ac2edfd3b8c466513ea54853605816a92aec1774"
+    },
+    {
+      "path": "assets/packs/GR_Guardrail_03.glb",
+      "bytes": 351820,
+      "sha256": "ce7b12d47cd5dda873b174fc651a64c022d5ddd39033e953c385e27fa7f65dd6"
+    },
+    {
+      "path": "assets/packs/GR_Guardrail_03.json",
+      "bytes": 136,
+      "sha256": "67c5cbbda852a5fba62636d982f7b464b89667bdb39771bfb9ddc8a2d231b6fb"
+    },
+    {
+      "path": "assets/packs/GR_Guardrail_03_GR_Guardrail_03_color.png",
+      "bytes": 158743,
+      "sha256": "2f39521dc245b8e7cee276a6d4d30c3388a0a7f207464be075a136d0e7462f4b"
+    },
+    {
+      "path": "assets/packs/GR_Guardrail_03_GR_Guardrail_03_orm.png",
+      "bytes": 11589,
+      "sha256": "8bca6371cd9f08784691c8e843c4ede014187eba8c4b15e03091994467dbeb9d"
+    },
+    {
+      "path": "assets/packs/GR_Handrail_03.glb",
+      "bytes": 474360,
+      "sha256": "e35fe05e4d76326916047e559f10d8917bd52215653b19962802aa6f8b029c6e"
+    },
+    {
+      "path": "assets/packs/GR_Handrail_03.json",
+      "bytes": 133,
+      "sha256": "587855874c0caa2a471c84f62a3c83c269c10f772921acbb210bf011c993742b"
+    },
+    {
+      "path": "assets/packs/GR_Handrail_03_GR_Handrail_03_color.png",
+      "bytes": 143405,
+      "sha256": "0c42df63603c0913ecee5f875e1de88819a53e6a2518d04bd6d4baf2f7f1dac3"
+    },
+    {
+      "path": "assets/packs/GR_Handrail_03_GR_Handrail_03_orm.png",
+      "bytes": 12207,
+      "sha256": "7f7c8eabd705ec29e8c04fc3528ab757fead667da664b3520909595409ec5b38"
+    },
+    {
+      "path": "assets/packs/GR_InsulatorSet_01.glb",
+      "bytes": 726164,
+      "sha256": "4001a266e42894adf847ecfbe38bb8d310a4864fbc8c131fb1084edc88c5c4df"
+    },
+    {
+      "path": "assets/packs/GR_InsulatorSet_01.json",
+      "bytes": 142,
+      "sha256": "dd717c285a426a57704cd7639a81c5a569ab04937758b79fd969939ee471a341"
+    },
+    {
+      "path": "assets/packs/GR_InsulatorSet_01_GR_InsulatorSet_01_color.png",
+      "bytes": 355113,
+      "sha256": "14160dd00682812a50e43011e942adfca82f872d160f334fe0f76742c7cdd087"
+    },
+    {
+      "path": "assets/packs/GR_InsulatorSet_01_GR_InsulatorSet_01_orm.png",
+      "bytes": 36508,
+      "sha256": "48213264c73c267936c6e70145381ad6cc0b440c6ebc2411b38050ce38169b42"
+    },
+    {
+      "path": "assets/packs/GR_JunctionBox_01.glb",
+      "bytes": 966224,
+      "sha256": "878cc79a5602ac71b48c4fdeccfd36b11c1067f7d861a6fe415eca325c4c24c5"
+    },
+    {
+      "path": "assets/packs/GR_JunctionBox_01.json",
+      "bytes": 143,
+      "sha256": "9a7b75bc07a1008192427f3c37c784a4989df64013d8ff7a7ad13d04ecebce07"
+    },
+    {
+      "path": "assets/packs/GR_JunctionBox_01_GR_JunctionBox_01_color.png",
+      "bytes": 307072,
+      "sha256": "d779e9a194a0528ce5cde81e5dbdc5932be4999b92af2a78f33d33c0765680e6"
+    },
+    {
+      "path": "assets/packs/GR_JunctionBox_01_GR_JunctionBox_01_orm.png",
+      "bytes": 32328,
+      "sha256": "bebdc0eedc0fd4e08cfbffe99cf6c7f53f04e6a1bfa5ac202ca0bebcfbcf9044"
+    },
+    {
+      "path": "assets/packs/GR_MeterPedestal_01.glb",
+      "bytes": 1034452,
+      "sha256": "8cbfd5426353371e63279f19cad97f8011be0d43b9b46341715b1f37573085ea"
+    },
+    {
+      "path": "assets/packs/GR_MeterPedestal_01.json",
+      "bytes": 144,
+      "sha256": "d9a85a41d6cc7e33c7a7d3abafb665a0edec315f57ce4b593e0e9b69f7842d4a"
+    },
+    {
+      "path": "assets/packs/GR_MeterPedestal_01_GR_MeterPedestal_01_color.png",
+      "bytes": 305026,
+      "sha256": "65b5f6d434e330db7a2bd578fd16545536bd0e937a72983548fcd41728c53aeb"
+    },
+    {
+      "path": "assets/packs/GR_MeterPedestal_01_GR_MeterPedestal_01_orm.png",
+      "bytes": 36148,
+      "sha256": "ddfb76fb3e292b54eae0331af3dbf6956917e7255165fdfe098cdfd72ac6fe13"
+    },
+    {
+      "path": "assets/packs/GR_PadTransformer_01.glb",
+      "bytes": 1579324,
+      "sha256": "f0e153d73a4a4ad4ed27c5cdaa823b27fffb9c5a26899fea34a7b1769fbdee17"
+    },
+    {
+      "path": "assets/packs/GR_PadTransformer_01.json",
+      "bytes": 143,
+      "sha256": "3cdc2cbf588e9c7ed7dc1ed93e560ef7766195bcfe51649f9da42c8afe1631e4"
+    },
+    {
+      "path": "assets/packs/GR_PadTransformer_01_GR_PadTransformer_01_color.png",
+      "bytes": 276897,
+      "sha256": "3b50095e5d727934b7ab4358f3a5a32b49b3ecb383a5f5984499407307ee2f5e"
+    },
+    {
+      "path": "assets/packs/GR_PadTransformer_01_GR_PadTransformer_01_orm.png",
+      "bytes": 32350,
+      "sha256": "51f57f02d122a8e361c88aed6cde9354e8f49fca984b95899e95b6052c3a077f"
+    },
+    {
+      "path": "assets/packs/GR_PedestrianGate_03.glb",
+      "bytes": 1212352,
+      "sha256": "0293ff7a96f2b36c5828724d00883f58b9757cb1a6e77377fb562fc65ba017ae"
+    },
+    {
+      "path": "assets/packs/GR_PedestrianGate_03.json",
+      "bytes": 144,
+      "sha256": "c6678a0ce6dae0b2c6dde17de0389a85135a8bd73b90d5a8cf63d58ecda5128d"
+    },
+    {
+      "path": "assets/packs/GR_PedestrianGate_03_GR_PedestrianGate_03_color.png",
+      "bytes": 166921,
+      "sha256": "6e06e6327af9eef4456d0f2c5e8b10b3aaf46bedf160d51540c53146c666f664"
+    },
+    {
+      "path": "assets/packs/GR_PedestrianGate_03_GR_PedestrianGate_03_orm.png",
+      "bytes": 20286,
+      "sha256": "afc2cdebf80e876f5f2f4873809be60e1829d9e4c3cc721ed3b44a04657bbf62"
+    },
+    {
+      "path": "assets/packs/GR_PoleTransformer_01.glb",
+      "bytes": 770804,
+      "sha256": "17297ef380aafe33482b270d5448cd824f8eb4858c0608327da5670c60ec0d6a"
+    },
+    {
+      "path": "assets/packs/GR_PoleTransformer_01.json",
+      "bytes": 147,
+      "sha256": "a819656cf06ba4edab9884e60c4d797a26b9d5639e29bfa9a6f44e9af42b4e92"
+    },
+    {
+      "path": "assets/packs/GR_PoleTransformer_01_GR_PoleTransformer_01_color.png",
+      "bytes": 321655,
+      "sha256": "d51fcaa12d143c2bb5f90d5d8a2448fb7cc3b5a4e1a6e23c2563fa6a42b7af1a"
+    },
+    {
+      "path": "assets/packs/GR_PoleTransformer_01_GR_PoleTransformer_01_orm.png",
+      "bytes": 46524,
+      "sha256": "4fc8b1759b94916dcb5fb12fb1782ae7ff3a9c33ed2d5dd539ab571a05c2f70b"
+    },
+    {
+      "path": "assets/packs/GR_RainCollector_02.glb",
+      "bytes": 474216,
+      "sha256": "4cc92277aeeb815a5a342bbff1a261689b65c2ca9bafc091e9b3bb36a7774609"
+    },
+    {
+      "path": "assets/packs/GR_RainCollector_02.json",
+      "bytes": 147,
+      "sha256": "af0a19a9339feefb1fca85de14d576e2df93d7ada13c4a1d3aad7d44d5f6d2c3"
+    },
+    {
+      "path": "assets/packs/GR_RainCollector_02_GR_RainCollector_02_color.png",
+      "bytes": 268015,
+      "sha256": "16acafae4cc71f843436deb1de2ed03f507c70a06389207b7aec9bdc000d484a"
+    },
+    {
+      "path": "assets/packs/GR_RainCollector_02_GR_RainCollector_02_orm.png",
+      "bytes": 18430,
+      "sha256": "80377a52020d9c5747508639f2ddcd12016a955bf11abd66d2e443170ad9f018"
+    },
+    {
+      "path": "assets/packs/GR_RetainingWall_03.glb",
+      "bytes": 681360,
+      "sha256": "1deb472e4e53c6eaa6654ac852ad07ba5939b5b26ea1b10b2b5e900946dec549"
+    },
+    {
+      "path": "assets/packs/GR_RetainingWall_03.json",
+      "bytes": 142,
+      "sha256": "3342055ee101aea506d99d8e8bdc11dd81cfd0a37d6fba23d005d7c7e723b1c8"
+    },
+    {
+      "path": "assets/packs/GR_RetainingWall_03_GR_RetainingWall_03_color.png",
+      "bytes": 310341,
+      "sha256": "08ca84a9345cafa44e4f52e637f9369052c5c13e5933d17cd325f187f20a6e73"
+    },
+    {
+      "path": "assets/packs/GR_RetainingWall_03_GR_RetainingWall_03_orm.png",
+      "bytes": 20594,
+      "sha256": "f6d52771ec99bed0007636856487609f444ea4c2f6965022bea4e359ce3640e6"
+    },
+    {
+      "path": "assets/packs/GR_RingSpannerSet_04.glb",
+      "bytes": 431960,
+      "sha256": "926b68b5969988856981872d257a64ff223cb8a4974b1b9f71497216fd6c13c7"
+    },
+    {
+      "path": "assets/packs/GR_RingSpannerSet_04.json",
+      "bytes": 145,
+      "sha256": "2caf1d282dcdd1422d81120cb149fe19d76fc9d0e60c4cffa7b415140b427e11"
+    },
+    {
+      "path": "assets/packs/GR_RingSpannerSet_04_GR_RingSpannerSet_04_color.png",
+      "bytes": 274533,
+      "sha256": "8634234a5e2cd3b81a53f8903a131ce3f0e3c032c1d97cbda6715f6bc2a733ef"
+    },
+    {
+      "path": "assets/packs/GR_RingSpannerSet_04_GR_RingSpannerSet_04_orm.png",
+      "bytes": 23037,
+      "sha256": "b0e7fb4c43f712a6b28f6a7d2e244e3239fb6b6b1840c4ce68c76efffa059500"
+    },
+    {
+      "path": "assets/packs/GR_SalvagedMotor_04.glb",
+      "bytes": 586176,
+      "sha256": "423b602cebf24016eb701fa68e2292255236a48928370aeb0fb74597b30befae"
+    },
+    {
+      "path": "assets/packs/GR_SalvagedMotor_04.json",
+      "bytes": 144,
+      "sha256": "9a620868bf53e75589ec1441b721d64d57b038252fc37d3265e00dadc35d3857"
+    },
+    {
+      "path": "assets/packs/GR_SalvagedMotor_04_GR_SalvagedMotor_04_color.png",
+      "bytes": 292256,
+      "sha256": "3984c2c6a50569cd4d6e9a13e0eca6be974913d7ac4956d767a1ec5b7e404525"
+    },
+    {
+      "path": "assets/packs/GR_SalvagedMotor_04_GR_SalvagedMotor_04_orm.png",
+      "bytes": 19950,
+      "sha256": "55e91d7dbe349518ae742a31c3801561ab03d2c20004e9da45597634f6cf1faf"
+    },
+    {
+      "path": "assets/packs/GR_ScrewdriverSet_04.glb",
+      "bytes": 743004,
+      "sha256": "25bd60d1913e893af1000acd24f993a8b992a0200dac780782b6d9d05efb1337"
+    },
+    {
+      "path": "assets/packs/GR_ScrewdriverSet_04.json",
+      "bytes": 144,
+      "sha256": "df6ed1a0a591e19de5f56b20e9c872c8d6aa48daf2f843bd4d5870c47bc992e7"
+    },
+    {
+      "path": "assets/packs/GR_ScrewdriverSet_04_GR_ScrewdriverSet_04_color.png",
+      "bytes": 282875,
+      "sha256": "f52451f792c5cc90b26ea050a402cf63270f670166a7cd00a2d1b56c278261a5"
+    },
+    {
+      "path": "assets/packs/GR_ScrewdriverSet_04_GR_ScrewdriverSet_04_orm.png",
+      "bytes": 21011,
+      "sha256": "e41dca460ae2d3cd4b9dd0040404333d08c7d0c952e87b057d528d497330b95a"
+    },
+    {
+      "path": "assets/packs/GR_ServiceBarrier_03.glb",
+      "bytes": 373372,
+      "sha256": "8cc5f3eea319f4f49930483e4f942b9d3cfc3599484f5d9f3d05bfbf9aaf3160"
+    },
+    {
+      "path": "assets/packs/GR_ServiceBarrier_03.json",
+      "bytes": 141,
+      "sha256": "67e593feff9bdadb1c8b60e3246606ba912564936162f1df959a3e15b1daf2b3"
+    },
+    {
+      "path": "assets/packs/GR_ServiceBarrier_03_GR_ServiceBarrier_03_color.png",
+      "bytes": 178844,
+      "sha256": "8b7cf65d717e081fc885e24d5d1c4c24ab2a4e1ab553389bd5543e091026712c"
+    },
+    {
+      "path": "assets/packs/GR_ServiceBarrier_03_GR_ServiceBarrier_03_orm.png",
+      "bytes": 14164,
+      "sha256": "037a54c5b7f7b41308b68e3ad196477737cef39e148d3387eb659269390ea63a"
+    },
+    {
+      "path": "assets/packs/GR_SocketRail_04.glb",
+      "bytes": 802740,
+      "sha256": "ba4632090071fb0df9c2994a518cfe9f2262157701ff93975cab6dd13f7ce0b1"
+    },
+    {
+      "path": "assets/packs/GR_SocketRail_04.json",
+      "bytes": 142,
+      "sha256": "07dcc52a8daa1cac3d63da7d53fea9aa63eed374a6a183920b1a7762ec7522c2"
+    },
+    {
+      "path": "assets/packs/GR_SocketRail_04_GR_SocketRail_04_color.png",
+      "bytes": 333756,
+      "sha256": "d6c492914f16b14d651740c8e57dc96428b5d9529e18a313489a19360d4668e9"
+    },
+    {
+      "path": "assets/packs/GR_SocketRail_04_GR_SocketRail_04_orm.png",
+      "bytes": 51534,
+      "sha256": "6a40f8bfe686f7668e351019a6031986d03a6a0e14a2139fa7705e6e28ea433e"
+    },
+    {
+      "path": "assets/packs/GR_SolarArray_02.glb",
+      "bytes": 3054568,
+      "sha256": "8f2f5bb8820050801a02ce7f108dd3e098bd170a08c5ad0bd9e890a7c998c9bb"
+    },
+    {
+      "path": "assets/packs/GR_SolarArray_02.json",
+      "bytes": 146,
+      "sha256": "68d77111765af3cb81274a6194c1ee8b6bab048211df0139f4b2629f7d6a9745"
+    },
+    {
+      "path": "assets/packs/GR_SolarArray_02_GR_SolarArray_02_color.png",
+      "bytes": 224836,
+      "sha256": "b32604eb644d617246d7917058f83561ff78ac2cb8bf745a275dd5c8d0f07a0f"
+    },
+    {
+      "path": "assets/packs/GR_SolarArray_02_GR_SolarArray_02_orm.png",
+      "bytes": 24101,
+      "sha256": "dfc64aa1219174e042af1111e742f5ef1e275f26f82a5c17610fbb1334a13035"
+    },
+    {
+      "path": "assets/packs/GR_SolderStation_04.glb",
+      "bytes": 534312,
+      "sha256": "7d6739ef0222576be5a1b7450adb8e0e107102bb7ac5a08099f71aaa9da4b7b4"
+    },
+    {
+      "path": "assets/packs/GR_SolderStation_04.json",
+      "bytes": 147,
+      "sha256": "e3696dbb01676a56549eefeca03937c2191f76cba5068c43000780194855966d"
+    },
+    {
+      "path": "assets/packs/GR_SolderStation_04_GR_SolderStation_04_color.png",
+      "bytes": 286369,
+      "sha256": "b0a4f908b20bd8d615988cfde14177dd6636621edd059e99b4f5c2d1b6f8df34"
+    },
+    {
+      "path": "assets/packs/GR_SolderStation_04_GR_SolderStation_04_orm.png",
+      "bytes": 42915,
+      "sha256": "97683e82257289cbc73ba7ca2b3c58e7444bf8d5dae9b846b6757f9190935082"
+    },
+    {
+      "path": "assets/packs/GR_SpareTires_04.glb",
+      "bytes": 1608516,
+      "sha256": "f063c9861641297ef1b097674c3f707bfe0f444514f2ceb07384cd2747ec716e"
+    },
+    {
+      "path": "assets/packs/GR_SpareTires_04.json",
+      "bytes": 141,
+      "sha256": "9b5ee4637e0af5be2dc0b6c0253938c1b563023d11d41520a27a03e9c1dff90e"
+    },
+    {
+      "path": "assets/packs/GR_SpareTires_04_GR_SpareTires_04_color.png",
+      "bytes": 230731,
+      "sha256": "157699e277c6182b08318be32bd17f9e1a67f638e14c8effd68c8620d4d75acd"
+    },
+    {
+      "path": "assets/packs/GR_SpareTires_04_GR_SpareTires_04_orm.png",
+      "bytes": 50701,
+      "sha256": "c1749082d513215e416293556fcec5acba92081763ce452f3d53331017c5dfbf"
+    },
+    {
+      "path": "assets/packs/GR_SteppingStones_03.glb",
+      "bytes": 376176,
+      "sha256": "3e2d00b53ab2dc6ce1742fb9f2d30ad275acea87ef7f11e404ca90e20ec5fdc6"
+    },
+    {
+      "path": "assets/packs/GR_SteppingStones_03.json",
+      "bytes": 146,
+      "sha256": "93623d6b8210668060c6d23ab00aa1d305f762bc09a486d26f78a437581c4642"
+    },
+    {
+      "path": "assets/packs/GR_SteppingStones_03_GR_SteppingStones_03_color.png",
+      "bytes": 234278,
+      "sha256": "b45074bfae531345fab8567f537a476476d3a873f1e023706e7c0412d9f41a9d"
+    },
+    {
+      "path": "assets/packs/GR_SteppingStones_03_GR_SteppingStones_03_orm.png",
+      "bytes": 19420,
+      "sha256": "b433c0a7a51686072d70a91284d87edbe55369e784527558c9b2d778a3128f91"
+    },
+    {
+      "path": "assets/packs/GR_SupplyCrate_02.glb",
+      "bytes": 727768,
+      "sha256": "424f47df2f3452536d065dafecb1c4c6e0d67655d185608e7b208ac815163b93"
+    },
+    {
+      "path": "assets/packs/GR_SupplyCrate_02.json",
+      "bytes": 145,
+      "sha256": "a56b77b5623453422ab02f36dfe566486cf253710aa69a529b72eadaed67925f"
+    },
+    {
+      "path": "assets/packs/GR_SupplyCrate_02_GR_SupplyCrate_02_color.png",
+      "bytes": 273603,
+      "sha256": "c500fa9c4fde833d2ecb0db47aa782df45d601d5bfb748c82304e1f2cd9a321e"
+    },
+    {
+      "path": "assets/packs/GR_SupplyCrate_02_GR_SupplyCrate_02_orm.png",
+      "bytes": 19651,
+      "sha256": "cf0d85a3a5b3db13aae314200220303a1767495760dba7c9276c9dc8bb000e17"
+    },
+    {
+      "path": "assets/packs/GR_SupplyLocker_02.glb",
+      "bytes": 1326928,
+      "sha256": "b171e76f2c45c9db28edde462fc22f924a896c454bfbd9e32300634b0cef0b18"
+    },
+    {
+      "path": "assets/packs/GR_SupplyLocker_02.json",
+      "bytes": 146,
+      "sha256": "88c4c7f086c8f31eb1da7e7d512aa19c0a537342c2bcaef6d5915691fd9b82b1"
+    },
+    {
+      "path": "assets/packs/GR_SupplyLocker_02_GR_SupplyLocker_02_color.png",
+      "bytes": 264400,
+      "sha256": "c49635d3c5ef7a1eedaa4c9b2ebf51c246ff99e70424b39976c59322e40b2f82"
+    },
+    {
+      "path": "assets/packs/GR_SupplyLocker_02_GR_SupplyLocker_02_orm.png",
+      "bytes": 30797,
+      "sha256": "b86e490d463b87202da7aca99d3b1cd98e938186c4179bb6221fd040df6fcb79"
+    },
+    {
+      "path": "assets/packs/GR_Switchgear_01.glb",
+      "bytes": 1369196,
+      "sha256": "adc9ceb64a6f8837f277e3a2c5eaa178f133d294f7edab11a7c8920fd23b7656"
+    },
+    {
+      "path": "assets/packs/GR_Switchgear_01.json",
+      "bytes": 141,
+      "sha256": "a612b8fe1c1f044bf33e75c7d27080a11cd7334cb87422c786184782ad81db68"
+    },
+    {
+      "path": "assets/packs/GR_Switchgear_01_GR_Switchgear_01_color.png",
+      "bytes": 284014,
+      "sha256": "a99734def28feb295e4c1b57d8642968e5c315633b7c102eca71feaecff09724"
+    },
+    {
+      "path": "assets/packs/GR_Switchgear_01_GR_Switchgear_01_orm.png",
+      "bytes": 29217,
+      "sha256": "0a7e1dcff954a31d996400fb9450806301cdb8c004400a04b0170882333e99cf"
+    },
+    {
+      "path": "assets/packs/GR_TapeSolder_04.glb",
+      "bytes": 594544,
+      "sha256": "d77ef7650f3fdda9478551dae17ab81f0f8cc219ad68d2999b9df1e6e27c6ac0"
+    },
+    {
+      "path": "assets/packs/GR_TapeSolder_04.json",
+      "bytes": 141,
+      "sha256": "526acb4b53383797ee6f6ad148438b8e6738cf8a4a650d2016feb95ee85a0b8e"
+    },
+    {
+      "path": "assets/packs/GR_TapeSolder_04_GR_TapeSolder_04_color.png",
+      "bytes": 322833,
+      "sha256": "e630612792d788f512ab556fbafc73d5670e866a7bfaa626f8e2a8d4c31f9905"
+    },
+    {
+      "path": "assets/packs/GR_TapeSolder_04_GR_TapeSolder_04_orm.png",
+      "bytes": 62050,
+      "sha256": "202f446f31417f81cd264108d91a377ad978d0c1590c9fc8c5c69250cb43b2ee"
+    },
+    {
+      "path": "assets/packs/GR_TarpShelter_02.glb",
+      "bytes": 592616,
+      "sha256": "87176ac0443fc25e825ca860a387081dc0659a1d4ed0227a5123423b120b730e"
+    },
+    {
+      "path": "assets/packs/GR_TarpShelter_02.json",
+      "bytes": 148,
+      "sha256": "612a96a9f73b5ddadc8e55f534fb0b21a21fba7984d9f863dd93d3d4b3e617dc"
+    },
+    {
+      "path": "assets/packs/GR_TarpShelter_02_GR_TarpShelter_02_color.png",
+      "bytes": 200924,
+      "sha256": "774f8402bd0834162d3303fdef5964ba0c4692faf6ff8c3b7494250b9a80d590"
+    },
+    {
+      "path": "assets/packs/GR_TarpShelter_02_GR_TarpShelter_02_orm.png",
+      "bytes": 15941,
+      "sha256": "41cb4a6bfe970f1a1b0b7d11dbeab6d4f75d86bca3369a6c77917c83e7dc1733"
+    },
+    {
+      "path": "assets/packs/GR_Toolboard_02.glb",
+      "bytes": 4309120,
+      "sha256": "30e440f5725200effe10b16633905aa0e896850faca7eeabfcd4bf67171b161b"
+    },
+    {
+      "path": "assets/packs/GR_Toolboard_02.json",
+      "bytes": 141,
+      "sha256": "37a32e27f032c7640d6eebb8f9761179aa9f74605b4f960296f99189c89eac4c"
+    },
+    {
+      "path": "assets/packs/GR_Toolboard_02_GR_Toolboard_02_color.png",
+      "bytes": 214259,
+      "sha256": "bb1a42cd7722afd568e6ab597181f7ffed8148072488248f0963b9ecf2ea54b0"
+    },
+    {
+      "path": "assets/packs/GR_Toolboard_02_GR_Toolboard_02_orm.png",
+      "bytes": 38591,
+      "sha256": "630d1e65c9e255d1322d021ad2e7185ab97da52141e8a879a9aa3c8ca2b7cd19"
+    },
+    {
+      "path": "assets/packs/GR_TrailMarker_03.glb",
+      "bytes": 269380,
+      "sha256": "c4ba5a132a2e5ba17046672e0a9036ce93987bbe734584e161d6ad81ea31b4e3"
+    },
+    {
+      "path": "assets/packs/GR_TrailMarker_03.json",
+      "bytes": 137,
+      "sha256": "43f335968c36bdc1b7a88d5a92e2a6a828a32fffb05c13278ff537629d13bdbe"
+    },
+    {
+      "path": "assets/packs/GR_TrailMarker_03_GR_TrailMarker_03_color.png",
+      "bytes": 178662,
+      "sha256": "9965d472912b41d8336b4ea7fc96e10288dcfc9a6aaec0b8483f2172e5817871"
+    },
+    {
+      "path": "assets/packs/GR_TrailMarker_03_GR_TrailMarker_03_orm.png",
+      "bytes": 11024,
+      "sha256": "4f770b946caf239b33736fbc986419f53b7e96669e65224c502aa88fe22dc8ac"
+    },
+    {
+      "path": "assets/packs/GR_TrailStairs_03.glb",
+      "bytes": 610676,
+      "sha256": "4306b2bce60278a19edebab18b6628b0ade88358634148da98b9c7f598a5d4f6"
+    },
+    {
+      "path": "assets/packs/GR_TrailStairs_03.json",
+      "bytes": 142,
+      "sha256": "c217f00c5e1384e733177587eaa938859ad325f4813d7d4f86e3f54fc1609f76"
+    },
+    {
+      "path": "assets/packs/GR_TrailStairs_03_GR_TrailStairs_03_color.png",
+      "bytes": 261661,
+      "sha256": "7fb32d4d4ccdb91701a18959f239b790f7eb7a540a5eeb9ee91fdbea4b7fa16a"
+    },
+    {
+      "path": "assets/packs/GR_TrailStairs_03_GR_TrailStairs_03_orm.png",
+      "bytes": 13864,
+      "sha256": "20621ab54d4778fb051b2da3afcb5b876b485f6604643ef2bc799995b2368e97"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPole_01.glb",
+      "bytes": 1100252,
+      "sha256": "f0b3e449b3e8b1d398a14a4fee2da608a784d0fe19fa8732e778f288395c891b"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPole_01.json",
+      "bytes": 139,
+      "sha256": "780e42887abc5082eda7bff59277aca4f554b2341ff47a21cc27e12296a08393"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPole_01_GR_UtilityPole_01_color.png",
+      "bytes": 335184,
+      "sha256": "11f6d5918cb57b0f53d7baa0ba7e6894873646336255279db440820aa3e4550f"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPole_01_GR_UtilityPole_01_orm.png",
+      "bytes": 61209,
+      "sha256": "1432c6b193a441b0af2e5d6dbcaf676939bb3d6762eff6984ff314bb54110e0c"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPump_04.glb",
+      "bytes": 457728,
+      "sha256": "a7317b9ce8f76f4aaeb3afc758d6285e045fedc06452976cc33668821800bd70"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPump_04.json",
+      "bytes": 143,
+      "sha256": "71b513e183eac572e2b350866c588dd85a33e25655848e56d1058b0402b39fd1"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPump_04_GR_UtilityPump_04_color.png",
+      "bytes": 281693,
+      "sha256": "8d2b67c0625c8c6014d696b26c4889946844231cee4b0a560af9c1b37f68ba8b"
+    },
+    {
+      "path": "assets/packs/GR_UtilityPump_04_GR_UtilityPump_04_orm.png",
+      "bytes": 31596,
+      "sha256": "eaa5c7089ab3f4ea979cc2c66b4829d2d11385352e3768a4494c16e0425bdaba"
+    },
+    {
+      "path": "assets/packs/GR_WaterBarrel_02.glb",
+      "bytes": 437416,
+      "sha256": "e54b9967492aa6e27baedd0705eb1b7a81b22e32f4b1e0e05c959b510e2be0d4"
+    },
+    {
+      "path": "assets/packs/GR_WaterBarrel_02.json",
+      "bytes": 145,
+      "sha256": "2c1deb1068bc4cc206c5ca10b1e585077c101f65361b72869c9868e12596ab39"
+    },
+    {
+      "path": "assets/packs/GR_WaterBarrel_02_GR_WaterBarrel_02_color.png",
+      "bytes": 237613,
+      "sha256": "889243221061e57fe60714b5183c7ca876a1f069d33915e194b7d270333379cb"
+    },
+    {
+      "path": "assets/packs/GR_WaterBarrel_02_GR_WaterBarrel_02_orm.png",
+      "bytes": 37040,
+      "sha256": "d85147a110c62e8a3ee823295a4e109ac81a539a2e00b049a6e4d129fab13bce"
+    },
+    {
+      "path": "assets/packs/GR_WaterFilter_02.glb",
+      "bytes": 616868,
+      "sha256": "133772ffbecf86786fd32f829dea86b0206f1a13d9961f7a152b4a2ad8e4987e"
+    },
+    {
+      "path": "assets/packs/GR_WaterFilter_02.json",
+      "bytes": 147,
+      "sha256": "030db9b3ab66ae43cffdabac62026fba62b71b886bb02ef26bf8ea7555236169"
+    },
+    {
+      "path": "assets/packs/GR_WaterFilter_02_GR_WaterFilter_02_color.png",
+      "bytes": 307376,
+      "sha256": "8f8f33bd1db6f5039d37121d3898134f8b674611c13687eecb8f19e3e4b86bf5"
+    },
+    {
+      "path": "assets/packs/GR_WaterFilter_02_GR_WaterFilter_02_orm.png",
+      "bytes": 39777,
+      "sha256": "966b93f78bf734e743ac06da5d2045a08519af9d9cb7e09eb919e76c98eb9187"
+    },
+    {
+      "path": "assets/packs/GR_WorkLight_01.glb",
+      "bytes": 441460,
+      "sha256": "29e3b2ec02d220c17c091499fdc5877a0c2b866bf6f9ba92a3cb7cd6859c42cd"
+    },
+    {
+      "path": "assets/packs/GR_WorkLight_01.json",
+      "bytes": 142,
+      "sha256": "a94817832253bc03acf091976926dfcd477b13aad633130d90eb334eda6af66f"
+    },
+    {
+      "path": "assets/packs/GR_WorkLight_01_GR_WorkLight_01_color.png",
+      "bytes": 223703,
+      "sha256": "c6edbf1bea5b6ee9ada7fa23541aaa1854f8ad73a387423c7d413c8ccce78997"
+    },
+    {
+      "path": "assets/packs/GR_WorkLight_01_GR_WorkLight_01_orm.png",
+      "bytes": 28868,
+      "sha256": "80cf23719b953bff3cffe047922e85c13fbcfa72f0fb4688fa605c7ecaf7019b"
+    },
+    {
+      "path": "assets/packs/GR_Workbench_02.glb",
+      "bytes": 695360,
+      "sha256": "97e677ecfc91d1e7f3edb020f0042607f6aa62c8ef0dd4a1ecfbbf9b9cd64ff9"
+    },
+    {
+      "path": "assets/packs/GR_Workbench_02.json",
+      "bytes": 141,
+      "sha256": "5629494bcc39390d140fc83bafcfbd1edcf862317915d732a5e0a32c2bb9aace"
+    },
+    {
+      "path": "assets/packs/GR_Workbench_02_GR_Workbench_02_color.png",
+      "bytes": 250622,
+      "sha256": "c6eb496213798e8f237baa2cceaaf3221b0e602cec4c4a21b9bebc1064b6fb74"
+    },
+    {
+      "path": "assets/packs/GR_Workbench_02_GR_Workbench_02_orm.png",
+      "bytes": 18466,
+      "sha256": "22ad68366e9788b4d1edba56a75d3992b30795f7ed2f64a68b4cf346e929c806"
+    },
+    {
+      "path": "data/dialogue/riggs.json",
+      "bytes": 1376,
+      "sha256": "3d8d80d7bf102b4a0e7780851340849f93490907494ae89c12ef2310b90b5b08"
+    },
+    {
+      "path": "data/opening_items.json",
+      "bytes": 4978,
+      "sha256": "a49aecaed123a5c03a19073ce630f1513edf8678fcddd83d0bd15fea05c47e73"
+    },
+    {
+      "path": "data/port/content.json",
+      "bytes": 102441,
+      "sha256": "2f4098193556c5826e6c5e8066dbda45f1addc8884ee271fce2459fa1a9b3c0d"
+    },
+    {
+      "path": "docs/ASSET_PIPELINE.md",
+      "bytes": 3414,
+      "sha256": "f026f102d9170a25d3e5d5b66989727207fe322e8248fda3c92477d4b6d72678"
+    },
+    {
+      "path": "docs/FRONTEND_NARRATIVE_AUDIO.md",
+      "bytes": 7167,
+      "sha256": "af5ba48b68abf68d502cb51715f98bead1a0bbd7b42c49ec8807c4e84ada9cab"
+    },
+    {
+      "path": "docs/ITEM_ICON_SHEET.png",
+      "bytes": 348628,
+      "sha256": "b57c262ffd1b517428278f59537800c29154a044094a6f9ceec969dac94b753f"
+    },
+    {
+      "path": "docs/README-FOUNDATION-HISTORY.md",
+      "bytes": 5061,
+      "sha256": "3a4ad74795942683a6363633c6ebf55b6a702a7a1a196bcc4b1f99b723ca9ce9"
+    },
+    {
+      "path": "docs/UI_SYMBOL_SHEET.svg",
+      "bytes": 8516,
+      "sha256": "396d0910258a64028f0186beb12da80ba369915dbad240b36c483fed63cb0f83"
+    },
+    {
+      "path": "docs/asset-screenshots/camp.png",
+      "bytes": 1271199,
+      "sha256": "44219febd946a36b89e6d5fc7933d3cea5e09803207cde7857577fed1d356747"
+    },
+    {
+      "path": "docs/asset-screenshots/house.png",
+      "bytes": 1131252,
+      "sha256": "5eb5e989f20994b60993f0011fc67b4e6e5292a5a00aebb9717e4374096775b5"
+    },
+    {
+      "path": "docs/asset-screenshots/house_upstairs.png",
+      "bytes": 626724,
+      "sha256": "7d8513d186e5b49815a737680a51e946b121633db972baf95cba6e9e3cf64bbe"
+    },
+    {
+      "path": "docs/asset-screenshots/pump.png",
+      "bytes": 1236421,
+      "sha256": "7f7ae9006e4cc7b8c809bc33ee44a7dc8fffcc16c517b300edd0bc5a47ef6add"
+    },
+    {
+      "path": "docs/asset-screenshots/route_overview.png",
+      "bytes": 1428186,
+      "sha256": "b14c8bd325365907795f29e3f2a3b427aa940e903cf658838be87ffe8e6953ee"
+    },
+    {
+      "path": "docs/asset-screenshots/store.png",
+      "bytes": 1002945,
+      "sha256": "388b620a719b69dd0574779ef3afdd8aa42342fc80a7ad978580ff33bd3b5bd1"
+    },
+    {
+      "path": "docs/asset-screenshots/utility_interior.png",
+      "bytes": 717105,
+      "sha256": "9d4809694c20be2f852283fe466084e4f7be3bfaf7bac1f8724f6e0d97f54912"
+    },
+    {
+      "path": "docs/asset-screenshots/workbench.png",
+      "bytes": 724426,
+      "sha256": "0e9ae2616cdc0f89d381b4700e99e2d229f01154f803f0c9bd6e320a1b18e74c"
+    },
+    {
+      "path": "docs/asset-screenshots/workshop.png",
+      "bytes": 1186948,
+      "sha256": "7024eae33af9796967d7d455144eed34de1f3f7765ac8955092f70cccbb4d391"
+    },
+    {
+      "path": "docs/polish-screenshots/bike.png",
+      "bytes": 1349497,
+      "sha256": "7a57066a93e36e0345d13088e2fefc5415fa65e4b5722387ec63ee5231aed4a6"
+    },
+    {
+      "path": "docs/polish-screenshots/drone.png",
+      "bytes": 1396745,
+      "sha256": "131a2f51e2f3a9719dca0a14ad1ed09f5bad481fc8d976356795f29dfdc99990"
+    },
+    {
+      "path": "docs/polish-screenshots/human.png",
+      "bytes": 1342364,
+      "sha256": "552d8e61a2bf8995ebe14888cd5549e692ec6149be04675f7bb393b3da97c8e4"
+    },
+    {
+      "path": "docs/polish-screenshots/inventory.png",
+      "bytes": 416406,
+      "sha256": "400ca74218995015260b17f16e523743d72df92fcfe181e9b7054046185a956e"
+    },
+    {
+      "path": "docs/polish-screenshots/loop.png",
+      "bytes": 1313830,
+      "sha256": "56521be0898222fada4e955253fadcec58283427b1bb7556cfeed82a4f8fe182"
+    },
+    {
+      "path": "docs/polish-screenshots/record.png",
+      "bytes": 378035,
+      "sha256": "f6aa76aa8788fddef2cb89f097ea97745abc647468504df853cc73ecb4f6637f"
+    },
+    {
+      "path": "docs/polish-screenshots/walk.png",
+      "bytes": 1319007,
+      "sha256": "074ef7509c6ae106ac1d5a9ab659319ec4f26ba14cd507ed049b3c2be2997acb"
+    },
+    {
+      "path": "docs/screenshots/backpack.png",
+      "bytes": 427251,
+      "sha256": "352f342d319647b2ff21a3d4ec76c99ce805b5bccb90e76fdf3985252b0904c7"
+    },
+    {
+      "path": "docs/screenshots/bike.png",
+      "bytes": 1013865,
+      "sha256": "ee853c0c6ddad0444b90821a581455f5e21e5528cf8f0e7f16244ecc950fd1b6"
+    },
+    {
+      "path": "docs/screenshots/camp.png",
+      "bytes": 1319383,
+      "sha256": "7ece5788b6cb577617b17393712af6566ae708064cc9d5458b30e7a360173b52"
+    },
+    {
+      "path": "docs/screenshots/corridor.png",
+      "bytes": 1269233,
+      "sha256": "feb184bd193ded4d343cf1383efb3273613777f1b4fe129646b5411bf6805ced"
+    },
+    {
+      "path": "docs/screenshots/drone.png",
+      "bytes": 969983,
+      "sha256": "3a05df796cb3d90057e6a4ca1ff11ae9b7b1528bf109e76f9f2cf5f9cc65d2ae"
+    },
+    {
+      "path": "docs/screenshots/menu.png",
+      "bytes": 298358,
+      "sha256": "c71138e4d16af4f332daca858e883654e0fa4beee435c4f942ba30005cd98e29"
+    },
+    {
+      "path": "docs/screenshots/modules.png",
+      "bytes": 431590,
+      "sha256": "22d24728a2cdac66926f0687a1f62c65125b31f20626b8a664f0a8ccebc02975"
+    },
+    {
+      "path": "docs/screenshots/substation.png",
+      "bytes": 1184855,
+      "sha256": "8be0722c7621c5a70d7f5ff2df101828fbc3bb6a72cece36afe56585b0167b37"
+    },
+    {
+      "path": "docs/test-logs/native.log",
+      "bytes": 1479,
+      "sha256": "21181ab68dc75f35ac96cee00cee67f31316f33ca9062f5009956e2762a8ad9b"
+    },
+    {
+      "path": "docs/test-logs/polish-delivery-polish.log",
+      "bytes": 4611,
+      "sha256": "ac7a90636b907f8cd2b5648a85faf04e4e11f9891a0dab6dee9d92e87f08f670"
+    },
+    {
+      "path": "docs/test-logs/polish-endurance.log",
+      "bytes": 2337,
+      "sha256": "abf15b0f39af2b31ba20d8760dbaeace00cc8a7f0c8670a07d6bfbae33763347"
+    },
+    {
+      "path": "docs/test-logs/polish-import.log",
+      "bytes": 11033,
+      "sha256": "10c9f6e13bc8de93fe365104d8f2a2c9ddfdab294a1011ac60b253e2b6accbe6"
+    },
+    {
+      "path": "docs/test-logs/polish-release-native.log",
+      "bytes": 1479,
+      "sha256": "21181ab68dc75f35ac96cee00cee67f31316f33ca9062f5009956e2762a8ad9b"
+    },
+    {
+      "path": "docs/test-logs/polish-release-vs02.log",
+      "bytes": 1728,
+      "sha256": "70d2c8ef3eb1828f8ec5bf9a7860d048b16595b807d3036ae3a26ceb4970ebab"
+    },
+    {
+      "path": "docs/test-logs/polish-render.log",
+      "bytes": 541,
+      "sha256": "05244f6ba2a759b1782155e2dfbaeb10c62aa95e7da68e2f621234ad0dbb303e"
+    },
+    {
+      "path": "docs/test-logs/vertical-slice-02.log",
+      "bytes": 1728,
+      "sha256": "70d2c8ef3eb1828f8ec5bf9a7860d048b16595b807d3036ae3a26ceb4970ebab"
+    },
+    {
+      "path": "docs/validation/test-assets-final2.log",
+      "bytes": 1570,
+      "sha256": "f088245e1a22adf1135e4e276bc66acde7eeda41421f7bfaec4e112b15593608"
+    },
+    {
+      "path": "docs/validation/test-native.log",
+      "bytes": 1603,
+      "sha256": "0704071f382e901c662b4970800e58cf10c06c297ed0d66207784ce2df95b193"
+    },
+    {
+      "path": "docs/validation/test-polish-final.log",
+      "bytes": 4610,
+      "sha256": "72d5e0490cc1249e86cf8f8cf6463e7b273637b75a12ba81193f4f9ab0abbffd"
+    },
+    {
+      "path": "docs/validation/test-vs02.log",
+      "bytes": 1728,
+      "sha256": "70d2c8ef3eb1828f8ec5bf9a7860d048b16595b807d3036ae3a26ceb4970ebab"
+    },
+    {
+      "path": "project.godot",
+      "bytes": 4761,
+      "sha256": "c7d98c84aadbf04c8542c07b2fd2b2a59c99f11732d42fa83cfea7aff4825423"
+    },
+    {
+      "path": "scenes/frontend.tscn",
+      "bytes": 4935,
+      "sha256": "589efa78ddfca17558bf78abc88498dc3b106dde6f51c31a22174b44c7f2378d"
+    },
+    {
+      "path": "scenes/main.tscn",
+      "bytes": 169,
+      "sha256": "868fdb7d293d504fde2816adb62c306bd6ac778d80e177304987494dd0c0a8cb"
+    },
+    {
+      "path": "scenes/props/Bike.tscn",
+      "bytes": 169,
+      "sha256": "65154cef8662b2938b6ef1de730ccfe8078122038f3ed3c5d3852e3b9f999cad"
+    },
+    {
+      "path": "scenes/props/Drone.tscn",
+      "bytes": 171,
+      "sha256": "84cd1e4a8d1242ad6ba464c425f76dde8438322cec59f94baad0fe3023ad7746"
+    },
+    {
+      "path": "scenes/props/ElectricalNode.tscn",
+      "bytes": 182,
+      "sha256": "1ba1135bb5d7ae5a2c2189d94711a50009ccacccc47f8645a1834bb143a5879e"
+    },
+    {
+      "path": "scenes/props/Generator.tscn",
+      "bytes": 179,
+      "sha256": "7e7be0bb4b68fac13e98ec1a8c2a80bd5fd685c4a0eec0b694072d0f6b293718"
+    },
+    {
+      "path": "scenes/props/LootContainer.tscn",
+      "bytes": 179,
+      "sha256": "42f822642862cc952da10838f331c08e1c63c98bc232bfe69076f2c6afdc6bd1"
+    },
+    {
+      "path": "scenes/props/NPC.tscn",
+      "bytes": 167,
+      "sha256": "36b4517dfaef376c5153378f364c9ef9af917bc55396456d82c12e33fe3235be"
+    },
+    {
+      "path": "scenes/props/PowerTrailer.tscn",
+      "bytes": 180,
+      "sha256": "e77006328cad1a4d2c5809e4a8d61c9804880f45bcb6c6f6aae47b53953149b2"
+    },
+    {
+      "path": "scenes/props/SolarArray.tscn",
+      "bytes": 176,
+      "sha256": "b1fe2fb0d5ae6f8cd4b6b67a0aa28df4681aec0cd5b119bf3dc47a5951a9a1d7"
+    },
+    {
+      "path": "scenes/props/Workbench.tscn",
+      "bytes": 179,
+      "sha256": "d71f00897c84314827cf62c3e971dfebf07205b766a32aba91f7f2118c107af8"
+    },
+    {
+      "path": "scripts/bike.gd",
+      "bytes": 1509,
+      "sha256": "c684d5e143933285a3d5b80313ab9a3756da7e9da602598f75a67521e078c089"
+    },
+    {
+      "path": "scripts/bike.gd.uid",
+      "bytes": 20,
+      "sha256": "4187c03a6af9b002925c24d5dfaba09849e675064b404db853a12ab43216670f"
+    },
+    {
+      "path": "scripts/drone.gd",
+      "bytes": 1329,
+      "sha256": "749e7be826dbf4809f9eae93640595641dd83d37384ef620f0120c9e02997e0f"
+    },
+    {
+      "path": "scripts/drone.gd.uid",
+      "bytes": 20,
+      "sha256": "54f007aafd5aac2a0977e1a0ca8abb15d45a20a7eba7eef62bdf2e8eb01a13f9"
+    },
+    {
+      "path": "scripts/expedition.gd",
+      "bytes": 40112,
+      "sha256": "501d2b9ff75ecb16e055ae066ed82189114176402893e00f556e9b20e9d465e3"
+    },
+    {
+      "path": "scripts/expedition.gd.uid",
+      "bytes": 19,
+      "sha256": "5512fab941f4957dbcb70bc50a6120431fd0bc1acfa382c2c1d038c0dc368574"
+    },
+    {
+      "path": "scripts/frontend.gd",
+      "bytes": 5590,
+      "sha256": "18d2451b5ae3006a4d66adf2e40cb1f1206d06f1d1975a777e62a4f402d212e9"
+    },
+    {
+      "path": "scripts/frontend.gd.uid",
+      "bytes": 19,
+      "sha256": "64eebedc5fc9056e2a4d4747eb1164e5280178ddd54232c987249859eb5d143b"
+    },
+    {
+      "path": "scripts/player.gd",
+      "bytes": 1395,
+      "sha256": "914695e08ebd5f22289b96941b5e46716b0f61ad1bde8226f637ddf4e9333fd1"
+    },
+    {
+      "path": "scripts/player.gd.uid",
+      "bytes": 19,
+      "sha256": "074aa929cdc6bc90b7ec08be8117f08b62e25a05a510c25c2a69bb43a5f1b10e"
+    },
+    {
+      "path": "systems/asset_integration.gd",
+      "bytes": 5713,
+      "sha256": "daf69427fb82d0d256be668e41911835c8719c440d7904fb7619c9d65ae8d1d1"
+    },
+    {
+      "path": "systems/asset_integration.gd.uid",
+      "bytes": 20,
+      "sha256": "86bb3178ea3cfe2c9ad18b5028c3ae3c707a9b71e3031aeeacba9fe15065a476"
+    },
+    {
+      "path": "systems/energy_system.gd",
+      "bytes": 889,
+      "sha256": "d7708a833d327c05fb8f474237ef4a3f3f7fe249143ca5ba8ddd980649fc98da"
+    },
+    {
+      "path": "systems/energy_system.gd.uid",
+      "bytes": 19,
+      "sha256": "4005d10d9dfef98452858617f59d137e249fd484c00ad1d6193179115dde22b4"
+    },
+    {
+      "path": "systems/field_audio.gd",
+      "bytes": 6747,
+      "sha256": "aa254260d388eb1d6580034e6f896f89f5d2fc312cbeca14779dca8f941dde68"
+    },
+    {
+      "path": "systems/field_audio.gd.uid",
+      "bytes": 20,
+      "sha256": "7bcb58201a8492ac9ec1a463dfe7eab0015e4f2f464983d36160306f09022429"
+    },
+    {
+      "path": "systems/field_hud.gd",
+      "bytes": 9032,
+      "sha256": "7593330f11a712d1353628a1f9d8cc9e975359304101eefef9bc9b6ea3c867d3"
+    },
+    {
+      "path": "systems/field_hud.gd.uid",
+      "bytes": 19,
+      "sha256": "7e0145c9fdfa2784bcb56d2b89efef3782f980520d045ee191045e244376f5a4"
+    },
+    {
+      "path": "systems/generator.gd",
+      "bytes": 1329,
+      "sha256": "e701c1295df570c661a9f828f7a84668a340e51fd3159052d2e63e2cc3c4914c"
+    },
+    {
+      "path": "systems/generator.gd.uid",
+      "bytes": 20,
+      "sha256": "0527e88f99729286490346c3c325ee808eb54231aff5c5c46d8cb13e4c0fa185"
+    },
+    {
+      "path": "systems/polish.gd",
+      "bytes": 8591,
+      "sha256": "687f7503b2f478a97d6f040a0d0ab7a88e9ada05d346a89acc0037d76b2e7dd5"
+    },
+    {
+      "path": "systems/polish.gd.uid",
+      "bytes": 19,
+      "sha256": "1918debbba3f5985f8b20cd7f5bbe56401a2f811f09df36baf24b74198076334"
+    },
+    {
+      "path": "systems/power_trailer.gd",
+      "bytes": 1417,
+      "sha256": "666b0b04248d90506e6eb1028209b2c03800af6a98fa869b50a4b3b38816cef0"
+    },
+    {
+      "path": "systems/power_trailer.gd.uid",
+      "bytes": 19,
+      "sha256": "ffda072c4a927ccb7f322991d357b9bee82c2a08261e6071ed5997155be5717f"
+    },
+    {
+      "path": "systems/scout_activities.gd",
+      "bytes": 5727,
+      "sha256": "59d2b7b6149b4ba1a6e59d34e4346e4700ba6bc97d5ff29b04477f53dabd9f97"
+    },
+    {
+      "path": "systems/scout_activities.gd.uid",
+      "bytes": 20,
+      "sha256": "864b16f3e41a0f9a5e463cec6c50150dd342f3ed81c82619e177a1509e723fc4"
+    },
+    {
+      "path": "systems/session.gd",
+      "bytes": 5014,
+      "sha256": "4843071c718b3c3d53a01d97f6be8e3624a455c5e1cf8bd848a5c0ef7f624560"
+    },
+    {
+      "path": "systems/session.gd.uid",
+      "bytes": 19,
+      "sha256": "53224ae73ee76bd424fa130d45233fe2273580596e4a57d2c973911218cc8d6b"
+    },
+    {
+      "path": "systems/slice02.gd",
+      "bytes": 14464,
+      "sha256": "b0758c65ddbfa224920dd29ea54ce8b0fdee71de30cbeae84718ab7ca080cc12"
+    },
+    {
+      "path": "systems/slice02.gd.uid",
+      "bytes": 20,
+      "sha256": "a171a5d31f329fb905c3ce1672c89be3a67ecf6e979438d60b501529b8f54c67"
+    },
+    {
+      "path": "systems/storage.gd",
+      "bytes": 4442,
+      "sha256": "6ea35294a755f46dfd5eebf6f69e6dfa238a0e4af9f34a33825a6943f4eb550e"
+    },
+    {
+      "path": "systems/storage.gd.uid",
+      "bytes": 20,
+      "sha256": "a4de8fdaa12481a5b1282f3a85db7c923b53da9d13c9af3b7ba1cbb79948f1a8"
+    },
+    {
+      "path": "systems/traversal.gd",
+      "bytes": 2593,
+      "sha256": "e53209510f20d239e55ec1614c4390cc7d9ccced3e2c6b492063074f883cce9a"
+    },
+    {
+      "path": "systems/traversal.gd.uid",
+      "bytes": 20,
+      "sha256": "750232b05dd31da05c5bed3109d27eab43ebbc334060428ad8e9fae5fd6b71de"
+    },
+    {
+      "path": "tests/asset_integration_regression.gd",
+      "bytes": 3759,
+      "sha256": "6f9191138e90a7544b7fabaa818b23d042c26922e644cff4056b2fc2a879b701"
+    },
+    {
+      "path": "tests/asset_integration_regression.gd.uid",
+      "bytes": 19,
+      "sha256": "c1803650db8a5ea06f81bf32978929542ffe97de0fe15f3cf26be5bcb84052a3"
+    },
+    {
+      "path": "tests/capture_assets.gd",
+      "bytes": 1623,
+      "sha256": "61221bfa0c911f35cf25a821404d9b51ca9373d2f65a75272338f4ea3834b2e1"
+    },
+    {
+      "path": "tests/capture_assets.gd.uid",
+      "bytes": 19,
+      "sha256": "6cee534fbf27e0a0e915be7873eb55b1f96a644c12446af0c52991babfe2bba8"
+    },
+    {
+      "path": "tests/capture_polish.gd",
+      "bytes": 2294,
+      "sha256": "4b4edbd292e78898453c1d613502a7886e553b145e23ba9c7a9cee75f92c649b"
+    },
+    {
+      "path": "tests/capture_polish.gd.uid",
+      "bytes": 20,
+      "sha256": "e7f224ebe489b63f1c29fa70c26dc149f30958d3335e11972a70761ccc5011d2"
+    },
+    {
+      "path": "tests/capture_views.gd",
+      "bytes": 2223,
+      "sha256": "2114b966a0acec5ff129d65552e44b74bb81dcd3a7a6169df399dc14825efa49"
+    },
+    {
+      "path": "tests/capture_views.gd.uid",
+      "bytes": 19,
+      "sha256": "7e96bffdf7b2c1f99fcb1107036d15b7040d3b0c541a770144f6df5d9f8d71a1"
+    },
+    {
+      "path": "tests/endurance_polish.gd",
+      "bytes": 3582,
+      "sha256": "6ca758bd7e4c3d166a27a3c9402c16e063885b577820c3f22f73933ba49fce8f"
+    },
+    {
+      "path": "tests/endurance_polish.gd.uid",
+      "bytes": 20,
+      "sha256": "e6b36e7394724c373b03f73d5a35326d649a7737e62d8958f72f6254590e8d57"
+    },
+    {
+      "path": "tests/leak_probe.gd",
+      "bytes": 296,
+      "sha256": "c1844de855138b24f3effec38e577cdf6d86e5d680649c5fba1523eb35656e84"
+    },
+    {
+      "path": "tests/leak_probe.gd.uid",
+      "bytes": 20,
+      "sha256": "ce12464904c9e79ce5d067a30f2fc5a6715cb9bbe50518734f7d00d80716f531"
+    },
+    {
+      "path": "tests/native_smoke.gd",
+      "bytes": 8070,
+      "sha256": "740cd1bdac28245beb6b45a91b57e06d4b103570c3ee2ffaefa113aeb574c92a"
+    },
+    {
+      "path": "tests/native_smoke.gd.uid",
+      "bytes": 20,
+      "sha256": "8ec6c69a1ac8853a639000d555d5003d3a311af161fc6e149a9344164e26a2ed"
+    },
+    {
+      "path": "tests/polish_regression.gd",
+      "bytes": 8678,
+      "sha256": "9c9a34bd8c43ae2ed1ef54562435bbad9771c8908914cdda16500e8a6c4f103b"
+    },
+    {
+      "path": "tests/polish_regression.gd.uid",
+      "bytes": 20,
+      "sha256": "8a86afa46109a1c00aad77df645a0dbee92f4bf421b49bde7d163bec5e0e6fa3"
+    },
+    {
+      "path": "tests/render_icons.gd",
+      "bytes": 1556,
+      "sha256": "e3e8c64c42d1af1ffdeb67c6573010e48d28df6953d134e6010b8113b04b85a5"
+    },
+    {
+      "path": "tests/render_icons.gd.uid",
+      "bytes": 20,
+      "sha256": "0d310b9ab4513c96103f0512b6e0ed5830176c16c5ba4148157d5427868013f9"
+    },
+    {
+      "path": "tests/vertical_slice_02.gd",
+      "bytes": 6945,
+      "sha256": "fdb1af20fa8f146b4e9b65271a27923b766804c891ba533f3385acbc0cdd0c38"
+    },
+    {
+      "path": "tests/vertical_slice_02.gd.uid",
+      "bytes": 20,
+      "sha256": "3f5a13d1aed50fc1037e4fa9fa204de11c81e872dfdbef2f5d462fc529c5a9bd"
+    },
+    {
+      "path": "tools/build_human_head.py",
+      "bytes": 1123,
+      "sha256": "84a0b07b15fe94cfc4932b5823c82772dd687c3e382f332026108c42e0760753"
+    },
+    {
+      "path": "tools/build_polish_audio.py",
+      "bytes": 3411,
+      "sha256": "b74eefe6f7661236b7c467ca096b5a506181ba2581655786b4a46c7e96762935"
+    },
+    {
+      "path": "tools/build_starter_assets.gd",
+      "bytes": 4663,
+      "sha256": "c1b7e79667f4f6ffb5bdf351e752a3c6d9513bc4768d9ce92903a66769dd57b9"
+    },
+    {
+      "path": "tools/build_starter_assets.gd.uid",
+      "bytes": 19,
+      "sha256": "a9e0275a0960555973940bced3dd7f3970479bc63cd2280ddd869d94aee9c280"
+    },
+    {
+      "path": "tools/export_packs.py",
+      "bytes": 7782,
+      "sha256": "2ae7d1c25dd8637b741d38b0fc188851a0d87a5067eea2370daf61d8b4859b8a"
+    },
+    {
+      "path": "world/REGION_01_LAYOUT.md",
+      "bytes": 3138,
+      "sha256": "6988ec2e7fe5daf767e0898a45e8e711a6d4164956cfb62ad0675f93ce7dfb87"
+    },
+    {
+      "path": "world/authored_opening.gd",
+      "bytes": 10726,
+      "sha256": "48a3f5f47a9be0bc0df549cd0b67235eea54fd632a183ee1838164d36002a1d0"
+    },
+    {
+      "path": "world/authored_opening.gd.uid",
+      "bytes": 20,
+      "sha256": "7e7eedae7d105fa4f89be70c323b9dfe97ca593814d3b0390045c3c346a9554a"
+    },
+    {
+      "path": "world/region_01.gd",
+      "bytes": 2131,
+      "sha256": "a54cc920cdda285085d00022c9cfee39f1755a3dd0a90c4857d745b0c74864f9"
+    },
+    {
+      "path": "world/region_01.gd.uid",
+      "bytes": 20,
+      "sha256": "7045b23d631a2872f965ebf223f6d681445b17080d52b67782f200e1bafe7894"
+    }
+  ]
+}

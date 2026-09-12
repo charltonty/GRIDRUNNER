@@ -1,0 +1,240 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+first_scan_filesystem: begin: Project initialization steps: 5
+	first_scan_filesystem: step 0: Scanning file structure...
+	first_scan_filesystem: step 1: Loading global class names...
+	first_scan_filesystem: step 2: Verifying GDExtensions...
+	first_scan_filesystem: step 3: Creating autoload scripts...
+	first_scan_filesystem: step 4: Initializing plugins...
+	first_scan_filesystem: step 5: Starting file scan...
+first_scan_filesystem: end
+update_scripts_classes: begin: Registering global classes... steps: 5
+	update_scripts_classes: step 0: FieldKit
+	update_scripts_classes: step 1: 
+	update_scripts_classes: step 2: ScoutActivities
+	update_scripts_classes: step 3: 
+	update_scripts_classes: step 4: 
+update_scripts_classes: end
+_update_scan_actions: begin: Scanning actions... steps: 148
+	_update_scan_actions: step 0: asphalt_0.wav
+	_update_scan_actions: step 1: asphalt_1.wav
+	_update_scan_actions: step 2: asphalt_2.wav
+	_update_scan_actions: step 3: asphalt_3.wav
+	_update_scan_actions: step 4: asphalt_4.wav
+	_update_scan_actions: step 5: concrete_0.wav
+	_update_scan_actions: step 6: concrete_1.wav
+	_update_scan_actions: step 7: concrete_2.wav
+	_update_scan_actions: step 8: concrete_3.wav
+	_update_scan_actions: step 9: concrete_4.wav
+	_update_scan_actions: step 10: creek.wav
+	_update_scan_actions: step 11: dirt_0.wav
+	_update_scan_actions: step 12: dirt_1.wav
+	_update_scan_actions: step 13: dirt_2.wav
+	_update_scan_actions: step 14: dirt_3.wav
+	_update_scan_actions: step 15: dirt_4.wav
+	_update_scan_actions: step 16: dry_soil_0.wav
+	_update_scan_actions: step 17: dry_soil_1.wav
+	_update_scan_actions: step 18: dry_soil_2.wav
+	_update_scan_actions: step 19: dry_soil_3.wav
+	_update_scan_actions: step 20: dry_soil_4.wav
+	_update_scan_actions: step 21: electrical.wav
+	_update_scan_actions: step 22: equipment_0.wav
+	_update_scan_actions: step 23: equipment_1.wav
+	_update_scan_actions: step 24: equipment_2.wav
+	_update_scan_actions: step 25: equipment_3.wav
+	_update_scan_actions: step 26: equipment_4.wav
+	_update_scan_actions: step 27: freewheel.wav
+	_update_scan_actions: step 28: grass_0.wav
+	_update_scan_actions: step 29: grass_1.wav
+	_update_scan_actions: step 30: grass_2.wav
+	_update_scan_actions: step 31: grass_3.wav
+	_update_scan_actions: step 32: grass_4.wav
+	_update_scan_actions: step 33: gravel_0.wav
+	_update_scan_actions: step 34: gravel_1.wav
+	_update_scan_actions: step 35: gravel_2.wav
+	_update_scan_actions: step 36: gravel_3.wav
+	_update_scan_actions: step 37: gravel_4.wav
+	_update_scan_actions: step 38: insects.wav
+	_update_scan_actions: step 39: interior_0.wav
+	_update_scan_actions: step 40: interior_1.wav
+	_update_scan_actions: step 41: interior_2.wav
+	_update_scan_actions: step 42: interior_3.wav
+	_update_scan_actions: step 43: interior_4.wav
+	_update_scan_actions: step 44: land_asphalt_0.wav
+	_update_scan_actions: step 45: land_asphalt_1.wav
+	_update_scan_actions: step 46: land_asphalt_2.wav
+	_update_scan_actions: step 47: land_asphalt_3.wav
+	_update_scan_actions: step 48: land_asphalt_4.wav
+	_update_scan_actions: step 49: land_concrete_0.wav
+	_update_scan_actions: step 50: land_concrete_1.wav
+	_update_scan_actions: step 51: land_concrete_2.wav
+	_update_scan_actions: step 52: land_concrete_3.wav
+	_update_scan_actions: step 53: land_concrete_4.wav
+	_update_scan_actions: step 54: land_dirt_0.wav
+	_update_scan_actions: step 55: land_dirt_1.wav
+	_update_scan_actions: step 56: land_dirt_2.wav
+	_update_scan_actions: step 57: land_dirt_3.wav
+	_update_scan_actions: step 58: land_dirt_4.wav
+	_update_scan_actions: step 59: land_dry_soil_0.wav
+	_update_scan_actions: step 60: land_dry_soil_1.wav
+	_update_scan_actions: step 61: land_dry_soil_2.wav
+	_update_scan_actions: step 62: land_dry_soil_3.wav
+	_update_scan_actions: step 63: land_dry_soil_4.wav
+	_update_scan_actions: step 64: land_grass_0.wav
+	_update_scan_actions: step 65: land_grass_1.wav
+	_update_scan_actions: step 66: land_grass_2.wav
+	_update_scan_actions: step 67: land_grass_3.wav
+	_update_scan_actions: step 68: land_grass_4.wav
+	_update_scan_actions: step 69: land_gravel_0.wav
+	_update_scan_actions: step 70: land_gravel_1.wav
+	_update_scan_actions: step 71: land_gravel_2.wav
+	_update_scan_actions: step 72: land_gravel_3.wav
+	_update_scan_actions: step 73: land_gravel_4.wav
+	_update_scan_actions: step 74: land_interior_0.wav
+	_update_scan_actions: step 75: land_interior_1.wav
+	_update_scan_actions: step 76: land_interior_2.wav
+	_update_scan_actions: step 77: land_interior_3.wav
+	_update_scan_actions: step 78: land_interior_4.wav
+	_update_scan_actions: step 79: land_leaves_0.wav
+	_update_scan_actions: step 80: land_leaves_1.wav
+	_update_scan_actions: step 81: land_leaves_2.wav
+	_update_scan_actions: step 82: land_leaves_3.wav
+	_update_scan_actions: step 83: land_leaves_4.wav
+	_update_scan_actions: step 84: land_metal_0.wav
+	_update_scan_actions: step 85: land_metal_1.wav
+	_update_scan_actions: step 86: land_metal_2.wav
+	_update_scan_actions: step 87: land_metal_3.wav
+	_update_scan_actions: step 88: land_metal_4.wav
+	_update_scan_actions: step 89: land_mud_0.wav
+	_update_scan_actions: step 90: land_mud_1.wav
+	_update_scan_actions: step 91: land_mud_2.wav
+	_update_scan_actions: step 92: land_mud_3.wav
+	_update_scan_actions: step 93: land_mud_4.wav
+	_update_scan_actions: step 94: land_rock_0.wav
+	_update_scan_actions: step 95: land_rock_1.wav
+	_update_scan_actions: step 96: land_rock_2.wav
+	_update_scan_actions: step 97: land_rock_3.wav
+	_update_scan_actions: step 98: land_rock_4.wav
+	_update_scan_actions: step 99: land_water_0.wav
+	_update_scan_actions: step 100: land_water_1.wav
+	_update_scan_actions: step 101: land_water_2.wav
+	_update_scan_actions: step 102: land_water_3.wav
+	_update_scan_actions: step 103: land_water_4.wav
+	_update_scan_actions: step 104: land_wood_0.wav
+	_update_scan_actions: step 105: land_wood_1.wav
+	_update_scan_actions: step 106: land_wood_2.wav
+	_update_scan_actions: step 107: land_wood_3.wav
+	_update_scan_actions: step 108: land_wood_4.wav
+	_update_scan_actions: step 109: leaves_0.wav
+	_update_scan_actions: step 110: leaves_1.wav
+	_update_scan_actions: step 111: leaves_2.wav
+	_update_scan_actions: step 112: leaves_3.wav
+	_update_scan_actions: step 113: leaves_4.wav
+	_update_scan_actions: step 114: leaves_wind.wav
+	_update_scan_actions: step 115: metal_0.wav
+	_update_scan_actions: step 116: metal_1.wav
+	_update_scan_actions: step 117: metal_2.wav
+	_update_scan_actions: step 118: metal_3.wav
+	_update_scan_actions: step 119: metal_4.wav
+	_update_scan_actions: step 120: mud_0.wav
+	_update_scan_actions: step 121: mud_1.wav
+	_update_scan_actions: step 122: mud_2.wav
+	_update_scan_actions: step 123: mud_3.wav
+	_update_scan_actions: step 124: mud_4.wav
+	_update_scan_actions: step 125: rock_0.wav
+	_update_scan_actions: step 126: rock_1.wav
+	_update_scan_actions: step 127: rock_2.wav
+	_update_scan_actions: step 128: rock_3.wav
+	_update_scan_actions: step 129: rock_4.wav
+	_update_scan_actions: step 130: tire.wav
+	_update_scan_actions: step 131: water_0.wav
+	_update_scan_actions: step 132: water_1.wav
+	_update_scan_actions: step 133: water_2.wav
+	_update_scan_actions: step 134: water_3.wav
+	_update_scan_actions: step 135: water_4.wav
+	_update_scan_actions: step 136: wood_0.wav
+	_update_scan_actions: step 137: wood_1.wav
+	_update_scan_actions: step 138: wood_2.wav
+	_update_scan_actions: step 139: wood_3.wav
+	_update_scan_actions: step 140: wood_4.wav
+	_update_scan_actions: step 141: bike.png
+	_update_scan_actions: step 142: drone.png
+	_update_scan_actions: step 143: human.png
+	_update_scan_actions: step 144: inventory.png
+	_update_scan_actions: step 145: loop.png
+	_update_scan_actions: step 146: record.png
+	_update_scan_actions: step 147: walk.png
+_update_scan_actions: end
+reimport: begin: (Re)Importing Assets steps: 28
+	reimport: step 0: Preparing files to reimport...
+	reimport: step 1: Preparing files to reimport...
+	reimport: step 2: Preparing files to reimport...
+	reimport: step 3: Preparing files to reimport...
+	reimport: step 4: Preparing files to reimport...
+	reimport: step 5: Preparing files to reimport...
+	reimport: step 6: Preparing files to reimport...
+	reimport: step 7: Preparing files to reimport...
+	reimport: step 8: Preparing files to reimport...
+	reimport: step 9: Preparing files to reimport...
+	reimport: step 10: Preparing files to reimport...
+	reimport: step 11: Preparing files to reimport...
+	reimport: step 12: Preparing files to reimport...
+	reimport: step 13: Preparing files to reimport...
+	reimport: step 14: Preparing files to reimport...
+	reimport: step 15: Preparing files to reimport...
+	reimport: step 16: Preparing files to reimport...
+	reimport: step 17: Preparing files to reimport...
+	reimport: step 18: Preparing files to reimport...
+	reimport: step 19: Preparing files to reimport...
+	reimport: step 20: Preparing files to reimport...
+	reimport: step 21: Preparing files to reimport...
+	reimport: step 22: Preparing files to reimport...
+	reimport: step 23: Preparing files to reimport...
+	reimport: step 24: Preparing files to reimport...
+	reimport: step 25: Preparing files to reimport...
+	reimport: step 26: Preparing files to reimport...
+	reimport: step 27: Preparing files to reimport...
+	reimport: step 0: Executing pre-reimport operations...
+	reimport: step 0: walk.png
+	reimport: step 1: record.png
+	reimport: step 2: loop.png
+	reimport: step 3: inventory.png
+	reimport: step 4: human.png
+	reimport: step 5: drone.png
+	reimport: step 6: bike.png
+	reimport: step 7: walk.png
+	reimport: step 8: record.png
+	reimport: step 9: loop.png
+	reimport: step 10: inventory.png
+	reimport: step 11: human.png
+	reimport: step 12: drone.png
+	reimport: step 13: bike.png
+	reimport: step 14: tire.wav
+	reimport: step 15: leaves_wind.wav
+	reimport: step 16: land_interior_4.wav
+	reimport: step 17: land_interior_3.wav
+	reimport: step 18: land_interior_2.wav
+	reimport: step 19: land_interior_1.wav
+	reimport: step 20: land_interior_0.wav
+	reimport: step 21: interior_4.wav
+	reimport: step 22: interior_3.wav
+	reimport: step 23: interior_2.wav
+	reimport: step 24: interior_1.wav
+	reimport: step 25: interior_0.wav
+	reimport: step 26: insects.wav
+	reimport: step 27: freewheel.wav
+	reimport: step 28: Finalizing Asset Import...
+reimport: end
+update_script_paths_documentation: begin: Updating scripts documentation steps: 5
+	update_script_paths_documentation: step 0: kit.gd
+	update_script_paths_documentation: step 1: polish.gd
+	update_script_paths_documentation: step 2: scout_activities.gd
+	update_script_paths_documentation: step 3: capture_polish.gd
+	update_script_paths_documentation: step 4: polish_regression.gd
+update_script_paths_documentation: end
+reimport: begin: (Re)Importing Assets steps: 28
+	reimport: step 0: Executing post-reimport operations...
+reimport: end
+loading_editor_layout: begin: Loading editor steps: 5
+	loading_editor_layout: step 0: Loading editor layout...
+loading_editor_layout: end

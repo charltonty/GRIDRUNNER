@@ -1,0 +1,202 @@
+[
+  {
+    "id": "GR_BatteryCase_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.688,
+      0.4555,
+      0.4985
+    ]
+  },
+  {
+    "id": "GR_BikeRepairStand_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.955,
+      1.777,
+      0.88
+    ]
+  },
+  {
+    "id": "GR_CampCot_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.846,
+      0.6637,
+      2.04
+    ]
+  },
+  {
+    "id": "GR_CampStove_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.66,
+      0.675,
+      0.4565
+    ]
+  },
+  {
+    "id": "GR_ChargingStation_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.97,
+      1.548,
+      0.7874
+    ]
+  },
+  {
+    "id": "GR_DroneHardCase_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.838,
+      0.312,
+      0.5685
+    ]
+  },
+  {
+    "id": "GR_ExtensionReel_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.7735,
+      0.559,
+      0.7294
+    ]
+  },
+  {
+    "id": "GR_FieldRadio_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.7028,
+      1.18,
+      0.624
+    ]
+  },
+  {
+    "id": "GR_FieldStorageCase_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.5556,
+      0.4091,
+      0.4338
+    ]
+  },
+  {
+    "id": "GR_FirstAidCase_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.4522,
+      0.3285,
+      0.3698
+    ]
+  },
+  {
+    "id": "GR_FoldingChair_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.54,
+      0.9328,
+      0.5941
+    ]
+  },
+  {
+    "id": "GR_RainCollector_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      1.284,
+      1.543,
+      1.046
+    ]
+  },
+  {
+    "id": "GR_SolarArray_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      2.1047,
+      0.934,
+      1.2899
+    ]
+  },
+  {
+    "id": "GR_SupplyCrate_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.786,
+      0.46,
+      0.5941
+    ]
+  },
+  {
+    "id": "GR_SupplyLocker_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.79,
+      2.048,
+      0.5915
+    ]
+  },
+  {
+    "id": "GR_TarpShelter_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      2.8897,
+      2.6512,
+      2.5585
+    ]
+  },
+  {
+    "id": "GR_Toolboard_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      1.43,
+      1.72,
+      0.615
+    ]
+  },
+  {
+    "id": "GR_WaterBarrel_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.61,
+      0.9855,
+      0.668
+    ]
+  },
+  {
+    "id": "GR_WaterFilter_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      0.8348,
+      0.825,
+      0.4951
+    ]
+  },
+  {
+    "id": "GR_Workbench_02",
+    "source": "GRIDRUNNER-Field-Camp-Pack-02(1).blend",
+    "doors": [],
+    "dimensions": [
+      1.92,
+      1.21,
+      0.947
+    ]
+  }
+]

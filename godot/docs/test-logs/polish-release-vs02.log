@@ -1,0 +1,44 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS: At least 100 item definitions
+PASS: Jump physically clears floor
+PASS: Held jump lands without automatic bounce
+PASS: Landing event follows airborne movement
+PASS: Crouch physically lowers capsule
+PASS: Ceiling prevents standing through collision
+PASS: Stand resumes when clearance returns
+PASS: Player cannot walk through solid wall
+PASS: Small step crossed by actual movement
+PASS: Player climbs a physical slope
+PASS: World water pickup succeeds within reach
+PASS: Pickup adds inventory and removes world mesh
+PASS: Depleted object cannot duplicate
+PASS: Repeated items stack
+PASS: Overweight pickup is atomic
+PASS: Transfer into bike
+PASS: Retrieve from bike
+PASS: Transfer into drone
+PASS: Retrieve from drone
+PASS: Transfer into trailer
+PASS: Retrieve from trailer
+PASS: Transfer into workbench
+PASS: Retrieve from workbench
+PASS: Transfer into world
+PASS: Retrieve from world
+PASS: Battery rack rejects incompatible supply
+PASS: Drone payload rejects excessive mass
+PASS: Docked module replacement succeeds
+PASS: Drone cargo module physically retrieves propeller
+PASS: Retrieved object occupies drone storage
+PASS: Airborne reconfiguration rejected
+PASS: Equipped mass and power increase actual battery consumption
+PASS: Marker consumes payload and creates world designation
+PASS: Cooldown prevents repeated payload consumption
+PASS: Backpack builds selectable item rows
+PASS: Slice 02 save reload accepted
+PASS: Tank and stored fuel persist
+PASS: Physical loot and drone cargo persist
+PASS: Opening discovery persists
+PASS: Invalid overweight storage save rejected
+PASS: Vertical Slice 01 saves remain accepted
+VS02 CHECKS: 41 / FAILURES: 0

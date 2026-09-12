@@ -1,0 +1,202 @@
+[
+  {
+    "id": "GR_BollardSet_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.05,
+      0.975,
+      0.25
+    ]
+  },
+  {
+    "id": "GR_BreakerPanel_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.9728,
+      1.0,
+      0.6125
+    ]
+  },
+  {
+    "id": "GR_CableSpool_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.3069,
+      0.8865,
+      1.1225
+    ]
+  },
+  {
+    "id": "GR_CableTray_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.73,
+      0.1575,
+      1.8813
+    ]
+  },
+  {
+    "id": "GR_ConcreteBarrier_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      2.1,
+      0.949,
+      0.64
+    ]
+  },
+  {
+    "id": "GR_ConcretePad_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.7555,
+      0.28,
+      1.3
+    ]
+  },
+  {
+    "id": "GR_ConduitAssembly_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.08,
+      0.75,
+      1.6518
+    ]
+  },
+  {
+    "id": "GR_Disconnect_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.596,
+      0.878,
+      0.3506
+    ]
+  },
+  {
+    "id": "GR_DistributionCabinet_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.87,
+      2.068,
+      0.6115
+    ]
+  },
+  {
+    "id": "GR_ElectricalSalvage_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.88,
+      0.295,
+      0.67
+    ]
+  },
+  {
+    "id": "GR_Generator_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.03,
+      0.6798,
+      0.624
+    ]
+  },
+  {
+    "id": "GR_GroundingKit_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.9178,
+      0.131,
+      0.614
+    ]
+  },
+  {
+    "id": "GR_InsulatorSet_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.72,
+      0.5725,
+      0.54
+    ]
+  },
+  {
+    "id": "GR_JunctionBox_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.59,
+      0.6545,
+      0.3804
+    ]
+  },
+  {
+    "id": "GR_MeterPedestal_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.65,
+      1.529,
+      0.4499
+    ]
+  },
+  {
+    "id": "GR_PadTransformer_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      2.05,
+      1.558,
+      1.48
+    ]
+  },
+  {
+    "id": "GR_PoleTransformer_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.544,
+      1.0758,
+      0.642
+    ]
+  },
+  {
+    "id": "GR_Switchgear_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.25,
+      2.368,
+      0.8316
+    ]
+  },
+  {
+    "id": "GR_UtilityPole_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      1.84,
+      4.6,
+      1.221
+    ]
+  },
+  {
+    "id": "GR_WorkLight_01",
+    "source": "GRIDRUNNER-Electrical-Pack-01.blend",
+    "doors": [],
+    "dimensions": [
+      0.8019,
+      1.891,
+      0.8248
+    ]
+  }
+]

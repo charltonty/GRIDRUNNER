@@ -1,3 +1,13 @@
+# GRIDRUNNER — Godot VS02 Asset Integration
+
+The native Godot project is in [`godot/`](godot/). Import `godot/project.godot` in Godot 4.4.1, allow asset imports to finish, then press **F5**.
+
+This milestone integrates all five GRIDRUNNER asset packs, five explorable buildings, working doors, persistent salvage, and the existing VS02 gameplay and Creek Service polish. The project includes 85 GLB assets with embedded textures; Blender is not required to play.
+
+Read the [Godot README](godot/README.md) for controls and the [integration notes](godot/ASSET_INTEGRATION.md) for scope and limitations. The packaged build passed 211 test assertions; [test logs](godot/docs/validation/) and [engine screenshots](godot/docs/asset-screenshots/) are included.
+
+The browser version below remains available separately.
+
 # GRIDRUNNER v7.3 — Settlements
 
 Play: https://charltonty.github.io/GRIDRUNNER/

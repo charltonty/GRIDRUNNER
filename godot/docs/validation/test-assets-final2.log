@@ -1,0 +1,41 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS: Integrated world present
+PASS: More than ninety world instances
+PASS: Live world uses GR_DistributionCabinet_01
+PASS: Live world uses GR_Workbench_02
+PASS: Live world uses GR_CreekSign_03
+PASS: Live world uses GR_SalvagedMotor_04
+PASS: Live world uses GR05_03_TexasHouse
+PASS: Walk through entrance / Creek service office
+PASS: Interior floor / Creek service office
+PASS: Walk through entrance / Roadside supply store
+PASS: Interior floor / Roadside supply store
+PASS: Walk through entrance / Hill Country house
+PASS: Interior floor / Hill Country house
+PASS: Walk through entrance / Maintenance workshop
+PASS: Interior floor / Maintenance workshop
+PASS: Walk through entrance / Creek pump station
+PASS: Interior floor / Creek pump station
+PASS: Climb twenty house stair treads
+PASS: Player physically reaches upper floor
+PASS: Door hinge interaction
+PASS: Door state stored
+PASS: Seized latch requires tool
+PASS: Screwdriver releases latch
+PASS: Building cache / office
+PASS: No duplicate reward / office
+PASS: Building cache / store
+PASS: No duplicate reward / store
+PASS: Building cache / house
+PASS: No duplicate reward / house
+PASS: Building cache / workshop
+PASS: No duplicate reward / workshop
+PASS: Building cache / pump
+PASS: No duplicate reward / pump
+PASS: Asset save accepted
+PASS: Door pose restored
+PASS: Salvage persists
+ASSET CHECKS: 36 / FAILURES: 0
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2378)

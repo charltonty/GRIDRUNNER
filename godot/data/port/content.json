@@ -6,7 +6,10 @@
       "category": "material",
       "value": 4,
       "stack": 999,
-      "description": "Insulated wire"
+      "description": "Insulated wire",
+      "family": "coil",
+      "condition": 100,
+      "icon": "res://assets/icons/items/wire.png"
     },
     "cells": {
       "name": "Lithium cell",
@@ -14,7 +17,10 @@
       "category": "material",
       "value": 18,
       "stack": 999,
-      "description": "Lithium cell"
+      "description": "Lithium cell",
+      "family": "battery",
+      "condition": 100,
+      "icon": "res://assets/icons/items/cells.png"
     },
     "electronics": {
       "name": "Electronics",
@@ -22,7 +28,10 @@
       "category": "material",
       "value": 9,
       "stack": 999,
-      "description": "Electronics"
+      "description": "Electronics",
+      "family": "board",
+      "condition": 100,
+      "icon": "res://assets/icons/items/electronics.png"
     },
     "steel": {
       "name": "Steel scrap",
@@ -30,7 +39,10 @@
       "category": "material",
       "value": 2,
       "stack": 999,
-      "description": "Steel scrap"
+      "description": "Sorted raw material for fabrication and equipment repairs.",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/steel.png"
     },
     "copper": {
       "name": "Copper",
@@ -38,7 +50,10 @@
       "category": "material",
       "value": 6,
       "stack": 999,
-      "description": "Copper"
+      "description": "Sorted raw material for fabrication and equipment repairs.",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/copper.png"
     },
     "aluminum": {
       "name": "Aluminum",
@@ -46,7 +61,10 @@
       "category": "material",
       "value": 3,
       "stack": 999,
-      "description": "Aluminum"
+      "description": "Sorted raw material for fabrication and equipment repairs.",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/aluminum.png"
     },
     "plastic": {
       "name": "Plastic",
@@ -54,7 +72,10 @@
       "category": "material",
       "value": 1,
       "stack": 999,
-      "description": "Plastic"
+      "description": "Sorted raw material for fabrication and equipment repairs.",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/plastic.png"
     },
     "glass": {
       "name": "Glass",
@@ -62,7 +83,10 @@
       "category": "material",
       "value": 1,
       "stack": 999,
-      "description": "Glass"
+      "description": "Sorted raw material for fabrication and equipment repairs.",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/glass.png"
     },
     "rubber": {
       "name": "Rubber",
@@ -70,7 +94,10 @@
       "category": "material",
       "value": 2,
       "stack": 999,
-      "description": "Rubber"
+      "description": "Sorted raw material for fabrication and equipment repairs.",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/rubber.png"
     },
     "fabric": {
       "name": "Fabric",
@@ -78,7 +105,10 @@
       "category": "material",
       "value": 1,
       "stack": 999,
-      "description": "Fabric"
+      "description": "Fabric",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/fabric.png"
     },
     "magnets": {
       "name": "Magnets",
@@ -86,7 +116,10 @@
       "category": "material",
       "value": 5,
       "stack": 999,
-      "description": "Magnets"
+      "description": "Magnets",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/magnets.png"
     },
     "bearings": {
       "name": "Bearings",
@@ -94,7 +127,10 @@
       "category": "material",
       "value": 4,
       "stack": 999,
-      "description": "Bearings"
+      "description": "Bearings",
+      "family": "ring",
+      "condition": 100,
+      "icon": "res://assets/icons/items/bearings.png"
     },
     "silicon": {
       "name": "Silicon",
@@ -102,7 +138,10 @@
       "category": "material",
       "value": 6,
       "stack": 999,
-      "description": "Silicon"
+      "description": "Silicon",
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/silicon.png"
     },
     "screwdriver": {
       "name": "Screwdriver",
@@ -110,7 +149,10 @@
       "category": "tool",
       "value": 6,
       "stack": 999,
-      "description": "Screwdriver"
+      "description": "Screwdriver",
+      "family": "tool",
+      "condition": 100,
+      "icon": "res://assets/icons/items/screwdriver.png"
     },
     "pickaxe": {
       "name": "Pickaxe",
@@ -118,7 +160,10 @@
       "category": "tool",
       "value": 15,
       "stack": 999,
-      "description": "Pickaxe"
+      "description": "Pickaxe",
+      "family": "tool",
+      "condition": 100,
+      "icon": "res://assets/icons/items/pickaxe.png"
     },
     "wrench": {
       "name": "Wrench",
@@ -126,7 +171,10 @@
       "category": "tool",
       "value": 8,
       "stack": 999,
-      "description": "Wrench"
+      "description": "Wrench",
+      "family": "tool",
+      "condition": 100,
+      "icon": "res://assets/icons/items/wrench.png"
     },
     "cutters": {
       "name": "Wire cutters",
@@ -134,7 +182,10 @@
       "category": "tool",
       "value": 8,
       "stack": 999,
-      "description": "Wire cutters"
+      "description": "Wire cutters",
+      "family": "tool",
+      "condition": 100,
+      "icon": "res://assets/icons/items/cutters.png"
     },
     "toaster": {
       "name": "Broken toaster",
@@ -148,7 +199,10 @@
         "steel": 1,
         "copper": 1,
         "wire": 1
-      }
+      },
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/toaster.png"
     },
     "laptop": {
       "name": "Dead laptop",
@@ -162,7 +216,10 @@
         "electronics": 2,
         "cells": 1,
         "plastic": 1
-      }
+      },
+      "family": "board",
+      "condition": 100,
+      "icon": "res://assets/icons/items/laptop.png"
     },
     "motor": {
       "name": "Seized motor",
@@ -176,7 +233,10 @@
         "copper": 3,
         "magnets": 2,
         "bearings": 1
-      }
+      },
+      "family": "motor",
+      "condition": 100,
+      "icon": "res://assets/icons/items/motor.png"
     },
     "panel": {
       "name": "Cracked solar panel",
@@ -190,7 +250,10 @@
         "aluminum": 2,
         "glass": 2,
         "silicon": 1
-      }
+      },
+      "family": "board",
+      "condition": 100,
+      "icon": "res://assets/icons/items/panel.png"
     },
     "bottle": {
       "name": "Empty bottle",
@@ -201,7 +264,10 @@
       "description": "Empty bottle",
       "salvage": {
         "glass": 1
-      }
+      },
+      "family": "bottle",
+      "condition": 100,
+      "icon": "res://assets/icons/items/bottle.png"
     },
     "rag": {
       "name": "Oily rag",
@@ -212,7 +278,10 @@
       "description": "Oily rag",
       "salvage": {
         "fabric": 1
-      }
+      },
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/rag.png"
     },
     "can": {
       "name": "Crushed can",
@@ -223,7 +292,10 @@
       "description": "Crushed can",
       "salvage": {
         "aluminum": 1
-      }
+      },
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/can.png"
     },
     "wrapper": {
       "name": "Food wrapper",
@@ -234,7 +306,10 @@
       "description": "Food wrapper",
       "salvage": {
         "plastic": 1
-      }
+      },
+      "family": "scrap",
+      "condition": 100,
+      "icon": "res://assets/icons/items/wrapper.png"
     },
     "tire": {
       "name": "Ruined tire",
@@ -246,16 +321,1466 @@
       "tool": "cutters",
       "salvage": {
         "rubber": 3
-      }
+      },
+      "family": "ring",
+      "condition": 100,
+      "icon": "res://assets/icons/items/tire.png"
     },
     "fuel": {
-      "name": "Generator fuel · 1 L",
+      "name": "Generator fuel \u00b7 1 L",
       "mass": 0.8,
       "category": "energy",
       "value": 80,
       "stack": 999,
-      "description": "Generator fuel · 1 L",
-      "energyKWh": 3
+      "description": "Rare fuel. Each litre yields 3 kWh through the generator. Store the output before running the tank dry.",
+      "energyKWh": 3,
+      "family": "canister",
+      "condition": 100,
+      "icon": "res://assets/icons/items/fuel.png",
+      "liters": 1,
+      "rarity": "rare"
+    },
+    "copper_cable": {
+      "name": "Copper Cable",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered copper cable. Inspect before committing it to a field repair.",
+      "family": "coil",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/copper_cable.png"
+    },
+    "connector": {
+      "name": "Connector",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered connector. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/connector.png"
+    },
+    "fuse": {
+      "name": "Fuse",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered fuse. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/fuse.png"
+    },
+    "breaker": {
+      "name": "Breaker",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered breaker. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/breaker.png"
+    },
+    "relay": {
+      "name": "Relay",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered relay. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/relay.png"
+    },
+    "contactor": {
+      "name": "Contactor",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered contactor. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/contactor.png"
+    },
+    "switch": {
+      "name": "Switch",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered switch. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/switch.png"
+    },
+    "transformer": {
+      "name": "Transformer",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered transformer. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/transformer.png"
+    },
+    "capacitor": {
+      "name": "Capacitor",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered capacitor. Inspect before committing it to a field repair.",
+      "family": "battery",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/capacitor.png"
+    },
+    "circuit_board": {
+      "name": "Circuit Board",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered circuit board. Inspect before committing it to a field repair.",
+      "family": "board",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/circuit_board.png"
+    },
+    "power_supply": {
+      "name": "Power Supply",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered power supply. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/power_supply.png"
+    },
+    "inverter": {
+      "name": "Inverter",
+      "category": "electrical",
+      "mass": 2.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered inverter. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/inverter.png",
+      "voltage": 48,
+      "powerKW": 1.2
+    },
+    "charger": {
+      "name": "Charger",
+      "category": "electrical",
+      "mass": 1.2,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered charger. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/charger.png",
+      "voltage": 72,
+      "powerKW": 0.5
+    },
+    "battery_module": {
+      "name": "Battery Module",
+      "category": "electrical",
+      "mass": 4.8,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered battery module. Inspect before committing it to a field repair.",
+      "family": "battery",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/battery_module.png",
+      "voltage": 48,
+      "energyKWh": 0.8
+    },
+    "damaged_radio": {
+      "name": "Damaged Radio",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered damaged radio. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/damaged_radio.png"
+    },
+    "junction_box": {
+      "name": "Junction Box",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered junction box. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/junction_box.png"
+    },
+    "busbar": {
+      "name": "Busbar",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered busbar. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/busbar.png"
+    },
+    "terminal_block": {
+      "name": "Terminal Block",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered terminal block. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/terminal_block.png"
+    },
+    "heat_sink": {
+      "name": "Heat Sink",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered heat sink. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/heat_sink.png"
+    },
+    "insulation_tape": {
+      "name": "Insulation Tape",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered insulation tape. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/insulation_tape.png"
+    },
+    "cable_gland": {
+      "name": "Cable Gland",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered cable gland. Inspect before committing it to a field repair.",
+      "family": "coil",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/cable_gland.png"
+    },
+    "diode": {
+      "name": "Diode",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered diode. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/diode.png"
+    },
+    "resistor": {
+      "name": "Resistor",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered resistor. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/resistor.png"
+    },
+    "voltage_regulator": {
+      "name": "Voltage Regulator",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered voltage regulator. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/voltage_regulator.png"
+    },
+    "meter_probe": {
+      "name": "Meter Probe",
+      "category": "electrical",
+      "mass": 0.35,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered meter probe. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/meter_probe.png"
+    },
+    "gear": {
+      "name": "Gear",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered gear. Inspect before committing it to a field repair.",
+      "family": "ring",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/gear.png"
+    },
+    "bolt": {
+      "name": "Bolt",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered bolt. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/bolt.png"
+    },
+    "bracket": {
+      "name": "Bracket",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered bracket. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/bracket.png"
+    },
+    "tubing": {
+      "name": "Tubing",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered tubing. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/tubing.png"
+    },
+    "sheet_metal": {
+      "name": "Sheet Metal",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered sheet metal. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/sheet_metal.png"
+    },
+    "spring": {
+      "name": "Spring",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered spring. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/spring.png"
+    },
+    "chain": {
+      "name": "Chain",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered chain. Inspect before committing it to a field repair.",
+      "family": "coil",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/chain.png"
+    },
+    "pump": {
+      "name": "Pump",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered pump. Inspect before committing it to a field repair.",
+      "family": "motor",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/pump.png"
+    },
+    "pulley": {
+      "name": "Pulley",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered pulley. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/pulley.png"
+    },
+    "hose_clamp": {
+      "name": "Hose Clamp",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered hose clamp. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/hose_clamp.png"
+    },
+    "axle": {
+      "name": "Axle",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered axle. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/axle.png"
+    },
+    "washer": {
+      "name": "Washer",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered washer. Inspect before committing it to a field repair.",
+      "family": "ring",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/washer.png"
+    },
+    "nut": {
+      "name": "Nut",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered nut. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/nut.png"
+    },
+    "sprocket": {
+      "name": "Sprocket",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered sprocket. Inspect before committing it to a field repair.",
+      "family": "ring",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/sprocket.png"
+    },
+    "brake_cable": {
+      "name": "Brake Cable",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered brake cable. Inspect before committing it to a field repair.",
+      "family": "coil",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/brake_cable.png"
+    },
+    "hinge": {
+      "name": "Hinge",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered hinge. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/hinge.png"
+    },
+    "steel_coupler": {
+      "name": "Steel Coupler",
+      "category": "mechanical",
+      "mass": 0.5,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered steel coupler. Inspect before committing it to a field repair.",
+      "family": "metal",
+      "condition": 75,
+      "salvage": {
+        "steel": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/steel_coupler.png"
+    },
+    "pliers": {
+      "name": "Pliers",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered pliers. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/pliers.png"
+    },
+    "multimeter": {
+      "name": "Multimeter",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered multimeter. Inspect before committing it to a field repair.",
+      "family": "instrument",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/multimeter.png"
+    },
+    "hammer": {
+      "name": "Hammer",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered hammer. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/hammer.png"
+    },
+    "drill": {
+      "name": "Drill",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered drill. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/drill.png"
+    },
+    "flashlight": {
+      "name": "Flashlight",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered flashlight. Inspect before committing it to a field repair.",
+      "family": "instrument",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/flashlight.png"
+    },
+    "soldering_iron": {
+      "name": "Soldering Iron",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered soldering iron. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/soldering_iron.png"
+    },
+    "socket_set": {
+      "name": "Socket Set",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered socket set. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/socket_set.png"
+    },
+    "file": {
+      "name": "File",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered file. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/file.png"
+    },
+    "hacksaw": {
+      "name": "Hacksaw",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered hacksaw. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/hacksaw.png"
+    },
+    "measuring_tape": {
+      "name": "Measuring Tape",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered measuring tape. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/measuring_tape.png"
+    },
+    "crimper": {
+      "name": "Crimper",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered crimper. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/crimper.png"
+    },
+    "repair_kit": {
+      "name": "Repair Kit",
+      "category": "tool",
+      "mass": 0.65,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered repair kit. Inspect before committing it to a field repair.",
+      "family": "tool",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/repair_kit.png"
+    },
+    "stone": {
+      "name": "Stone",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered stone. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/stone.png"
+    },
+    "quartz": {
+      "name": "Quartz",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered quartz. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/quartz.png"
+    },
+    "iron_ore": {
+      "name": "Iron Ore",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered iron ore. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/iron_ore.png"
+    },
+    "copper_ore": {
+      "name": "Copper Ore",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered copper ore. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/copper_ore.png"
+    },
+    "ceramic": {
+      "name": "Ceramic",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered ceramic. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/ceramic.png"
+    },
+    "carbon_fiber": {
+      "name": "Carbon Fiber",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered carbon fiber. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/carbon_fiber.png"
+    },
+    "mesh": {
+      "name": "Mesh",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered mesh. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/mesh.png"
+    },
+    "cloth_patch": {
+      "name": "Cloth Patch",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered cloth patch. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/cloth_patch.png"
+    },
+    "epoxy": {
+      "name": "Epoxy",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered epoxy. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/epoxy.png"
+    },
+    "solder": {
+      "name": "Solder",
+      "category": "material",
+      "mass": 0.25,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered solder. Inspect before committing it to a field repair.",
+      "family": "scrap",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/solder.png"
+    },
+    "water": {
+      "name": "Water",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Field recovery supply. Use from Backpack to restore health; consumed on use.",
+      "family": "bottle",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/water.png",
+      "heal": 4
+    },
+    "ration": {
+      "name": "Ration",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Field recovery supply. Use from Backpack to restore health; consumed on use.",
+      "family": "supply",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/ration.png",
+      "heal": 8
+    },
+    "bandage": {
+      "name": "Bandage",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Field recovery supply. Use from Backpack to restore health; consumed on use.",
+      "family": "supply",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/bandage.png",
+      "heal": 15
+    },
+    "medkit": {
+      "name": "Medkit",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Field recovery supply. Use from Backpack to restore health; consumed on use.",
+      "family": "supply",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/medkit.png",
+      "heal": 40
+    },
+    "canteen": {
+      "name": "Canteen",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered canteen. Inspect before committing it to a field repair.",
+      "family": "bottle",
+      "condition": 75,
+      "salvage": {
+        "fabric": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/canteen.png"
+    },
+    "food_tin": {
+      "name": "Food Tin",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered food tin. Inspect before committing it to a field repair.",
+      "family": "supply",
+      "condition": 75,
+      "salvage": {
+        "fabric": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/food_tin.png"
+    },
+    "tarp": {
+      "name": "Tarp",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered tarp. Inspect before committing it to a field repair.",
+      "family": "supply",
+      "condition": 75,
+      "salvage": {
+        "fabric": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/tarp.png"
+    },
+    "cord": {
+      "name": "Cord",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered cord. Inspect before committing it to a field repair.",
+      "family": "coil",
+      "condition": 75,
+      "salvage": {
+        "fabric": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/cord.png"
+    },
+    "sleeping_roll": {
+      "name": "Sleeping Roll",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered sleeping roll. Inspect before committing it to a field repair.",
+      "family": "supply",
+      "condition": 75,
+      "salvage": {
+        "fabric": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/sleeping_roll.png"
+    },
+    "storage_case": {
+      "name": "Storage Case",
+      "category": "survival",
+      "mass": 0.4,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered storage case. Inspect before committing it to a field repair.",
+      "family": "supply",
+      "condition": 75,
+      "salvage": {
+        "fabric": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/storage_case.png"
+    },
+    "bike_battery": {
+      "name": "Bike Battery",
+      "category": "vehicle",
+      "mass": 8.2,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered bike battery. Inspect before committing it to a field repair.",
+      "family": "battery",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/bike_battery.png",
+      "voltage": 72,
+      "energyKWh": 2.0
+    },
+    "bike_controller": {
+      "name": "Bike Controller",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered bike controller. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/bike_controller.png"
+    },
+    "bike_motor": {
+      "name": "Bike Motor",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered bike motor. Inspect before committing it to a field repair.",
+      "family": "motor",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/bike_motor.png"
+    },
+    "brake_pad": {
+      "name": "Brake Pad",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered brake pad. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/brake_pad.png"
+    },
+    "brake_disc": {
+      "name": "Brake Disc",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered brake disc. Inspect before committing it to a field repair.",
+      "family": "ring",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/brake_disc.png"
+    },
+    "inner_tube": {
+      "name": "Inner Tube",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered inner tube. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/inner_tube.png"
+    },
+    "tire_patch": {
+      "name": "Tire Patch",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered tire patch. Inspect before committing it to a field repair.",
+      "family": "ring",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/tire_patch.png"
+    },
+    "drone_battery": {
+      "name": "Drone Battery",
+      "category": "vehicle",
+      "mass": 1.1,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered drone battery. Inspect before committing it to a field repair.",
+      "family": "battery",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/drone_battery.png",
+      "voltage": 22.2,
+      "energyKWh": 0.4
+    },
+    "propeller": {
+      "name": "Propeller",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered propeller. Inspect before committing it to a field repair.",
+      "family": "propeller",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/propeller.png"
+    },
+    "drone_motor": {
+      "name": "Drone Motor",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered drone motor. Inspect before committing it to a field repair.",
+      "family": "motor",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/drone_motor.png"
+    },
+    "camera": {
+      "name": "Camera",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered camera. Inspect before committing it to a field repair.",
+      "family": "instrument",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/camera.png"
+    },
+    "sensor": {
+      "name": "Sensor",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered sensor. Inspect before committing it to a field repair.",
+      "family": "instrument",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/sensor.png"
+    },
+    "spotlight": {
+      "name": "Spotlight",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered spotlight. Inspect before committing it to a field repair.",
+      "family": "instrument",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/spotlight.png"
+    },
+    "cargo_hook": {
+      "name": "Cargo Hook",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered cargo hook. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/cargo_hook.png"
+    },
+    "marker_pod": {
+      "name": "Marker Pod",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered marker pod. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/marker_pod.png"
+    },
+    "utility_module": {
+      "name": "Utility Module",
+      "category": "vehicle",
+      "mass": 0.6,
+      "value": 8,
+      "stack": 20,
+      "description": "Recovered utility module. Inspect before committing it to a field repair.",
+      "family": "device",
+      "condition": 75,
+      "salvage": {
+        "electronics": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/utility_module.png"
+    },
+    "fuel_bottle": {
+      "name": "Fuel Bottle",
+      "category": "fuel",
+      "mass": 1.5,
+      "value": 25,
+      "stack": 20,
+      "description": "Rare fuel. Each litre yields 3 kWh through the generator. Store the output before running the tank dry.",
+      "family": "bottle",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/fuel_bottle.png",
+      "liters": 0.25,
+      "energyKWh": 0.75,
+      "rarity": "rare"
+    },
+    "jerry_can": {
+      "name": "Jerry Can",
+      "category": "fuel",
+      "mass": 4.4,
+      "value": 400,
+      "stack": 20,
+      "description": "Rare fuel. Each litre yields 3 kWh through the generator. Store the output before running the tank dry.",
+      "family": "canister",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/jerry_can.png",
+      "liters": 5,
+      "energyKWh": 15,
+      "rarity": "rare"
+    },
+    "generator_tank": {
+      "name": "Generator Tank",
+      "category": "fuel",
+      "mass": 2,
+      "value": 160,
+      "stack": 20,
+      "description": "Rare fuel. Each litre yields 3 kWh through the generator. Store the output before running the tank dry.",
+      "family": "canister",
+      "condition": 75,
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/generator_tank.png",
+      "liters": 2,
+      "energyKWh": 6,
+      "rarity": "rare"
+    },
+    "signal_receiver": {
+      "name": "Signal Receiver",
+      "category": "quest",
+      "mass": 0.2,
+      "value": 8,
+      "stack": 20,
+      "description": "A repaired narrow-band receiver. A faint repeating carrier is present near the roadside service cabinet.",
+      "family": "instrument",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/signal_receiver.png"
+    },
+    "carrier_note": {
+      "name": "Carrier Note",
+      "category": "quest",
+      "mass": 0.2,
+      "value": 8,
+      "stack": 20,
+      "description": "MARA / 06:40: The carrier repeats every eleven seconds. Riggs heard it too. Follow the utility line. Never bridge a live cabinet by hand.",
+      "family": "board",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/carrier_note.png"
+    },
+    "route_map": {
+      "name": "Route Map",
+      "category": "quest",
+      "mass": 0.2,
+      "value": 8,
+      "stack": 20,
+      "description": "Black Creek \u2192 Milepost Repair \u2192 stranded EV \u2192 solar storage \u2192 substation. Scout the elevated relay before drawing power.",
+      "family": "board",
+      "condition": 75,
+      "salvage": {
+        "plastic": 1
+      },
+      "tool": "screwdriver",
+      "icon": "res://assets/icons/items/route_map.png"
     }
   },
   "recipes": {

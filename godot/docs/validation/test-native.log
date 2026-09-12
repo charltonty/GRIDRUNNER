@@ -1,0 +1,43 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS: Native scene builds campaign, NPC and salvage targets
+PASS: New game starts on foot at camp
+PASS: Walking physically moves the player
+PASS: Walking jump leaves the floor
+PASS: Mount nearby bike
+PASS: Bike physically travels over 8 metres in two seconds
+PASS: Ground contacts do not suppress bike acceleration
+PASS: Brake stops bike
+PASS: Reverse physically moves bike backwards
+PASS: Recovery resets safely to road
+PASS: Dismount
+PASS: Drone launch
+PASS: Space ascends
+PASS: Shift descends
+PASS: Scan persists nearby discoveries
+PASS: Follow restores physical pilot mode
+PASS: Hold command
+PASS: Physical return docks
+PASS: Independent POV preferences
+PASS: Atomic recipe transaction
+PASS: Transaction counts
+PASS: Missing inputs preserve inventory
+PASS: Capacity failure is atomic
+PASS: Mining yields one finite resource
+PASS: 12 kW generator / accelerated game time
+PASS: Full reserve consumes no fuel
+PASS: Native save reload
+PASS: Energy and depleted loot restored
+PASS: Malformed save rejected
+PASS: Older saves without independent bike heading remain valid
+PASS: Leg 1 completion travels to Leg 2
+PASS: Breaker sequence restores waterworks
+PASS: Leg 2 completion travels to Leg 3
+PASS: Antenna bearing accepted
+PASS: Final campaign decision
+PASS: Power controls reject remote operation
+PASS: Native menu screens render
+PASS: Low battery forces return out of manual mode
+NATIVE TEST FAILURES: 0
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2378)

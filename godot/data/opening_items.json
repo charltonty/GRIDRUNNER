@@ -1,0 +1,376 @@
+[
+  {
+    "uid": "opening_00",
+    "item": "water",
+    "pos": [
+      53,
+      0.04,
+      -90
+    ],
+    "count": 1,
+    "yaw": 0.0
+  },
+  {
+    "uid": "opening_01",
+    "item": "ration",
+    "pos": [
+      53.6,
+      0.04,
+      -90
+    ],
+    "count": 1,
+    "yaw": 0.71
+  },
+  {
+    "uid": "opening_02",
+    "item": "bandage",
+    "pos": [
+      54.2,
+      0.04,
+      -90
+    ],
+    "count": 1,
+    "yaw": 1.42
+  },
+  {
+    "uid": "opening_03",
+    "item": "route_map",
+    "pos": [
+      49.2,
+      1.04,
+      -99.8
+    ],
+    "count": 1,
+    "yaw": 2.13
+  },
+  {
+    "uid": "opening_04",
+    "item": "multimeter",
+    "pos": [
+      49.6,
+      1.04,
+      -99.8
+    ],
+    "count": 1,
+    "yaw": 2.84
+  },
+  {
+    "uid": "opening_05",
+    "item": "carrier_note",
+    "pos": [
+      50,
+      1.04,
+      -99.8
+    ],
+    "count": 1,
+    "yaw": 3.55
+  },
+  {
+    "uid": "opening_06",
+    "item": "wire",
+    "pos": [
+      50.5,
+      1.04,
+      -99.8
+    ],
+    "count": 1,
+    "yaw": 4.26
+  },
+  {
+    "uid": "opening_07",
+    "item": "steel",
+    "pos": [
+      50.7,
+      0.25,
+      -99.8
+    ],
+    "count": 1,
+    "yaw": 4.97
+  },
+  {
+    "uid": "opening_08",
+    "item": "plastic",
+    "pos": [
+      48.8,
+      0.25,
+      -99.8
+    ],
+    "count": 1,
+    "yaw": 5.68
+  },
+  {
+    "uid": "opening_09",
+    "item": "drone_battery",
+    "pos": [
+      50,
+      1.04,
+      -98
+    ],
+    "count": 1,
+    "yaw": 6.39
+  },
+  {
+    "uid": "opening_10",
+    "item": "propeller",
+    "pos": [
+      50.5,
+      1.04,
+      -98
+    ],
+    "count": 1,
+    "yaw": 7.1
+  },
+  {
+    "uid": "opening_11",
+    "item": "circuit_board",
+    "pos": [
+      51,
+      1.04,
+      -98
+    ],
+    "count": 1,
+    "yaw": 7.81
+  },
+  {
+    "uid": "opening_12",
+    "item": "bolt",
+    "pos": [
+      48,
+      0.04,
+      -91
+    ],
+    "count": 1,
+    "yaw": 8.52
+  },
+  {
+    "uid": "opening_13",
+    "item": "rag",
+    "pos": [
+      46.8,
+      0.04,
+      -92
+    ],
+    "count": 1,
+    "yaw": 9.23
+  },
+  {
+    "uid": "opening_14",
+    "item": "bottle",
+    "pos": [
+      46,
+      0.04,
+      -89
+    ],
+    "count": 1,
+    "yaw": 9.94
+  },
+  {
+    "uid": "opening_15",
+    "item": "fuse",
+    "pos": [
+      12,
+      0.85,
+      -180
+    ],
+    "count": 1,
+    "yaw": 10.649999999999999
+  },
+  {
+    "uid": "opening_16",
+    "item": "breaker",
+    "pos": [
+      11.6,
+      0.85,
+      -180
+    ],
+    "count": 1,
+    "yaw": 11.36
+  },
+  {
+    "uid": "opening_17",
+    "item": "signal_receiver",
+    "pos": [
+      12.4,
+      0.85,
+      -180
+    ],
+    "count": 1,
+    "yaw": 12.07
+  },
+  {
+    "uid": "opening_18",
+    "item": "copper_cable",
+    "pos": [
+      10,
+      0.04,
+      -177
+    ],
+    "count": 1,
+    "yaw": 12.78
+  },
+  {
+    "uid": "opening_19",
+    "item": "electronics",
+    "pos": [
+      11,
+      0.04,
+      -183
+    ],
+    "count": 1,
+    "yaw": 13.489999999999998
+  },
+  {
+    "uid": "opening_20",
+    "item": "steel",
+    "pos": [
+      10,
+      0.04,
+      -184
+    ],
+    "count": 1,
+    "yaw": 14.2
+  },
+  {
+    "uid": "opening_21",
+    "item": "fuel_bottle",
+    "pos": [
+      14,
+      0.04,
+      -184
+    ],
+    "count": 1,
+    "yaw": 14.91
+  },
+  {
+    "uid": "opening_22",
+    "item": "tire_patch",
+    "pos": [
+      -6,
+      0.04,
+      -155
+    ],
+    "count": 1,
+    "yaw": 15.62
+  },
+  {
+    "uid": "opening_23",
+    "item": "inner_tube",
+    "pos": [
+      -6.5,
+      0.04,
+      -155
+    ],
+    "count": 1,
+    "yaw": 16.33
+  },
+  {
+    "uid": "opening_24",
+    "item": "wire",
+    "pos": [
+      -7,
+      0.04,
+      -155
+    ],
+    "count": 1,
+    "yaw": 17.04
+  },
+  {
+    "uid": "opening_25",
+    "item": "charger",
+    "pos": [
+      -82,
+      0.04,
+      -282
+    ],
+    "count": 1,
+    "yaw": 17.75
+  },
+  {
+    "uid": "opening_26",
+    "item": "bike_controller",
+    "pos": [
+      -83,
+      0.04,
+      -282
+    ],
+    "count": 1,
+    "yaw": 18.46
+  },
+  {
+    "uid": "opening_27",
+    "item": "jerry_can",
+    "pos": [
+      -88,
+      0.04,
+      -290
+    ],
+    "count": 1,
+    "yaw": 19.169999999999998
+  },
+  {
+    "uid": "opening_28",
+    "item": "relay",
+    "pos": [
+      89,
+      0.04,
+      -410
+    ],
+    "count": 1,
+    "yaw": 19.88
+  },
+  {
+    "uid": "opening_29",
+    "item": "connector",
+    "pos": [
+      90,
+      0.04,
+      -410
+    ],
+    "count": 1,
+    "yaw": 20.59
+  },
+  {
+    "uid": "opening_30",
+    "item": "battery_module",
+    "pos": [
+      91,
+      0.04,
+      -410
+    ],
+    "count": 1,
+    "yaw": 21.299999999999997
+  },
+  {
+    "uid": "opening_31",
+    "item": "washer",
+    "pos": [
+      22,
+      0.04,
+      -226
+    ],
+    "count": 1,
+    "yaw": 22.009999999999998
+  },
+  {
+    "uid": "opening_32",
+    "item": "can",
+    "pos": [
+      22.6,
+      0.04,
+      -226
+    ],
+    "count": 1,
+    "yaw": 22.72
+  },
+  {
+    "uid": "opening_33",
+    "item": "wrapper",
+    "pos": [
+      22.9,
+      0.04,
+      -226
+    ],
+    "count": 1,
+    "yaw": 23.43
+  }
+]
