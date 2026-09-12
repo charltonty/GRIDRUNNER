@@ -8,12 +8,16 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="GRIDRUNNER: Ghost Signal"
 config/description="Vertical Slice 02 — Creek Service polish milestone"
 run/main_scene="res://scenes/frontend.tscn"
-config/features=PackedStringArray("4.4")
+config/features=PackedStringArray("4.7")
 
 [autoload]
 
@@ -24,6 +28,7 @@ Session="*res://systems/session.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [input]
 

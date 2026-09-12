@@ -15,6 +15,8 @@ func run() -> void:
     await process_frame
     var started:=Time.get_ticks_msec()
     var session=root.get_node("Session");session.reset();session.save_path="user://performance_regression.json"
+    check(session.fit_window_size(Vector2i(3840,2160),.9)==Vector2i(3456,1944),"4K display gets a centered 90% 16:9 window")
+    check(session.fit_window_size(Vector2i(3440,1440),.9)==Vector2i(2304,1296),"Ultrawide display fits the design aspect inside usable height")
     var game=load("res://scenes/main.tscn").instantiate();root.add_child(game)
     for i in range(12):await physics_frame
     game.set_physics_process(false)

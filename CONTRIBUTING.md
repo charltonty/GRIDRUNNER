@@ -2,7 +2,7 @@
 
 ## Engine baseline
 
-Use Godot 4.4.1 stable with the Compatibility renderer. Opening and saving the project with another engine version can rewrite `project.godot`, scenes, resources, and import metadata. Make engine upgrades in a dedicated branch and commit so they can be reviewed separately from gameplay changes.
+Use Godot 4.7.2 stable with the Compatibility renderer. Opening and saving the project with another engine version can rewrite `project.godot`, scenes, resources, and import metadata. Make engine upgrades in a dedicated branch and commit so they can be reviewed separately from gameplay changes.
 
 ## What belongs in Git
 

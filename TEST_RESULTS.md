@@ -1,23 +1,23 @@
 # Validation — Vertical Slice 02
 
-Engine: **Godot 4.4.1 stable**, Linux. Headless physics/gameplay testing plus actual OpenGL Compatibility renders under Mesa llvmpipe. Windows binaries and hardware-GPU performance were not tested.
+Current engine: **Godot 4.7.2 stable**, Windows. The original visual validation below used Godot 4.4.1 on Linux with OpenGL Compatibility renders under Mesa llvmpipe.
 
 ## Repository-root cleanup validation
 
-On 2026-09-11, the promoted repository-root project was imported and tested with the official Godot 4.4.1 Windows build:
+On 2026-09-11, the promoted repository-root project was imported and tested with the official Godot 4.7.2 Windows build:
 
 - `tests/native_smoke.gd`: **38 passed, 0 failures**.
 - `tests/vertical_slice_02.gd`: **41 passed, 0 failures**.
 - `tests/polish_regression.gd`: **96 passed, 0 failures**.
 - `tests/asset_integration_regression.gd`: **36 passed, 0 failures**.
-- `tests/performance_regression.gd`: **4 passed, 0 failures**.
-- Total: **215 passed, 0 failures**.
+- `tests/performance_regression.gd`: **6 passed, 0 failures**.
+- Total: **217 passed, 0 failures**.
 
 Headless GLB import emitted the previously documented dummy-renderer texture warnings. The full import and all five suites exited successfully.
 
 ## Static-world performance validation
 
-On 2026-09-11, the Godot 4.4.1 Windows build reported 552 distance-culled static render cells, 194 local MultiMesh chunks and 1,041 of 1,330 geometry instances with explicit visibility ranges. Procedural collision now uses 162 boxes and 253 cylinders; only 38 concave shapes remain for terrain and authored building structures.
+On 2026-09-11, the Godot 4.7.2 Windows build reported 552 distance-culled static render cells, 194 local MultiMesh chunks and 1,041 of 1,330 geometry instances with explicit visibility ranges. Procedural collision now uses 162 boxes and 253 cylinders; only 38 concave shapes remain for terrain and authored building structures.
 
 At the existing scripted human-camera position, the Compatibility renderer submitted 1,650 draw calls and 1,166,295 primitives after the change, compared with the checked-in baseline log's 1,782 draw calls and 1,435,438 primitives. This is a workload comparison, not a frame-time benchmark; the baseline was captured with Linux llvmpipe and the new reading with an Intel Arc A370M on Windows.
 
@@ -39,7 +39,7 @@ Tests use separate `gridrunner_regression_test.json` and `vs02_test.json` saves.
 
 ## Reproduce
 
-From the repository root, using Godot 4.4.1:
+From the repository root, using Godot 4.7.2:
 
 ```sh
 godot --headless --path . --editor --import --quit

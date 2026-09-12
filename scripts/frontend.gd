@@ -7,11 +7,12 @@ extends Control
 
 func _ready() -> void:
     theme=load("res://systems/field_hud.gd").make_theme()
+    Session.display_changed.connect(update_display_button)
     build_showcase()
     Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
     show_main()
     $MainPanel/Buttons/Load.pressed.connect(_on_continue_pressed)
-    $MainPanel/Buttons/FieldManual.pressed.connect(func(): info("Field manual", "WASD move, mouse look, F mount/dismount. P pedals. Q deploy/recall drone. Space rises, Shift descends. R scans. E interacts. H changes camera. 1 follow, 2 hold, 3 return. I Backpack, B drone modules, X payload, L spotlight, Ctrl crouch, G power, M route map, F5 saves. Escape opens menus.
+    $MainPanel/Buttons/FieldManual.pressed.connect(func(): info("Field manual", "WASD move, mouse look, F mount/dismount. P pedals. Q deploy/recall drone. Space rises, Shift descends. R scans. E interacts. H changes camera. 1 follow, 2 hold, 3 return. I Backpack, B drone modules, X payload, L spotlight, Ctrl crouch, G power, M route map, F5 saves, F11 toggles fullscreen. Escape opens menus.
 
 Meet Mara at the starting camp. Restore tools, scavenge energy and activate the rooftop relay. Complete the tower to travel to the Spillway; then reach Black Start. Trader advice stays on the route screen."))
     $MainPanel/Buttons/Accessibility.pressed.connect(func(): info("Accessibility", "All dialogue is text. Reduced motion is available in the expedition pause menu. H cycles close and distant cameras. Audio can be muted in Settings. Native gamepad, touch and rebinding are not implemented yet."))
@@ -20,9 +21,16 @@ Meet Mara at the starting camp. Restore tools, scavenge energy and activate the 
     $NewGamePanel/Buttons/Custom.disabled=true
     $NewGamePanel/Buttons/Custom.text="CUSTOM / not implemented"
     $SettingsPanel/Buttons/Audio.pressed.connect(func(): Session.volume=fmod(Session.volume+0.2,1.2); status.text="AUDIO %d%%" % int(Session.volume*100))
-    $SettingsPanel/Buttons/Display.pressed.connect(func(): DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode()==DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN))
-    $SettingsPanel/Buttons/Controls.pressed.connect(func(): info("Controls", "WASD · Mouse look · F bike · P pedal · Q drone · Space/Shift altitude · 1/2/3 drone commands · R scan · E use · H camera · I Backpack · B modules · X payload · L light · Ctrl crouch · G power · M route · F5 save · Escape pause"))
+    $SettingsPanel/Buttons/Display.pressed.connect(cycle_display)
+    $SettingsPanel/Buttons/Controls.pressed.connect(func(): info("Controls", "WASD · Mouse look · F bike · P pedal · Q drone · Space/Shift altitude · 1/2/3 drone commands · R scan · E use · H camera · I Backpack · B modules · X payload · L light · Ctrl crouch · G power · M route · F5 save · F11 fullscreen · Escape pause"))
     $SettingsPanel/Buttons/Gameplay.pressed.connect(func(): info("Native port", "Three campaign legs, finite salvage and NPC stock. Saves are native to this build; browser saves cannot be imported. Explorer/Survival adjust the initial supplies."))
+    update_display_button()
+
+func cycle_display() -> void:
+    Session.cycle_display_mode();update_display_button();status.text="DISPLAY / "+Session.display_description()
+
+func update_display_button() -> void:
+    $SettingsPanel/Buttons/Display.text="VIDEO / "+Session.display_description()
 
 func show_main() -> void:
     main_panel.visible = true
@@ -47,6 +55,7 @@ func _on_start_standard_pressed() -> void:
 func _on_settings_pressed() -> void:
     main_panel.visible = false
     settings_panel.visible = true
+    update_display_button()
 
 func _on_back_pressed() -> void:
     show_main()
