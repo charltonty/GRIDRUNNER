@@ -38,6 +38,7 @@ godot --headless --path . --script tests/native_smoke.gd
 godot --headless --path . --script tests/vertical_slice_02.gd
 godot --headless --path . --script tests/polish_regression.gd
 godot --headless --path . --script tests/asset_integration_regression.gd
+godot --headless --path . --script tests/performance_regression.gd
 ```
 
 Large binary assets are currently small enough for ordinary Git. Introduce Git LFS before adding large or frequently changing binary source files; do not partially migrate existing assets in an unrelated change.

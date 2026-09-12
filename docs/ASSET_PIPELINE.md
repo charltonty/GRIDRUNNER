@@ -57,6 +57,10 @@ Small props: MultiMesh/instancing and aggressive distance culling.
 Vegetation: MultiMesh and billboard/distance strategy.
 Do not make thousands of unique materials.
 
+Static procedural props are merged by material into local render-grid cells. Keep large road and terrain meshes separate, and keep cell origins near their geometry so visibility ranges measure the intended distance. MultiMeshes must also use local transforms and a conservative `custom_aabb`; Godot culls a MultiMesh as one unit, not per instance.
+
+Use primitive `BoxShape3D`, `SphereShape3D`, `CapsuleShape3D` or `CylinderShape3D` collision for simple world objects. Reserve concave triangle collision for terrain and authored structures that genuinely need it. Run `tests/performance_regression.gd` after changing world generation, batching, foliage, visibility ranges or collision.
+
 ## Asset-sheet workflow
 Concept sheets generated during development are references, not runtime assets. For each sheet:
 1. approve silhouette/material language;

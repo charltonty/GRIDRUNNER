@@ -10,9 +10,16 @@ On 2026-09-11, the promoted repository-root project was imported and tested with
 - `tests/vertical_slice_02.gd`: **41 passed, 0 failures**.
 - `tests/polish_regression.gd`: **96 passed, 0 failures**.
 - `tests/asset_integration_regression.gd`: **36 passed, 0 failures**.
-- Total: **211 passed, 0 failures**.
+- `tests/performance_regression.gd`: **4 passed, 0 failures**.
+- Total: **215 passed, 0 failures**.
 
-Headless GLB import emitted the previously documented dummy-renderer texture warnings. The full import and all four suites exited successfully.
+Headless GLB import emitted the previously documented dummy-renderer texture warnings. The full import and all five suites exited successfully.
+
+## Static-world performance validation
+
+On 2026-09-11, the Godot 4.4.1 Windows build reported 552 distance-culled static render cells, 194 local MultiMesh chunks and 1,041 of 1,330 geometry instances with explicit visibility ranges. Procedural collision now uses 162 boxes and 253 cylinders; only 38 concave shapes remain for terrain and authored building structures.
+
+At the existing scripted human-camera position, the Compatibility renderer submitted 1,650 draw calls and 1,166,295 primitives after the change, compared with the checked-in baseline log's 1,782 draw calls and 1,435,438 primitives. This is a workload comparison, not a frame-time benchmark; the baseline was captured with Linux llvmpipe and the new reading with an Intel Arc A370M on Windows.
 
 ## Results
 
@@ -38,6 +45,9 @@ From the repository root, using Godot 4.4.1:
 godot --headless --path . --editor --import --quit
 godot --headless --path . --script tests/native_smoke.gd
 godot --headless --path . --script tests/vertical_slice_02.gd
+godot --headless --path . --script tests/polish_regression.gd
+godot --headless --path . --script tests/asset_integration_regression.gd
+godot --headless --path . --script tests/performance_regression.gd
 ```
 
 Graphical renderer required for icons/screenshots:

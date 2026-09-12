@@ -50,8 +50,10 @@ static func build(game,polish) -> void:
             for j in range(4):
                 var pos: Vector3=a.lerp(b,(j+.5)/4)+across*6
                 if clear(pos):continue
-                var rock:=FieldKit.ellipsoid(props,pos+Vector3.UP*1.1,Vector3(5,3.6+rng.randf(),4.5),"rock")
-                rock.rotation.y=rng.randf()*TAU;rock.create_trimesh_collision()
+                var rock_size:=Vector3(5,3.6+rng.randf(),4.5);var rock_yaw:=rng.randf()*TAU
+                var rock:=FieldKit.ellipsoid(props,pos+Vector3.UP*1.1,rock_size,"rock")
+                rock.rotation.y=rock_yaw
+                FieldKit.box_collision(props,pos+Vector3.UP*1.1,rock_size*.82,"rock",rock_yaw)
     # Fence follows the maintenance property, with a motor gate in its actual opening.
     for z in [-118,-122,-126,-130,-142,-146,-150,-154]:
         FieldKit.tube(props,Vector3(35,0,z),Vector3(35,2.7,z),.07,"rust")
@@ -100,7 +102,7 @@ static func build(game,polish) -> void:
     var lamp:=OmniLight3D.new();lamp.name="BenchLamp";lamp.position=Vector3(59,2,-98);lamp.omni_range=4;lamp.light_energy=1.2;lamp.light_color=Color("ffe1aa");lamp.visible=Session.state.polish.gates.get("lamp",false);p.add_child(lamp)
     FieldKit.box(props,Vector3(55,1,-109),Vector3(.5,.25,.2),"olive")
     FieldKit.text(props,"CREEK SERVICE →\nROAD / CAMP ←",Vector3(60,2.2,-116),.006)
-    FieldKit.batch_static(props)
+    FieldKit.batch_static(props,280,50)
     vegetation(p)
     game.audio_rig.zones.clear()
     game.audio_rig.spatial(p,"creek",Vector3(68,0,-158),.11,32)
@@ -147,5 +149,11 @@ static func vegetation(p: Node3D) -> void:
 static func batch(p: Node3D,mesh: Mesh,transforms: Array[Transform3D],distance: float,title: String) -> void:
     if transforms.is_empty():return
     var mm:=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=mesh;mm.instance_count=transforms.size()
-    for i in range(transforms.size()):mm.set_instance_transform(i,transforms[i])
-    var n:=MultiMeshInstance3D.new();n.name=title;n.multimesh=mm;n.visibility_range_end=distance;n.visibility_range_end_margin=15;n.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;p.add_child(n)
+    var bounds:=AABB(transforms[0].origin,Vector3.ZERO)
+    for transform_ in transforms:bounds=bounds.expand(transform_.origin)
+    var cell_origin:=bounds.get_center();var local_bounds:=AABB(transforms[0].origin-cell_origin,Vector3.ZERO)
+    for i in range(transforms.size()):
+        var transform_: Transform3D=transforms[i];transform_.origin-=cell_origin
+        mm.set_instance_transform(i,transform_);local_bounds=local_bounds.expand(transform_.origin)
+    mm.custom_aabb=local_bounds.grow(8 if title=="Canopy" else 3 if title=="Scrub" else 2)
+    var n:=MultiMeshInstance3D.new();n.name=title;n.multimesh=mm;n.position=cell_origin;n.visibility_range_end=distance;n.visibility_range_end_margin=15;n.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;p.add_child(n)

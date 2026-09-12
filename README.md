@@ -29,9 +29,10 @@ godot --headless --path . --script tests/native_smoke.gd
 godot --headless --path . --script tests/vertical_slice_02.gd
 godot --headless --path . --script tests/polish_regression.gd
 godot --headless --path . --script tests/asset_integration_regression.gd
+godot --headless --path . --script tests/performance_regression.gd
 ```
 
-The repository-root cleanup was validated on Windows with Godot 4.4.1: **211 assertions passed with zero failures** across the four suites.
+The project was validated on Windows with Godot 4.4.1: **215 assertions passed with zero failures** across the five suites. The performance suite also guards the static render grid, local foliage bounds, visibility ranges, and primitive collision policy.
 
 Read `CONTRIBUTING.md` before changing engine versions, moving resources, or committing imported assets.
 
