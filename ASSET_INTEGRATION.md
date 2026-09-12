@@ -2,7 +2,7 @@
 
 ## Play
 
-Extract the ZIP into a new folder, import `project.godot` with Godot 4.7.2, allow imports to finish, then press F5. Choose New Expedition → Standard. This is a complete source project, not a standalone executable. Blender is not needed to play. Back up valued saves before using this milestone.
+Extract the ZIP into a new folder, import `project.godot` with Godot 4.4.1, allow imports to finish, then press F5. Choose New Expedition → Standard. This is a complete source project, not a standalone executable. Blender is not needed to play. Back up valued saves before using this milestone.
 
 ## Added
 
@@ -14,7 +14,7 @@ Extract the ZIP into a new folder, import `project.godot` with Godot 4.7.2, allo
 
 ## Validation
 
-Tested in Godot 4.7.2 stable. 217 assertions passed: 38 native, 41 VS02, 96 Creek Service polish, 36 asset-integration and 6 performance/display checks. The integration suite physically checks entrances, upstairs traversal, door operation, cache duplication prevention and restored save state. Historical validation logs are in `docs/validation/`.
+Tested in Godot 4.4.1 stable. The integration suite physically checks entrances, upstairs traversal, door operation, cache duplication prevention and restored save state. Historical validation logs are in `docs/validation/`.
 
 Nine actual engine screenshots are in `docs/asset-screenshots/`. These use a detached inspection camera; any interaction prompt belongs to the player left at camp.
 

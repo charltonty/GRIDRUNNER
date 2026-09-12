@@ -2,8 +2,6 @@ class_name FieldKit
 extends RefCounted
 # Original reusable geometry. World textures: ambientCG CC0; see ASSET_CREDITS.
 static var cache: Dictionary = {}
-const STATIC_CELL_SIZE:=100.0
-const STATIC_VISIBILITY_RANGE:=500.0
 static func mat(key: String) -> StandardMaterial3D:
     if cache.has(key): return cache[key]
     var m := StandardMaterial3D.new()
@@ -313,21 +311,17 @@ static func foliage(p: Node3D,center: float,leg: int) -> void:
     var gm:=grass_mesh();gm.surface_set_material(0,leaf)
     var foliage_mat:=ShaderMaterial.new();foliage_mat.shader=load("res://art/foliage.gdshader")
     var tm:=tree_mesh(12);tm.surface_set_material(0,foliage_mat)
-    # Two-dimensional chunks are the acceleration structure for ground cover.
-    # MultiMesh culling is all-or-nothing, so narrow cells keep off-screen strips off the GPU.
-    for iz in range(19):
-        for ix in range(4):
-            var mm:=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=gm;mm.instance_count=175
-            var x0:=-200.0+ix*100.0;var z0:=center+850.0-iz*100.0;var cell_origin:=Vector3(x0+50,0,z0+50)
-            for i in range(mm.instance_count):
-                var x:=rng.randf_range(x0,x0+100)
-                if absf(x)<12:x+=24*signf(x)
-                var z:=rng.randf_range(z0,z0+100)
-                var courtyard: bool=(Vector2(x-54,z+100).length()<27 or AssetLibrary.clear_area(Vector3(x,0,z))) if leg==1 else false
-                var scale_: float=0.01 if courtyard else rng.randf_range(0.7,1.9)
-                mm.set_instance_transform(i,Transform3D(Basis(Vector3.UP,rng.randf()*TAU).scaled(Vector3.ONE*scale_),Vector3(x,0.04,z)-cell_origin))
-            mm.custom_aabb=AABB(Vector3(-52,-.1,-52),Vector3(104,2,104))
-            var node:=MultiMeshInstance3D.new();node.name="GrassCell_%02d_%02d" % [ix,iz];node.multimesh=mm;node.position=cell_origin;node.visibility_range_end=115;node.visibility_range_end_margin=20;node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;p.add_child(node)
+    # Spatially chunked MultiMeshes keep grass culling local.
+    for chunk in range(19):
+        var mm:=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=gm;mm.instance_count=700
+        for i in range(mm.instance_count):
+            var x:=rng.randf_range(-185,185)
+            if absf(x)<12: x+=24*signf(x)
+            var z:=center+900-chunk*100+rng.randf_range(-50,50)
+            var courtyard: bool=(Vector2(x-54,z+100).length()<27 or AssetLibrary.clear_area(Vector3(x,0,z))) if leg==1 else false
+            var scale_: float=0.01 if courtyard else rng.randf_range(0.7,1.9)
+            mm.set_instance_transform(i,Transform3D(Basis(Vector3.UP,rng.randf()*TAU).scaled(Vector3.ONE*scale_),Vector3(x,0.04,z)))
+        var node:=MultiMeshInstance3D.new();node.multimesh=mm;node.visibility_range_end=115;node.visibility_range_end_margin=20;node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;p.add_child(node)
     for i in range(250):
         var x:=rng.randf_range(-440,440); var z:=center+rng.randf_range(-930,930)
         if leg==1 and i>=230:
@@ -393,7 +387,7 @@ static func height_at(x: float,z: float) -> float:
     var edge:=smoothstep(185.0,400.0,absf(x))
     return -0.025+edge*(26+sin(x*0.021+z*0.003)*12+cos(z*0.019)*10+sin(x*0.037-z*0.013)*4)
 
-static func batch_static(root: Node3D,visibility_end: float=STATIC_VISIBILITY_RANGE,cell_size: float=STATIC_CELL_SIZE) -> void:
+static func batch_static(root: Node3D) -> void:
     var buckets: Dictionary={}
     var pending: Array[Node]=[root]
     var remove: Array[Node]=[]
@@ -404,35 +398,21 @@ static func batch_static(root: Node3D,visibility_end: float=STATIC_VISIBILITY_RA
         if not node is MeshInstance3D or node.name=="RideableTerrain":continue
         var source: MeshInstance3D=node
         if source.mesh==null:continue
-        var transform_: Transform3D=root.global_transform.affine_inverse()*source.global_transform
-        var bounds: AABB=transform_*source.mesh.get_aabb()
-        # Roads, terrain slabs and other macro geometry should keep their own AABB.
-        if bounds.size.x>cell_size*1.5 or bounds.size.z>cell_size*1.5:continue
-        var cell:=Vector2i(floori(bounds.get_center().x/cell_size),floori(bounds.get_center().z/cell_size))
-        var cell_origin:=Vector3((cell.x+.5)*cell_size,0,(cell.y+.5)*cell_size)
-        transform_.origin-=cell_origin
-        var source_range:=visibility_end if source.visibility_range_end<=0 else minf(visibility_end,source.visibility_range_end)
-        var appended:=false
         for surface in range(source.mesh.get_surface_count()):
             var material: Material=source.material_override if source.material_override else source.mesh.surface_get_material(surface)
             if material==null:continue
+            var transform_: Transform3D=root.global_transform.affine_inverse()*source.global_transform
+            var cell:=Vector2i(floori(transform_.origin.x/100),floori(transform_.origin.z/100))
             var key: String=str(material.get_instance_id())+":"+str(cell)
             if not buckets.has(key):
                 var st:=SurfaceTool.new();st.begin(Mesh.PRIMITIVE_TRIANGLES)
-                buckets[key]={"st":st,"material":material,"cell":cell,"origin":cell_origin,"sources":0,"shadow":source.cast_shadow,"range":source_range}
+                buckets[key]={"st":st,"material":material}
             buckets[key].st.append_from(source.mesh,surface,transform_)
-            buckets[key].sources+=1;appended=true
-            buckets[key].range=maxf(buckets[key].range,source_range)
-            if source.cast_shadow!=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF:buckets[key].shadow=source.cast_shadow
-        if not appended:continue
         for child in source.get_children():
             if child is StaticBody3D: child.reparent(root,true)
         remove.append(source)
     for key in buckets:
-        var bucket: Dictionary=buckets[key];var cell: Vector2i=bucket.cell
-        var n:=MeshInstance3D.new();n.name="StaticCell_%d_%d_%s" % [cell.x,cell.y,str(bucket.material.get_instance_id())]
-        n.mesh=bucket.st.commit();n.material_override=bucket.material;n.position=bucket.origin;n.cast_shadow=bucket.shadow
-        n.visibility_range_end=bucket.range;n.visibility_range_end_margin=minf(40,bucket.range*.1);n.set_meta("source_surfaces",bucket.sources);n.add_to_group("static_render_cells")
+        var n:=MeshInstance3D.new();n.mesh=buckets[key].st.commit();n.material_override=buckets[key].material
         root.add_child(n)
     for node in remove: node.queue_free()
 

@@ -117,5 +117,6 @@ func run() -> void:
     for i in range(130):g.polish.tick(1.0/60)
     check(s.state.polish.landings==perches+1,"Stable precision perch records once")
     check(g.polish.npcs[0].node.get_node_or_null("Head")!=null,"Resident uses imported anatomical head")
+    check(g.polish.npcs[0].node.get_node_or_null("EyeL")!=null and g.polish.npcs[0].node.get_node_or_null("EyeR")!=null,"Resident eyes remain visible face geometry")
     print("POLISH CHECKS: ",checks," / FAILURES: ",failures)
     g.queue_free();await process_frame;quit(1 if failures else 0)

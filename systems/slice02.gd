@@ -191,7 +191,7 @@ func dress() -> void:
     if Session.state.leg!=1:return
     var decor:=Node3D.new();decor.name="OpeningCampDecor";game.world.add_child(decor)
     OpeningWorld.build(decor)
-    FieldKit.batch_static(decor,320,60)
+    FieldKit.batch_static(decor)
     for key in STATIONS:game.add_target("storage_"+key,key.capitalize()+" / storage",STATIONS[key],"storage")
     game.add_target("drone_bay","SCOUT-01 / EQUIPMENT BAY",Vector3(50,1,-98),"modules")
     for r in opening_data:

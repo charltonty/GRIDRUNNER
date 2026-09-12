@@ -19,8 +19,10 @@ static func make(parent: Node3D,pos: Vector3,mechanic: bool=false) -> Node3D:
     FieldKit.ellipsoid(n,Vector3(0,1.755,.013),Vector3(.24,.13,.25),"olive" if mechanic else "dark")
     if mechanic:FieldKit.box(n,Vector3(0,1.725,-.12),Vector3(.24,.028,.18),"olive")
     for x in [-.049,.049]:
-        FieldKit.ellipsoid(n,Vector3(x,1.654,-.091),Vector3(.031,.013,.012),"dark")
-        FieldKit.tube(n,Vector3(x-.019,1.677,-.085),Vector3(x+.019,1.681,-.085),.007,"dark")
+        var eye:=FieldKit.ellipsoid(n,Vector3(x,1.654,-.164),Vector3(.031,.013,.012),"dark")
+        eye.name="EyeL" if x<0 else "EyeR"
+        var brow:=FieldKit.tube(n,Vector3(x-.019,1.677,-.166),Vector3(x+.019,1.681,-.166),.007,"dark")
+        brow.name="BrowL" if x<0 else "BrowR"
     for sign_ in [-1,1]:
         var arm:=Node3D.new();arm.name="ArmL" if sign_<0 else "ArmR";arm.position=Vector3(sign_*.25,1.37,0);n.add_child(arm)
         FieldKit.tube(arm,Vector3.ZERO,Vector3(sign_*.06,-.27,0),.10,cloth,.12)

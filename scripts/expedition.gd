@@ -219,7 +219,7 @@ func build_world() -> void:
     FieldKit.dress_world(world,leg,center)
     if leg==2: box(world,Vector3(115,0.05,-2400),Vector3(22,0.06,600),Color("477f88"))
     if leg==3: box(world,Vector3(0,15,-4650),Vector3(45,30,20),Color("344b55"),true)
-    FieldKit.batch_static(world,520)
+    FieldKit.batch_static(world)
     if slice02: slice02.dress()
     if polish: polish.dress()
     asset_pass.build(self)

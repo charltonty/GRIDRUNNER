@@ -102,7 +102,7 @@ static func build(game,polish) -> void:
     var lamp:=OmniLight3D.new();lamp.name="BenchLamp";lamp.position=Vector3(59,2,-98);lamp.omni_range=4;lamp.light_energy=1.2;lamp.light_color=Color("ffe1aa");lamp.visible=Session.state.polish.gates.get("lamp",false);p.add_child(lamp)
     FieldKit.box(props,Vector3(55,1,-109),Vector3(.5,.25,.2),"olive")
     FieldKit.text(props,"CREEK SERVICE →\nROAD / CAMP ←",Vector3(60,2.2,-116),.006)
-    FieldKit.batch_static(props,280,50)
+    FieldKit.batch_static(props)
     vegetation(p)
     game.audio_rig.zones.clear()
     game.audio_rig.spatial(p,"creek",Vector3(68,0,-158),.11,32)
@@ -149,11 +149,5 @@ static func vegetation(p: Node3D) -> void:
 static func batch(p: Node3D,mesh: Mesh,transforms: Array[Transform3D],distance: float,title: String) -> void:
     if transforms.is_empty():return
     var mm:=MultiMesh.new();mm.transform_format=MultiMesh.TRANSFORM_3D;mm.mesh=mesh;mm.instance_count=transforms.size()
-    var bounds:=AABB(transforms[0].origin,Vector3.ZERO)
-    for transform_ in transforms:bounds=bounds.expand(transform_.origin)
-    var cell_origin:=bounds.get_center();var local_bounds:=AABB(transforms[0].origin-cell_origin,Vector3.ZERO)
-    for i in range(transforms.size()):
-        var transform_: Transform3D=transforms[i];transform_.origin-=cell_origin
-        mm.set_instance_transform(i,transform_);local_bounds=local_bounds.expand(transform_.origin)
-    mm.custom_aabb=local_bounds.grow(8 if title=="Canopy" else 3 if title=="Scrub" else 2)
-    var n:=MultiMeshInstance3D.new();n.name=title;n.multimesh=mm;n.position=cell_origin;n.visibility_range_end=distance;n.visibility_range_end_margin=15;n.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;p.add_child(n)
+    for i in range(transforms.size()):mm.set_instance_transform(i,transforms[i])
+    var n:=MultiMeshInstance3D.new();n.name=title;n.multimesh=mm;n.visibility_range_end=distance;n.visibility_range_end_margin=15;n.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;p.add_child(n)
