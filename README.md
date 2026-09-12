@@ -1,61 +1,71 @@
-# GRIDRUNNER — Godot VS02 Asset Integration
+# GRIDRUNNER — Ghost Signal
 
-The native Godot project is in [`godot/`](godot/). Import `godot/project.godot` in Godot 4.4.1, allow asset imports to finish, then press **F5**.
+Native Godot project for the GRIDRUNNER vertical slice. The project now lives directly at the repository root; the retired JavaScript/browser port is intentionally not kept on this branch.
 
-This milestone integrates all five GRIDRUNNER asset packs, five explorable buildings, working doors, persistent salvage, and the existing VS02 gameplay and Creek Service polish. The project includes 85 GLB assets with embedded textures; Blender is not required to play.
+**Engine baseline: Godot 4.4.1 stable using the Compatibility renderer.** Use this version unless an engine upgrade is being made as a deliberate, separately reviewed change.
 
-Read the [Godot README](godot/README.md) for controls and the [integration notes](godot/ASSET_INTEGRATION.md) for scope and limitations. The packaged build passed 211 test assertions; [test logs](godot/docs/validation/) and [engine screenshots](godot/docs/asset-screenshots/) are included.
+**Latest upgrade: all five supplied GRIDRUNNER packs integrated.** See `ASSET_INTEGRATION.md` for the new buildings, interactions, validation and limitations. The Creek Service milestone below is preserved.
 
-The browser version below remains available separately.
+**Latest milestone: VS02 / Creek Service polish.** Read `POLISH_MILESTONE.md` for the new HUD, surface audio, authored service loop, SCOUT trial and controls. `POLISH_VALIDATION.md` records the current checks; the older documents below describe the preserved VS02 foundation.
 
-# GRIDRUNNER v7.3 — Settlements
+Complete Godot source project, built directly on the supplied Vertical Slice 01 milestone. PC keyboard/mouse.
 
-Play: https://charltonty.github.io/GRIDRUNNER/
+## Play
 
-See [SETTLEMENTS-v7.3.md](SETTLEMENTS-v7.3.md) for new buildings, NPCs, audio, styling, tests and limitations.
+1. Clone the repository and check out this branch into a clean folder.
+2. In Godot's Project Manager, import `project.godot` from the repository root.
+3. Allow the asset import to finish. Press F5.
+4. New Expedition → Standard starts at Black Creek camp.
 
-# GRIDRUNNER v7.2 — Fieldwork
+The repository contains source and assets, not a Windows executable. No asset accounts are needed to play from Godot. Existing native VS01 saves are accepted and gain empty VS02 storage/progression fields. Back up any valued save before testing a milestone.
 
-Play: https://charltonty.github.io/GRIDRUNNER/
+## Develop and validate
 
-See [FIELDWORK-GUIDE.md](FIELDWORK-GUIDE.md) for changes, controls, architecture, content examples, tests and known limitations. This is the first playable foundations pass from the Compact Work Handoff.
-
-# GRIDRUNNER v7 — Ghost Signal, Legs 1–3
-
-An in-place upgrade of the supplied GRIDRUNNER prototype. Complete editable browser source is in `dist/`; no production compilation is required.
-
-## Play locally
-
-Install Python 3, then run from this folder:
+Run these commands from the repository root with Godot 4.4.1 on your `PATH`:
 
 ```sh
-python3 -m http.server 8000 --directory dist
+godot --headless --path . --editor --import --quit
+godot --headless --path . --script tests/native_smoke.gd
+godot --headless --path . --script tests/vertical_slice_02.gd
+godot --headless --path . --script tests/polish_regression.gd
+godot --headless --path . --script tests/asset_integration_regression.gd
 ```
 
-On Windows, `py -m http.server 8000 --directory dist` also works. Open **http://localhost:8000** in a WebGL-capable desktop browser. Do not open index.html directly with a file URL. Click New Expedition to begin and unlock audio. Start with HIGH or MEDIUM; use LOW for mobile or slower hardware.
+The repository-root cleanup was validated on Windows with Godot 4.4.1: **211 assertions passed with zero failures** across the four suites.
 
-## Develop and test
-
-With Node.js 24 and npm:
-
-```sh
-npm ci
-npm run dev
-npm test
-```
-
-Vite prints the development address. `/_qa` is a clearly labeled development-only CPU/HUD diagnostic; it does not render 3D and is not included in the static hosted game.
+Read `CONTRIBUTING.md` before changing engine versions, moving resources, or committing imported assets.
 
 ## Controls
 
-WASD ride/move; mouse look; S brake; P+W pedal; F mount/dismount; E use; R scan; Q launch/recall; Space ascend; Shift descend; I inventory; M map; Tab quick menu; Escape pause; F5 save slot 1.
+| Control | Action |
+|---|---|
+| WASD / mouse | Move or steer / look |
+| Shift on foot | Sprint |
+| Space on foot | Jump; hold does not auto-repeat |
+| Ctrl on foot | Crouch; blocked ceiling prevents standing |
+| E | Nearby interaction or physical pickup |
+| F | Mount / dismount nearby bike |
+| Space on bike / P | Brake / pedal |
+| Backspace | Recover stuck bike to road |
+| I | Backpack, inspection and accessible storage tabs |
+| B | SCOUT-01 equipment bay |
+| Q | Launch / recall drone |
+| Space / Shift in drone | Ascend / descend |
+| R | Scan; requires scanner module in drone mode |
+| L | Toggle equipped drone spotlight |
+| X | Marker designation / equipped utility action |
+| 1 / 2 / 3 | Drone follow / hold / return |
+| H | Cycle separate walking, bike or drone camera profiles |
+| G / T | Power trailer controls / transfer reserve to bike |
+| M | Route / discoveries |
+| F5 / Escape | Save / pause |
 
-Drone commands: **1 Follow, 2 Hold, 3 Dock, 4 FPV, 5 Scout Ahead, 6 Orbit**. Follow returns you to the bike while the drone accompanies you. Return and docking take flight time. Menus pause flight. Aircraft repairs are in Drones; recharge is in Pack/Craft. Park within 9 m of a landed aircraft to recover it with Q.
+Reduced motion is in the expedition pause menu. It disables the new landing camera response. All dialogue is text. Audio volume is adjustable.
 
-The left touch joystick, right-side look drag, rise/descend buttons and pedal toggle remain available.
+## Opening route
 
-## Release status
+Meet Mara → inspect Backpack → gather camp supplies → configure SCOUT-01 near the bike → launch/scan → recall → transfer supplies → ride toward Milepost Repair → stop at the service cabinet near x12, z−180 → investigate the carrier → stranded EV → solar storage → substation relay → Ghost Signal tower.
 
-This v7 candidate passed the included logic and DOM integration tests. The available test browser could not create a WebGL context, so GPU rendering, manual campaign playthrough and frame-rate certification are pending. The v7 game is live at https://gridrunner.goodyartist.chatgpt.site. GitHub Pages setup is described in GITHUB-PAGES.md. Read `QA-v7.md`, `CHANGELOG-v7.md` and `DEVELOPER-GUIDE.md`.
+The opening tasks guide rather than lock the player into a sequence. The complete original three-leg campaign remains available. The new service-cabinet carrier is an early hook; the original tower remains the chapter transition.
 
-The original source archive is preserved separately; its SHA-256 is recorded in QA-v7.md.
+See `WORK_COMPLETED.md`, `TEST_RESULTS.md`, `ASSET_CREDITS.md`, and the actual engine screenshots and icon sheets in `docs/` for scope, validation and remaining work.

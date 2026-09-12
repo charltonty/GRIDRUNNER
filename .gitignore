@@ -1,4 +1,31 @@
-node_modules/
-*.zip
-godot/.godot/
+# Godot-generated caches. These are rebuilt locally.
+.godot/
+.import/
+*.translation
+*.tmp
+.nomedia
+
+# Local export configuration and credentials.
+export.cfg
+export_credentials.cfg
+
+# Godot C# / Mono generated state.
+.mono/
+data_*/
+mono_crash.*.json
+
+# Local editor and operating-system files.
+.idea/
+.vs/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Tool caches and local archives.
 **/__pycache__/
+*.py[cod]
+*.zip
+
+# Generated game exports. Track export_presets.cfg, but not its output.
+build/
+exports/

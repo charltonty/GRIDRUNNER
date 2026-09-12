@@ -1,0 +1,17 @@
+# Keep Godot's text resources mergeable and consistent on every platform.
+* text=auto eol=lf
+
+# Binary source assets must never receive line-ending conversion.
+*.blend binary
+*.glb binary
+*.hdr binary
+*.jpeg binary
+*.jpg binary
+*.mp3 binary
+*.ogg binary
+*.otf binary
+*.png binary
+*.tga binary
+*.ttf binary
+*.wav binary
+*.webp binary
